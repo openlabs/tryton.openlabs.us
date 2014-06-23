@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}">
+<head>
+        {% block head %}
+        <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+        <meta charset="utf-8" />
+        {% if FEED_ALL_ATOM %}
+        <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Full Atom Feed" />
+        {% endif %}
+        {% if FEED_ALL_RSS %}
+        <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Full RSS Feed" />
+        {% endif %}
+        {% if FEED_ATOM %}
+        <link href="{{ FEED_DOMAIN }}/{{ FEED_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Atom Feed" />
+        {% endif %}
+        {% if FEED_RSS %}
+        <link href="{{ FEED_DOMAIN }}/{{ FEED_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
+        {% endif %}
+        {% if CATEGORY_FEED_ATOM and category %}
+        <link href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_ATOM|format(category.slug) }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Categories Atom Feed" />
+        {% endif %}
+        {% if CATEGORY_FEED_RSS and category %}
+        <link href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_RSS|format(category.slug) }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Categories RSS Feed" />
+        {% endif %}
+        {% if TAG_FEED_ATOM and tag %}
+        <link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_ATOM|format(tag.slug) }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Tags Atom Feed" />
+        {% endif %}
+        {% if TAG_FEED_RSS and tag %}
+        <link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_RSS|format(tag.slug) }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Tags RSS Feed" />
+        {% endif %}
+
+        <!-- All style sheets -->
+        <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/default.css" />
+        <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/component.css" />
+        <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/app.css" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/vendor/semantic.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.0/animate.min.css">         
+        <!-- END: All style sheets -->
+
+        {% endblock head %}
+</head>
+<body>
+  {{ categories }}
+  <div class="container">
+    <div class="main">
+      <nav id="cbp-hrmenu" class="cbp-hrmenu fadeIn animated">
+        <ul>
+          <li>
+            <a href="#" class="tryton__logo">Tryton</a>
+            <div class="cbp-hrsub">
+              <div class="cbp-hrsub-inner">
+                <div>
+                  <div class="ui grid two columns">
+                    <div class="row">
+                      <div class="column">
+                        <h2>Welcome to Tryton!</h2>
+                        <p class="lead">Hello and welcome to the online portal of Tryton. Just entering some text here and yada yada yada.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="ui grid two columns">
+                    <div class="row">
+                      <div class="column">
+                        <h2>Help</h2>
+                        <p class="lead">
+                          <ul>
+                            <li><a href="#">Documentation</a>
+                            </li>
+                            <li><a href="#">Development</a>
+                            </li>
+                            <li><a href="#">Customer Support</a>
+                            </li>
+                          </ul>
+                        </p>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /cbp-hrsub-inner -->
+            </div>
+          </li>
+          {% for cat, articles in categories %}
+          <li>
+            <a href="#">Features</a>
+            <div class="cbp-hrsub">
+              <div class="cbp-hrsub-inner">
+                {% for article in articles %}
+                <div>
+                  <h4><i class="fa {{ article.icon }}"></i> {{ article.title }}</h4>
+                  <ul>
+                    <li><a href="#">{{ article.subtitle }}</a>
+                    </li>
+                  </ul>
+                </div>
+                {% endfor %}
+              </div>
+              <!-- /cbp-hrsub-inner -->
+            </div>
+            <!-- /cbp-hrsub -->
+          </li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <section class="hero">
+    <div class="hero__container">
+      <h1 class="fadeInDown animated">Some kind of introductory text should be put here. It should be two lines or more.</h1>
+      <div class="buttons fadeInUp animated">
+        <a href="article.html" class="hairline__button" target="_blank">Article Page</a>
+        <a href="landing.html" class="hairline__button" target="_blank">Landing Page</a>
+      </div>
+      <center>
+        <div class="chev fadeIn animated">
+          <a href="#about"><i class="fa fa-angle-down"></i></a>
+        </div>
+      </center>
+    </div>
+
+
+  </section>
+  <section class="section" id="about">
+    <div class="container">
+      <div class="ui stackable fluid two column grid">
+        <div class="row">
+          <div class="column">
+            <h1>What
+              <span class="und">exactly</span>&nbsp;is it?</h1>
+            <p class="lead">Tryton is basically a Python framework for creating scalable, robust and maintainable e-commerce applications.</p>
+            <p class="lead">
+              If that seems all Greek to you, refer to the video or read the <a href="#">documentation</a>.
+            </p>
+            <p class="lead">
+              The sample article page is => <a href="article.html">Article Page</a>
+            </p>
+          </div>
+
+          <div class="column">
+            <iframe width="550.33" height="350" src="https://www.youtube.com/embed/YE7VzlLtp-4" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="parallax img1"></section>
+  <section class="features">
+    <div class="inner">
+      <h1>Features</h1>
+      <div class="feature-row">
+        <div class="feature">
+          <img src="{{ SITEURL }}/theme/img/compile.png" alt="">
+          <h3>Clean Code</h3>
+          <p>A small description of this feature can be entered here. Yada yada.</p>
+        </div>
+        <div class="feature">
+          <img src="{{ SITEURL }}/theme/img/concat.png" alt="">
+          <h3>Brilliant Docs</h3>
+          <p>A small description of this feature can be entered here. I am writing random text here yada yada yada yada.</p>
+        </div>
+        <div class="feature">
+          <img src="{{ SITEURL }}/theme/img/refresh.png" alt="">
+          <h3>Lightning Fast</h3>
+          <p>A small description of this feature can be entered here. I am writing random text here yada yada yada yada.</p>
+        </div>
+      </div>
+
+      <div class="feature-row">
+        <div class="feature">
+          <a class="push button">Read all Features</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="parallax img2">
+  </section>
+  <section class="area">
+    <h1>Dummy Section</h1>
+    <h3>Hello, I am a subheader</h3>
+    <p class="lead">
+      This is a dummy section. Something of relevance may be added here but meh who cares about layabout sections now?
+    </p>
+  </section>
+  <section class="parallax img3">
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="ui grid four center aligned columns no-margin">
+        <div class="row">
+          <div class="column">
+            <h1>Lets get social</h1>
+            <div class="links">
+              <a href="https://twitter.com/trytonusa"><i class="fa fa-twitter"></i></a>
+              <a href="https://plus.google.com/communities/111064602356347307346"><i class="fa fa-google-plus"></i></a>
+              <a href="https://github.com/tryton/tryton"><i class="fa fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <p class="lead">Everything &copy; OpenLabs Pvt. Ltd 2014-2015</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="{{ SITEURL }}/theme/js/vendor/modernizr.custom.js"></script>
+  <script src="{{ SITEURL }}/theme/js/cbp-horizontal-menu.js"></script>
+  <script>
+  $(function() {
+    cbpHorizontalMenu.init();
+  });
+  </script>
+
+  <script>
+  $(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/headroomjs/0.5.0/jQuery.headroom.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/headroomjs/0.5.0/headroom.min.js"></script>
+  <script>
+  // $("#cbp-hrmenu").headroom();
+  </script>
+</body>
+</html>

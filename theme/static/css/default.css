@@ -1,0 +1,48 @@
+/* General Demo Style */
+ @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700);
+body, html {
+    font-size: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden; 
+    z-index: 8;
+}
+/* Reset */
+ *, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+ .clearfix:before, .clearfix:after {
+    content:" ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+body {
+    font-family:'Source Sans Pro', Calibri, Arial, sans-serif;
+    color: #222;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+}
+a {
+    color: #00adef;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    text-decoration: none;
+    transition: all 0.33s ease-in-out;
+}
+a:hover {
+    border-bottom: 2px solid rgba(71, 163, 218, 1);
+    color: #00adef;
+}
+.und {
+    text-decoration: none;
+    background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)), -webkit-linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)), -webkit-linear-gradient(rgb(51, 51, 50), rgb(51, 51, 50));
+    background-size: 0.05em 3px, 0.05em 3px, 3px 3px;
+    background-repeat: no-repeat, no-repeat, repeat-x;
+    text-shadow: 0.03em 0 rgb(255, 255, 255), -0.03em 0 rgb(255, 255, 255), 0 0.03em rgb(255, 255, 255), 0 -0.03em rgb(255, 255, 255), 0.06em 0 rgb(255, 255, 255), -0.06em 0 rgb(255, 255, 255), 0.09em 0 rgb(255, 255, 255), -0.09em 0 rgb(255, 255, 255), 0.12em 0 rgb(255, 255, 255), -0.12em 0 rgb(255, 255, 255), 0.15em 0 rgb(255, 255, 255), -0.15em 0 rgb(255, 255, 255);
+    background-position-y: 87%, 87%, 87%;
+    background-position-x: 0%, 100%, 0%;
+}
