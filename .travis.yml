@@ -5,8 +5,10 @@ install:
 - pip install -r requirements.txt
 script:
 - fab build
+- ls -al
 deploy:
   provider: s3
+  skip_cleanup: true
   access_key_id: AKIAIDIGJHF2U3NLRAEA
   secret_access_key:
     secure: US/uGF+Ecs5T0XYPmcBr8N0GB7Y9hlb7vIeIspDwA9W4dsb60ORlWB6dV+SQgk3SffAj+n+y3ZTlGMxr8f4x1UpNtsb/y1fRGKOfErRRqHEzqXdyiJI9aB4WW+1s5Xe/tVIUEd0kNBwhCiqr0vJgLDNpL7XYUjjDa8RJGuWeLCo=
