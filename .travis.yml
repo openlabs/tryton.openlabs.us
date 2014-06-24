@@ -10,8 +10,7 @@ deploy:
   provider: s3
   skip_cleanup: true
   access_key_id: AKIAIDIGJHF2U3NLRAEA
-  secret_access_key:
-    secure: "MDSbKkpAI4HUfQ5pP6jwFtI5dt89pIfdIs6tN+oMDIw/aes63JHzXHPhNFrGzZAebfD3RYEbW82PQkuWGrGjpkbdAckcfV8N0hoAMPE09XVmljBSwXlfwI+zFpwd/OLG9L3hYVwK0KA39Sg5ZxvQv01kKg7FbqW9KPTrEz5xq/s="
+  secret_access_key: KxUvaCiVHCRrvUqTcI5xXHCkikMutYwBnZmj3QOB
   bucket: tryton.openlabs.us
   endpoint: tryton.openlabs.us.s3-website-us-east-1.amazonaws.com
   region: us-east-1
