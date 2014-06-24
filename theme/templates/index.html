@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+
+  {% block content %}
+
+  <section class="hero">
+    <div class="hero__container">
+      <h1 class="fadeInDown animated">Some kind of introductory text should be put here. It should be two lines or more.</h1>
+      <div class="buttons fadeInUp animated">
+        <a href="article.html" class="hairline__button" target="_blank">Article Page</a>
+        <a href="landing.html" class="hairline__button" target="_blank">Landing Page</a>
+      </div>
+      <center>
+        <div class="chev fadeIn animated">
+          <a href="#about"><i class="fa fa-angle-down"></i></a>
+        </div>
+      </center>
+    </div>
+
+
+  </section>
+  <section class="section" id="about">
+    <div class="container">
+      <div class="ui stackable fluid two column grid">
+        <div class="row">
+          <div class="column">
+            <h1>What
+              <span class="und">exactly</span>&nbsp;is it?</h1>
+            <p class="lead">Tryton is basically a Python framework for creating scalable, robust and maintainable e-commerce applications.</p>
+            <p class="lead">
+              If that seems all Greek to you, refer to the video or read the <a href="#">documentation</a>.
+            </p>
+            <p class="lead">
+              The sample article page is => <a href="article.html">Article Page</a>
+            </p>
+          </div>
+
+          <div class="column">
+            <iframe width="550.33" height="350" src="https://www.youtube.com/embed/YE7VzlLtp-4" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="parallax img1"></section>
+  <section class="features">
+    <div class="inner">
+      <h1>Features</h1>
+      <div class="feature-row">
+        <div class="feature">
+          <img src="{{ SITEURL }}/theme/img/compile.png" alt="">
+          <h3>Clean Code</h3>
+          <p>A small description of this feature can be entered here. Yada yada.</p>
+        </div>
+        <div class="feature">
+          <img src="{{ SITEURL }}/theme/img/concat.png" alt="">
+          <h3>Brilliant Docs</h3>
+          <p>A small description of this feature can be entered here. I am writing random text here yada yada yada yada.</p>
+        </div>
+        <div class="feature">
+          <img src="{{ SITEURL }}/theme/img/refresh.png" alt="">
+          <h3>Lightning Fast</h3>
+          <p>A small description of this feature can be entered here. I am writing random text here yada yada yada yada.</p>
+        </div>
+      </div>
+
+      <div class="feature-row">
+        <div class="feature">
+          <a class="push button">Read all Features</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="parallax img2">
+  </section>
+  <section class="area">
+    <h1>Dummy Section</h1>
+    <h3>Hello, I am a subheader</h3>
+    <p class="lead">
+      This is a dummy section. Something of relevance may be added here but meh who cares about layabout sections now?
+    </p>
+  </section>
+  <section class="parallax img3">
+  </section>
+
+  {% endblock content %}

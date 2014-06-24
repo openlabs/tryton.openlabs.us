@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block head %}
+  {{ super() }}
+  {% for keyword in article.keywords %}
+    <meta name="keywords" contents="{{keyword}}" />
+  {% endfor %}
+
+  {% for description in article.description %}
+    <meta name="description" contents="{{description}}" />
+  {% endfor %}
+
+  {% for tag in article.tags %}
+    <meta name="tags" contents="{{tag}}" />
+  {% endfor %}
+
+{% endblock %}
+
+
+{% block content %}
+<section class="landing-hero">
+  <div class="centered">
+    <h1>{{ article.title }}</h1>
+    <p class="lead">{{ article.subtitle }}</p>
+    <a href="#info">
+      <span class="arrow"></span>
+    </a>
+  </div>
+</section>
+
+<section class="info section" id="info">
+  <h1>What is it?</h1>
+  <div class="constrain">
+    <p class="lead">
+      {{ article.content }}
+    </p>
+  </div>
+</section>
+
+<section class="features landing">
+  <div class="inner">
+    <h1>How does Tryton manage assets?</h1>
+    <h3 class="subheader">
+      Various components of the system
+    </h3>
+    <div class="feature-row">
+      <div class="feature">
+        <img src="img/compile.png" alt="">
+        <h3>Clean Code</h3>
+        <p>A small description of this feature can be entered here. Yada yada.</p>
+      </div>
+      <div class="feature">
+        <img src="img/concat.png" alt="">
+        <h3>Brilliant Docs</h3>
+        <p>A small description of this feature can be entered here. I am writing random text here yada yada yada yada.</p>
+      </div>
+      <div class="feature">
+        <img src="img/refresh.png" alt="">
+        <h3>Lightning Fast</h3>
+        <p>A small description of this feature can be entered here. I am writing random text here yada yada yada yada.</p>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock content %}
