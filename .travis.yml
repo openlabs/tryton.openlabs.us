@@ -4,7 +4,7 @@ python:
 install:
 - pip install -r requirements.txt
 script:
-- fab rebuild
+- fab build
 deploy:
   provider: s3
   access_key_id: AKIAIDIGJHF2U3NLRAEA
