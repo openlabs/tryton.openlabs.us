@@ -11,8 +11,10 @@ deploy:
   skip_cleanup: true
   access_key_id: AKIAIDIGJHF2U3NLRAEA
   secret_access_key:
-    secure: Ghm9WXBE6JvT6wUd8OAX1EwSRusDPOA4OxIMlHny4Jtquzyp33y7kKZlcyrECX+P4hLpYmBn4bgf+rr2Ro4h2iFjeqnZ6Mz9dXUMbplnqbt9yWphzky5ewz/948v+txFzfndXllKX8sT3gq62FhubE5Pkraoa3WLFx4iCStG8zU=
+    secure: "lGCIOUxv1/SexqGrCywARNiJGNd0Zxxxzx/YBaE6+KDeUSGyk40lmsNYA670id6Lar/s0LbYKQ/zRASkMxGRjinrN0roIwIrOMR3lpZGQXda3O76Z3WOggGrmGaLkMboRqi+iuXDHjGnAxPN/L5HaHeUsLECAje+UurCleTnQb8="
   bucket: tryton.openlabs.us
+  endpoint: tryton.openlabs.us.s3-website-us-east-1.amazonaws.com
+  region: us-east-1
   local-dir: output
   on:
     repo: openlabs/tryton.openlabs.us
