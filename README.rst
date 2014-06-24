@@ -17,7 +17,7 @@ use the lazy method outlined below. The choice is yours.
 1. Clone this repo
 ```````````````````
 
-.. code-block::
+.. code-block:: shell
 
     git clone git@github.com:openlabs/tryton.openlabs.us
     cd tryton.openlabs.us
@@ -27,7 +27,7 @@ use the lazy method outlined below. The choice is yours.
 
 You should be doing this in a virtualenv.
 
-.. code-block::
+.. code-block:: shell
 
     pip install -r requirements.txt
 
@@ -36,14 +36,14 @@ The above code should install all the required files.
 3. Building the site
 ````````````````````
 
-.. code-block::
+.. code-block:: shell
 
     fab build
 
 This should create a new `output` folder where the generated html is placed.
 To view this in your web browser, you can use the builtin web server.
 
-.. code-block::
+.. code-block:: shell
 
     fab serve
 
