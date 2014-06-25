@@ -93,10 +93,20 @@
                   <a href="{{ SITEURL }}/{{ article.url }}">
                     <h4><i class="fa {{ article.icon }}"></i> {{ article.title }}</h4>
                   </a>
+                  {% if article.sections %}
+                  <ul>
+                    {% for section in article.sections.split(',') %}
+                    <li>
+                      <a href="{{ SITEURL }}/{{ article.url }}#{{ section|trim }}">{{ section|trim }}</a>
+                    </li>
+                    {% endfor %}
+                  </ul>                    
+                  {% else %}
                   <ul>
                     <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.subtitle }}</a>
                     </li>
                   </ul>
+                  {% endif %}
                 </div>
                 {% endfor %}
               </div>
