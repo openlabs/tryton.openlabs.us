@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block main %}
+
+<section class="blog-heading">
+  <div class="container">
+    <h1 class="white-text-color margin-0">{% block blog_heading %}Blog{% endblock blog_heading %}</h1>
+    <ol class="breadcrumb remove_background padding-0 margin-0">
+      <li><a class="white-text-color" href="#">Home</a></li>
+      {% block breadcrumb %}
+      {% endblock breadcrumb %}
+    </ol>
+  </div>
+</section>
+
+{% block blog_desc %}{% endblock blog_desc %}
+{% endblock main %}
+{% block blog_date %}
+<table class="blog-date pull-left" border="0" cellpadding="0" cellspacing="0" width="60">
+  <tr>
+    <td>
+      <table border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td class="blog-month">
+            September
+          </td>
+        </tr>
+        <tr>
+          <td class="blog-time">
+            16
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<h3 class="margin-0"><a href="tryton-unconference-2014-liepzig.html">Tryton Unconference 4.0, Liepzig.</a></h3>
+<ul class="mar_bottom3">
+  <li class="pull-left list-unstyled post-by">Sorabh</li>
+  <li class="list-unstyled post-event pull-left">Events</li>
+</ul>
+{% endblock blog_date %}

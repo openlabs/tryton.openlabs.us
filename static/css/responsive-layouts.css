@@ -1,0 +1,40 @@
+@media only screen and (max-width: 768px) {
+  .navbar-default .navbar-collapse{
+    border-color: #e7e7e7;
+    background: #e7e7e7;
+  }
+  .padding-auto-0 {
+    padding-left: 0;
+    padding-right: 0; 
+  }
+  .nav-button {
+    margin-top: 18px;
+  }
+  .text-center-xs {
+    text-align: center;
+  }
+  .rounded-icon {
+    /*csslint important:false */
+    margin:auto;
+    float: none !important;
+  }
+  .knowMoreSection button{
+    margin-bottom: 25px;
+  }
+  .content-center-xs {
+    margin:auto;
+  }
+  .main-menu > ul {
+    top: 7px;
+    left:103px;
+  }
+  .mar_top3-xs {
+    margin-top: 30px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .text-center-sm{
+    text-align: center;
+  }
+
+}

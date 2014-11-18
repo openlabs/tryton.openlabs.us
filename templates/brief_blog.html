@@ -1,0 +1,42 @@
+
+{% extends 'blog.html' %}
+{% block title %} Blog | {{ super() }} {% endblock title %}
+{% block breadcrumb %}
+<li class="white-text-color">Blog</li>
+{% endblock breadcrumb %}
+{% block blog_desc %}
+<section>
+  <div class="container">
+    <div class="mar_top7"></div>
+    <div class="col-xs-12 col-sm-12 col-ms-12 padding-0">
+      <div class="col-xs-12 col-sm-4 col-md-4 padding-0 img-frame">
+        <a href="#"> <img class="tul img-responsive" src="https://s3-ap-southeast-1.amazonaws.com/uploads-ap.hipchat.com/37228/917821/UhA1Jp7nYdPbgCq/tryton%20unconference%202014.jpg" alt="Tryton Unconference 2014">
+        </a>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-4 mar_top3-xs">
+        <div>
+         {% block blog_date %} {{ super() }} {% endblock blog_date %}
+       </div>
+       
+       <div class="clearfix"></div>
+       <p>This year the annual Tryton Unconference will take place in Leipzig, Germany from 14th to 16th of November. This will be the 4th Annual conference of the Tryton community</p>
+     </div>
+     <div class="col-xs-4 col-xs-offset-4 col-md-offset-0 col-sm-offset-0 col-md-4 mar_top3-xs">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search">
+        <span class="input-group-addon glyphicon glyphicon-search position-top0"></span>
+      </div>
+      <h3> Blog Categories</h3>
+      <ul class="link_list padding-0">
+        <li class="list-unstyled"><a href="events.html"><i class="fa fa-angle-right"></i> Events</a></li>
+        <li class="list-unstyled"><a href="tryton.html"><i class="fa fa-angle-right"></i> Tryton</a></li>
+        <li class="list-unstyled"><a href="development.html"><i class="fa fa-angle-right"></i> Development</a></li>
+        <li class="list-unstyled"><a href="tutorials.html"><i class="fa fa-angle-right"></i> Tutorials</a></li>
+        <li class="list-unstyled"><a href="news.html"><i class="fa fa-angle-right"></i> News</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="mar_top7"></div>
+</section>
+{% endblock blog_desc %}
