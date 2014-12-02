@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{% block title %}Tryton - World's Most Stable OpenSource ERP System{% endblock title %}</title>
+  <title>{% block title %}{% trans %}Tryton - World's Most Stable OpenSource ERP System{% endtrans %}{% endblock title %}</title>
 
   <!-- Package CSS -->  
   <link href="{{ STATIC }}bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -33,44 +33,44 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li class="main-menu"><a href="/" class="active">Home</a></li>
-            <li class="main-menu"><a href="foundation.html">Foundation</a></li>
+            <li class="main-menu"><a href="/" class="active">{% trans %}Home{% endtrans %}</a></li>
+            <li class="main-menu"><a href="foundation.html">{% trans %}Foundation{% endtrans %}</a></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Features<span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{% trans %}Features{% endtrans %}<span class="caret"></span></a>
               <ul class="dropdown-menu dropdown-position" role="menu">
-                <li><a href="features.html" class="text-uppercase">Features</a></li>
-                <li><a href="features.html#fast" class="text-uppercase scroll">Fast</a></li>
-                <li><a href="features.html#opensource" class="text-uppercase scroll">OpenSource</a></li>
-                <li><a href="features.html#api" class="text-uppercase scroll">API</a></li>
-                <li><a href="features.html#custom" class="text-uppercase scroll">Customizable</a></li>
-                <li><a href="features.html#scale" class="text-uppercase scroll">Scalable</a></li>
-                <li><a href="features.html#secure" class="text-uppercase scroll">Secure</a></li>
-                <li><a href="features.html#modular" class="text-uppercase scroll">Modular</a></li>
-                <li><a href="features.html#stable" class="text-uppercase scroll">Stable</a></li>
+                <li><a href="features.html" class="text-uppercase">{% trans %}Features{% endtrans %}</a></li>
+                <li><a href="features.html#fast" class="text-uppercase scroll">{% trans %}Fast{% endtrans %}</a></li>
+                <li><a href="features.html#opensource" class="text-uppercase scroll">{% trans %}OpenSource{% endtrans %}</a></li>
+                <li><a href="features.html#api" class="text-uppercase scroll">{% trans %}API{% endtrans %}</a></li>
+                <li><a href="features.html#custom" class="text-uppercase scroll">{% trans %}Customizable{% endtrans %}</a></li>
+                <li><a href="features.html#scale" class="text-uppercase scroll">{% trans %}Scalable{% endtrans %}</a></li>
+                <li><a href="features.html#secure" class="text-uppercase scroll">{% trans %}Secure{% endtrans %}</a></li>
+                <li><a href="features.html#modular" class="text-uppercase scroll">{% trans %}Modular{% endtrans %}</a></li>
+                <li><a href="features.html#stable" class="text-uppercase scroll">{% trans %}Stable{% endtrans %}</a></li>
               </ul>
             </li>
             <li class="dropdown">
-              <a href="app.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Apps<span class="caret"></span></a>
+              <a href="app.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{% trans %}Apps{% endtrans %}<span class="caret"></span></a>
               <ul class="dropdown-menu dropdown-position" role="menu">
-                <li><a href="app.html" class="text-uppercase">Apps</a>
+                <li><a href="app.html" class="text-uppercase">{% trans %}Apps{% endtrans %}</a>
                 </li>
-                <li><a href="ecommerce.html" class="text-uppercase">ECommerce</a>
+                <li><a href="ecommerce.html" class="text-uppercase">{% trans %}ECommerce{% endtrans %}</a>
                 </li>
-                <li><a href="accounts.html" class="text-uppercase">Accounts</a>
+                <li><a href="accounts.html" class="text-uppercase">{% trans %}Accounts{% endtrans %}</a>
                 </li>
-                <li><a href="inventory.html" class="text-uppercase">Inventory</a>
+                <li><a href="inventory.html" class="text-uppercase">{% trans %}Inventory{% endtrans %}</a>
                 </li>
-                <li><a href="crm.html" class="text-uppercase">CRM</a>
+                <li><a href="crm.html" class="text-uppercase">{% trans %}CRM{% endtrans %}</a>
                 </li>
-                <li><a href="purchase.html" class="text-uppercase">Purchase</a>
+                <li><a href="purchase.html" class="text-uppercase">{% trans %}Purchase{% endtrans %}</a>
                 </li>
-                <li><a href="orders.html" class="text-uppercase">Orders</a>
+                <li><a href="orders.html" class="text-uppercase">{% trans %}Orders{% endtrans %}</a>
                 </li>
-                <li><a href="projects.html" class="text-uppercase">Projects</a>
+                <li><a href="projects.html" class="text-uppercase">{% trans %}Projects{% endtrans %}</a>
                 </li>
               </ul>
             </li>
-            <li class="main-menu"><a href="blogs.html">Blog</a></li>
+            <li class="main-menu"><a href="blogs.html">{% trans %}Blog{% endtrans %}</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div>
@@ -89,24 +89,24 @@
       <div class="col-md-3 col-sm-6 col-xs-12 text-center-xs footer-set-height">
         <img src="{{ STATIC }}images/footer-logo.png" alt="trytonLogo" />
         <ul class="contact_address pull-left list-unstyled">
-          <li>Tryton.us is an initiative of Openlabs Technologies to aware people about Tryton ERP and its implementation.<br><br>It is a private initiative not intended to replace, or communicate on behalf of the whole Tryton community. </li>
-          <li>Tryton is a registered trademark of the Tryton Foundation.</li>
+          <li>{% trans %}Tryton.us is an initiative of Openlabs Technologies to aware people about Tryton ERP and its implementation.{% endtrans %}<br><br>{% trans %}It is a private initiative not intended to replace, or communicate on behalf of the whole Tryton community.{% endtrans %} </li>
+          <li>{% trans %}Tryton is a registered trademark of the Tryton Foundation.{% endtrans %}</li>
           <li><img src="{{ STATIC }}images/footer-wmap.png" alt=""></li>
         </ul>
       </div>
       <div class="col-md-3 col-sm-4 col-md-offset-0 col-sm-offset-2 col-xs-4 col-xs-offset-4 footer-set-height">
-        <h3 class="footer_headings">Useful Links</h3>
+        <h3 class="footer_headings">{% trans %}Useful Links{% endtrans %}</h3>
         <ul class="link_list list-unstyled">
-          <li><a href="/"><i class="fa fa-angle-right"></i> Home</a></li>
-          <li><a href="events.html"><i class="fa fa-angle-right"></i> Features</a></li>
-          <li><a href="community.html"><i class="fa fa-angle-right"></i> Apps</a></li>
-          <li><a href="foundation.html"><i class="fa fa-angle-right"></i> Foundation</a></li>
-          <li><a href="download.html"><i class="fa fa-angle-right"></i> Blog</a></li>
-          <li><a href="documentation.html"><i class="fa fa-angle-right"></i> Contact</a></li>
+          <li><a href="/"><i class="fa fa-angle-right"></i>{% trans %} Home{% endtrans %}</a></li>
+          <li><a href="events.html"><i class="fa fa-angle-right"></i> {% trans %}Features{% endtrans %}</a></li>
+          <li><a href="community.html"><i class="fa fa-angle-right"></i> {% trans %}Apps{% endtrans %}</a></li>
+          <li><a href="foundation.html"><i class="fa fa-angle-right"></i> {% trans %}Foundation{% endtrans %}</a></li>
+          <li><a href="download.html"><i class="fa fa-angle-right"></i> {% trans %}Blog{% endtrans %}</a></li>
+          <li><a href="documentation.html"><i class="fa fa-angle-right"></i> {% trans %}Contact{% endtrans %}</a></li>
         </ul>
       </div>
       <div class="col-md-3 col-sm-6 col-xs-12 text-center-xs footer-set-height">
-       <h3 class="footer_headings">Latest Tweets</h3>
+       <h3 class="footer_headings">{% trans %}Latest Tweets{% endtrans %}</h3>
 
        <div class="twitter_feed">
         <a class="twitter-timeline" href="https://twitter.com/hashtag/tryton" data-widget-id="499079587393839106">#tryton Tweets</a>
@@ -125,22 +125,22 @@
       </div>
     </div>
     <div class="col-md-3 col-sm-4 col-sm-offset-2 col-xs-12 col-md-offset-0 text-center-xs footer-set-height">
-      <h3 class="footer_headings">Join Community</h3>
+      <h3 class="footer_headings">{% trans %}Join Community{% endtrans %}</h3>
       <ul class="list-unstyled">
         <li>
-          <a href="https://groups.google.com/forum/#!forum/tryton" class="white-text-color"><i class="fa fa-google-plus"></i>&nbsp;&nbsp;GOOGLE GROUP</a>
+          <a href="https://groups.google.com/forum/#!forum/tryton" class="white-text-color"><i class="fa fa-google-plus"></i>&nbsp;&nbsp;{% trans %}GOOGLE GROUP{% endtrans %}</a>
         </li>
         <li>
-          <a href="https://github.com/tryton/tryton" class="white-text-color"><i class="fa fa-github"></i>&nbsp;&nbsp;GET THE CODE</a>
+          <a href="https://github.com/tryton/tryton" class="white-text-color"><i class="fa fa-github"></i>&nbsp;&nbsp;{% trans %}GET THE CODE{% endtrans %}</a>
         </li>
       </ul>
       <br>
       <br>
-      <p class="white-text-color">Tryton Fondation Privée <br>
-        Rue de Rotterdam, 4 <br>
-        4000 Liège <br>
+      <p class="white-text-color">{% trans %}Tryton Fondation Privée {% endtrans %}<br>
+        {% trans %}Rue de Rotterdam, 4 {% endtrans %}<br>
+        {% trans %}4000 Liège {% endtrans %}<br>
         Belgium <br><br>
-        <a href="mailto:foundation@tryton.org" target="_blank" class="white-text-color"><i class="fa fa-envelope"></i>&nbsp;&nbsp;foundation@tryton.org</a></p>
+        <a href="mailto:foundation@tryton.org" target="_blank" class="white-text-color"><i class="fa fa-envelope"></i>&nbsp;&nbsp;{% trans %}foundation@tryton.org{% endtrans %}</a></p>
       </div>
       <div class="clearfix mar_top6"></div>
     </div>
@@ -148,14 +148,14 @@
       <div class="clearfix mar_top6"></div>
       <div class="container">
         <div class="col-md-12 text-center">
-          <p class="white-text-color">Made with <i class="fa fa-heart text-red"></i> by <strong><a href="https://www.openlabs.co.in" class="white-text-color">Team OPENLABS</a></strong></p>
+          <p class="white-text-color">{% trans %}Made with {% endtrans %}<i class="fa fa-heart text-red"></i> {% trans %}by{% endtrans %} <strong><a href="https://www.openlabs.co.in" class="white-text-color">{% trans %}Team OPENLABS{% endtrans %}</a></strong></p>
         </div>
         <div class="clearfix mar_top3 clearfix pull-left"></div>
       </div>
     </div>
     <div class="content_licensed col-md-12 col-sm-12 col-xs-12">
      <div class="container">
-      <b>Content Licensed as Creative Commons</b>
+      <b>{% trans %}Content Licensed as Creative Commons{% endtrans %}</b>
     </div>
   </div>
 </div>
@@ -166,12 +166,12 @@
 <script src="{{ STATIC }}bower_components/jquery/dist/jquery.min.js"></script>
 <script src="{{ STATIC }}bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script>
-$(document).ready(function(){
-  $(".scroll").click(function(){
-    $("html,body").animate({scrollTop:$(this.hash).offset().top-105},2000);
-  });
+  $(document).ready(function(){
+$(".scroll").click(function(){
+  $("html,body").animate({scrollTop:$(this.hash).offset().top-105},2000);
 });
-</script>
+  });
+  </script>
 {% endblock script_tags %}
 </body>
 </html>
