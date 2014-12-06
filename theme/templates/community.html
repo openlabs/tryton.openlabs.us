@@ -1,65 +1,241 @@
 {% extends 'base.html' %}
-
+{% block title %} {% trans %} Community {% endtrans %} | {{ super() }} {% endblock title %}
 {% block main %}
 <section class="app-banner">
   <div class="container">
     <ol class="breadcrumb remove_background">
-      <li><a class="white-text-color" href="/">{% trans %} Home {% endtrans %}</a></li>
-      <li class="white-text-color">{% trans %} Community {% endtrans %}</li>
+      <li><a class="white-text-color" href="/">{% trans %}Home{% endtrans %}</a></li>
+      <li class="white-text-color">{% trans %}Community{% endtrans %}</li>
     </ol>
     <div class="mar-top-150"></div>
     <div class="text-center">
-        <h1 class="white-text-color"><strong>{% trans %}An active open source community{% endtrans %}</strong></h1>
+      <h1 class="white-text-color"><strong>{% trans %}Join the community{% endtrans %}</strong>
+      </h1>
       <div class="col-sm-12 col-xs-12" >
         <div class="col-sm-2 col-xs-4 col-xs-offset-4 col-sm-offset-5 app-banner-divider">
         </div>
       </div>
       <div>
-        <p class="white-text-color">{% trans %}Tryton project is a global collaboration of developers and technology enthusiasts developing the open source business management software for small and medium-sized enterprises.{% endtrans %}</p>
+        <p class="white-text-color">
+          {% trans %}Tryton project is a global collaboration of developers and technology enthusiasts developing the open source business management software for small and medium-sized enterprises.{% endtrans %}
+        </p>
       </div>
     </div>
   </div>
 </section>
-<div class="mar_top5 clearfix" id="Mailing lists, IRC"></div>
-<div class="container">
-  <section>
-    <div class="container">
-      <div class="col-xs-12 col-sm-12 col-md-12 mar_top5">
-        <div class="col-xs-12 col-sm-6 col-md-6">
-          <h2><strong>{% trans %}Mailing Lists{% endtrans %}</strong></h2>
-          <ul>
-            <li><a href="http://groups.tryton.org/">English</a></li>
-            <li><a href="http://groups-ca.tryton.org/">Català</a></li>
-            <li><a href="http://groups-de.tryton.org/">Deutsch</a></li>
-            <li><a href="http://groups-es.tryton.org/">Español</a></li>
-            <li><a href="http://groups-fr.tryton.org/">Français</a></li>
-            <li><a href="http://groups-ru.tryton.org/">РУССКИЙ</a></li>
-            <br>
-            <li><a href="http://groups-dev.tryton.org/">Developers</a></li>
-            <li><a href="http://groups-announce.tryton.org/">Announce</a></li>
-            <li><a href="http://groups-commit.tryton.org/">Commit</a></li>
-            <li><a href="http://groups-contrib.tryton.org/">Contrib</a></li>
-          </ul>
-          <p>{% trans %}Be considerate of other subscribers on the mailing lists,{% endtrans %} <a href="http://groups.tryton.org/netiquette">{% trans %}follow the netiquette{% endtrans %}</a>.
-          </p>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-6">
-          <h2><strong>{% trans %}Internet Relay Chat{% endtrans %}</strong></h2>
-          <p>{% trans %}There are several channels on the{% endtrans %} <a href="http://www.freenode.net/">Freenode IRC</a>.</p>
-          <ul>
-            <li>English: <a href="irc://irc.freenode.net/tryton">#tryton</a> (<a href="http://www.tryton.org/~irclog/">{% trans %}Archives{% endtrans %}</a>)</li>
-            <li>Deutsch: <a href="irc://irc.freenode.net/tryton.de">#tryton.de</a> (<a href="http://www.tryton.org/~irclog/de/">{% trans %}Archives{% endtrans %}</a>)</li>
-            <li>Español: <a href="irc://irc.freenode.net/tryton-es">#tryton-es</a> (<a href="http://www.tryton.org/~irclog/es/">{% trans %}Archives{% endtrans %}</a>)</li>
-            <li>Français: <a href="irc://irc.freenode.net/tryton-fr">#tryton-fr</a> (<a href="http://www.tryton.org/~irclog/fr/">{% trans %}Archives{% endtrans %}</a>)</li>
-            <li>РУССКИЙ: <a href="irc://irc.freenode.net/tryton-ru">#tryton-ru</a> (<a href="http://www.tryton.org/~irclog/ru/">{% trans %}Archives{% endtrans %}</a>)</li>
-            <br>
-            <li>Commits: <a href="irc://irc.freenode.net/tryton-commit">#tryton-commit</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="mar_top3 clearfix"></div>
-  </section>
-  <div class="mar_top5 clearfix"></div>
+<div class="mar_top5 clearfix"></div>
+<section>
+  <div class="container">
+    <h2 class="text-center"><span class="small">{% trans %}Tryton wouldn’t be where it is today without the people who supported it by dedicating their time and skills.</span><br><strong>So why not join Tryton community and make it even better.{% endtrans %}</strong>
+    </h2>
+    <div class="mar_top6"></div>
+    <h1 class="text-center"><strong>{% trans %}How to Join{% endtrans %}</strong></h1>
+    <div class="mar_top6"></div>
+    <div class="col-xs-12 col-sm-12 col-md-12">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-md-offset-0 col-lg-5 col-lg-offset-1">
+          <div class="community-box mailing-irc-height">
+            <div class="row">
+              <div class="col-sm-12 col-md-8 text-center-sm text-center-xs">
+                <h2 class="inline-display">
+                 <strong>{% trans %}Subscribe to the {% endtrans %}<br>{% trans %}Mailing list{% endtrans %}</strong>
+               </h2>
+             </div>
+             <div class="col-sm-12 col-md-4 text-center">
+               <i class="fa fa-envelope-o"></i>
+             </div>
+           </div>
+           <div class="mar_top2"></div>
+           <div class="divider-blue"></div>
+           <div class="mar_top2"></div>
+           <p>{% trans %}Feel free to subscribe to our{% endtrans %} <a href="#">{% trans %}mailing list:{% endtrans %}</a></p>
+           <form role="form">
+            <div class="form-group">
+              <div class="row">
+                <div class="col-md-9 col-sm-9 col-xs-6">
+                  <input type="email" class="form-control " placeholder="Your Email Here">
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-3">
+                 <button type="submit" class="btn btn-primary">{% trans %}Submit{% endtrans %}</button>
+               </div>
+             </div>
+           </div>
+         </form>
+         <div>
+          <div class="row">
+            <div class="col-sm-4 col-xs-3">
+             <a href="http://groups.tryton.org/" class="label label-primary label-size">English</a>
+           </div>
+           <div class="col-sm-4 col-xs-3">
+             <a href="http://groups-ca.tryton.org/" class="label label-primary label-size">Català</a>
+           </div>
+           <div class="col-sm-4 col-xs-3">
+             <a href="http://groups-de.tryton.org/" class="label label-primary label-size">Deutsch</a>
+           </div>
+         </div>
+         <div class="row">
+           <div class="col-sm-4 col-xs-3">
+             <a href="http://groups-es.tryton.org/" class="label label-primary label-size">Español</a>
+           </div>
+           <div class="col-sm-4 col-xs-3">
+             <a href="http://groups-fr.tryton.org/" class="label label-primary label-size">Français</a>
+           </div>
+           <div class="col-sm-4 col-xs-3">
+             <a href="http://groups-ru.tryton.org/" class="label label-primary label-size">РУССКИЙ</a>
+           </div>
+         </div>
+         <div class="row">
+           <div class="col-sm-4 col-xs-3">
+             <a href="http://groups-dev.tryton.org/" class="label label-primary label-size">Developers</a>
+           </div>
+           <div class="col-sm-4 col-xs-3">
+             <a href="http://groups-announce.tryton.org/" class="label label-primary label-size">Announce</a>
+           </div>
+           <div class="col-sm-4 col-xs-3">
+             <a href="http://groups-commit.tryton.org/" class="label label-primary label-size">Commit</a>
+           </div>
+         </div>
+         <div class="row">
+           <div class="col-sm-4">
+             <a href="http://groups-contrib.tryton.org/" class="label label-primary label-size">Contrib</a>
+           </div>
+         </div>
+       </di>
+     </div>
+   </div>
+ </div>
+ <div class="col-xs-12 col-sm-6 col-md-6 col-lg-5">
+  <div class="community-box mailing-irc-height" >
+    <div class="row">
+      <div class="col-sm-12 col-md-8 text-center-sm text-center-xs">
+        <h2 class="inline-display">
+         <strong>{% trans %}Check out the{% endtrans %} <br> {% trans %}Freenode IRC{% endtrans %}<br> {% trans %}channel{% endtrans %}</strong>
+       </h2>
+     </div>
+     <div class="col-sm-12 col-sm-12 col-md-4 text-center">
+       <i class="fa fa-envelope-o"></i>
+     </div>
+   </div>
+   <div class="mar_top2"></div>
+   <div class="divider-blue"></div>
+   <div class="mar_top2"></div>
+   <div class="row">
+     <div class="col-sm-6 col-xs-6">
+       <h4 class="text-muted margin-0">English</h4><p><a class="reference external" href="irc://irc.freenode.net/tryton"> #tryton</a><a class="reference external" href="~irclog/"> (#tryton Archive)</a></p>
+     </div>
+     <div class="col-sm-6 col-xs-6">
+       <h4 class="text-muted margin-0">Deutsch</h4><h5><a class="reference external" href="irc://irc.freenode.net/tryton.de"> #tryton.de</a> <a class="reference external" href="~irclog/de/">(#tryton.de Archive)</a></h5>
+     </div>
+   </div>
+   <div class="row">
+     <div class="col-sm-6 col-xs-6">
+       <h4 class="text-muted margin-0">Español</h4><p><a class="reference external" href="irc://irc.freenode.net/tryton-es"> #tryton-es</a><a class="reference external" href="~irclog/es/"> (#tryton-es Archive)</a></p>
+     </div>
+     <div class="col-sm-6 col-xs-6">
+       <h4 class="text-muted margin-0">Français</h4><p><a class="reference external" href="irc://irc.freenode.net/tryton-fr"> #tryton-fr </a><a class="reference external" href="~irclog/fr/">(#tryton-fr Archive)</a></p>
+     </div>
+   </div>
+   <div class="row">
+     <div class="col-sm-6 col-xs-6">
+       <h4 class="text-muted margin-0">РУССКИЙ</h4><p><a class="reference external" href="irc://irc.freenode.net/tryton-ru"> #tryton-ru</a><a class="reference external" href="~irclog/ru/"> (#tryton-ru Archive)</a></p>
+     </div>
+     <div class="col-sm-6 col-xs-6">
+       <h4 class="text-muted margin-0">Commits</h4><p><a class="reference external" href="irc://irc.freenode.net/tryton-commit"> #tryton-commit</a></p>
+     </div>
+   </div>
+ </div>
 </div>
+</div>
+<div class="row">
+ <div class="col-xs-12 col-sm-6 col-md-6 col-md-offset-0 col-lg-5 col-lg-offset-1">
+  <div class="community-box">
+    <div class="row">
+      <div class="col-sm-12 col-md-8 text-center-sm text-center-xs">
+        <h2 class="inline-display">
+         <strong>{% trans %}Tryton twitter{% endtrans %}<br>{% trans %}Community{% endtrans %}</strong>
+       </h2>
+     </div>
+     <div class="col-sm-12 col-md-4 text-center">
+       <i class="fa fa-twitter"></i>
+     </div>
+   </div>
+   <div class="mar_top2"></div>
+   <div class="divider-blue"></div>
+   <div class="mar_top2"></div>
+   <h4 class="text-muted">@trytonusa, @tryton, @trytonerp etc
+   </h4>
+ </div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-5">
+  <div class="community-box">
+    <div class="row">
+      <div class="col-sm-12 col-md-8 text-center-sm text-center-xs">
+        <h2 class="inline-display">
+         <strong>{% trans %}Twitter wiki{% endtrans %}</strong>
+       </h2>
+     </div>
+     <div class="col-sm-12 col-md-4 text-center">
+       <i class="fa fa-file-text-o"></i>
+     </div>
+   </div>
+   <div class="mar_top2"></div>
+   <div class="divider-blue"></div>
+   <div class="mar_top2"></div>
+   <h4 class="text-muted">{% trans %}Some information (roadmap, howto's etc.) is available on the {% endtrans %}<a class="reference external" href="http://wiki.tryton.org/">wiki</a></h4>
+ </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="mar_top5 clearfix"></div>
+<section>
+  <div class="container">
+    <h2 class="text-center"><strong>{% trans %}Where to help ?{% endtrans %}</strong>
+    </h2>
+    <div class="mar_top5"></div>
+    <div class="col-sm-6 col-md-6 col-lg-5 col-lg-offset-1">
+      <div class="community-box">
+        <div class="row">
+         <div class="col-sm-12 col-md-12 text-center">
+           <i class="fa fa-file-text-o"></i>
+         </div>
+       </div>
+       <div class="mar_top2"></div>
+       <div class="divider-blue"></div>
+       <div class="mar_top2"></div>
+       <div class="row">
+         <div class="col-sm-12 col-md-8 text-center-sm text-center-xs">
+          <h2 class="inline-display">
+           <strong>{% trans %}Getting involved and contributing to the source code{% endtrans %}</strong>
+         </h2>
+       </div>
+       <div class="col-sm-12 col-md-4 text-center">
+        <a href="https://github.com/tryton/tryton">
+         <i class="fa fa-github"></i>
+       </a>
+     </div>
+   </div>
+   <div class="text-right mar_top2">
+     <div class="btn btn-success">{% trans %}Contribute Now{% endtrans %}</div>
+   </div>
+ </div>
+</div>
+<div class="col-sm-6 col-md-6 col-lg-5">
+  <div class="community-box">
+    <div class="row">
+     <div class="col-sm-12 col-md-12 text-center">
+       <i class="fa fa-file-text-o"></i>
+     </div>
+   </div>
+   <div class="mar_top2"></div>
+   <div class="divider-blue"></div>
+   <div class="mar_top2"></div>
+   <h4 class="text-muted">{% trans %}Help with the documentation Easy yet important way to help{% endtrans %} </h4>
+ </div>
+</div>
+</div>
+</div>
+</section>
+<div class="mar_top5 clearfix"></div>
 {% endblock main %}
