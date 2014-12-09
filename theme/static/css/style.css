@@ -264,6 +264,9 @@ a:hover {
   color:#fff;
 }
 
+#myFeedback > .carousel-inner {
+  overflow: visible;
+}
 .carousel-control.carousel-color-none {
   background-image: none;
 }
