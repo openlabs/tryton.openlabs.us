@@ -1,0 +1,223 @@
+{% extends 'base.html' %}
+{% block title %} {% trans %} Download {% endtrans %} | {{ super() }} {% endblock title %}
+{% block main %}
+<section class="app-banner">
+  <div class="container">
+    <div class="mar-top-150"></div>
+    <div class="text-center">
+      <h1 class="white-text-color"><strong> {% trans %}DOWNLOAD {% endtrans %}</strong>
+      </h1>
+      <div class="col-sm-12 col-xs-12" >
+        <div class="col-sm-2 col-xs-4 col-xs-offset-4 col-sm-offset-5 app-banner-divider">
+        </div>
+      </div>
+      <div>
+        <p class="white-text-color"> {% trans %}Download the tryton packages {% endtrans %}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="download_os">
+<section>
+  <div class="container">
+      <div class="col-xs-12 col-sm-12 col-md-12 mar_top5">
+        <h1 class="text-center white-text-color">Packages</h1>
+        <div class="col-sm-4 mar_top2 os_opacity linux_os">
+          <div class="os-name text-center os-name-border os-name-background">Linux</div>
+          <div class="col-sm-6 padding-0">
+            <div class="download-link linux-link-background">
+              <div class="linux-spec">
+                <a class="text-muted" href="http://aur.archlinux.org/packages.php?K=tryton&amp;setlang=en"><strong>Arch Linux</strong></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 padding-0">
+            <div class="download-link2 linux-link-background">
+              <div class="linux-spec">
+                <a class="text-muted" href="http://packages.debian.org/search?keywords=tryton&amp;searchon=names&amp;suite=all&amp;section=all"><strong>Debian</strong></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 padding-0">
+            <div class="download-link linux-link-background">
+              <div class="linux-spec">
+                <a class="text-muted" href="https://admin.fedoraproject.org/pkgdb/packages/tryton*/"><strong>Fedora</strong></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 padding-0">
+            <div class="download-link2 linux-link-background">
+              <div class="linux-spec">
+                <a class="text-muted" href="http://code.google.com/p/tryton/wiki/GentooOverlay"><strong>Gentoo</strong></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 padding-0">
+            <div class="download-link linux-link-background">
+              <div class="linux-spec">
+                <a class="text-muted" href="https://build.opensuse.org/project/subprojects/Application:ERP:Tryton"><strong>openSUSE</strong></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 padding-0">
+            <div class="download-link2 linux-link-background">
+              <div class="linux-spec">
+                <a class="text-muted" href="http://packages.ubuntu.com/search?suite=default&amp;section=all&amp;arch=any&amp;searchon=names&amp;keywords=tryton"><strong>Ubuntu</strong></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 padding-0">
+          <div class="os-name linux_os bottom-border linux-link-background"></div>
+        </div>
+        </div>
+        <div class="col-sm-4 padding-0 mar_top2 padding15-xs os_opacity win_os">
+          <div class="os-name text-center os-name-border os-name-background">Windows</div>
+          <div class="col-sm-4 padding-0">
+            <div class="download-link linux-link-background">
+              <div class="linux-spec">
+                <a class="text-muted" href="http://downloads.tryton.org/3.4/tryton-setup-last.exe"><strong>Client 3.4 exe</strong></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 padding-0">
+            <div class="download-link2 linux-link-background">
+              <div class="linux-spec">
+                <a class="text-muted" href="http://downloads.tryton.org/3.4/neso-setup-last.exe"><strong>Neso 3.4 exe</strong></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 padding-0">
+            <div class="download-link2 linux-link-background">
+              <div class="linux-spec">
+                <a class="text-muted" href="http://downloads.tryton.org/3.2/tryton-setup-last.exe"><strong>Client 3.2 exe</strong></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 padding-0">
+            <div class="download-link linux-link-background">
+              <div class="linux-spec">
+                <a class="text-muted" href="http://downloads.tryton.org/3.2/neso-setup-last.exe"><strong>Neso 3.2 exe</strong></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 padding-0">
+            <div class="download-link2 linux-link-background">
+              <div class="linux-spec">
+                <a class="text-muted" href="http://downloads.tryton.org/3.0/tryton-setup-last.exe"><strong>Client 3.0 exe</strong></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 padding-0">
+            <div class="download-link2 linux-link-background">
+              <div class="linux-spec">
+                <a class="text-muted" href="http://downloads.tryton.org/3.0/neso-setup-last.exe"><strong>Neso 3.0 exe</strong></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 padding-0">
+            <div class="download-link linux-link-background">
+              <div class="linux-spec">
+                <a class="text-muted" href="http://downloads.tryton.org/2.8/tryton-setup-last.exe"><strong>Client 2.8 exe</strong></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 padding-0">
+            <div class="download-link2 linux-link-background">
+              <div class="linux-spec">
+                <a class="text-muted" href="http://downloads.tryton.org/2.8/neso-setup-last.exe"><strong>Neso 2.8 exe</strong></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 padding-0">
+            <div class="download-link2 linux-link-background">
+              <div class="linux-spec">
+                <a class="text-muted" href="http://downloads.tryton.org/2.6/tryton-setup-last.exe"><strong>Client 2.6 exe</strong></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 padding-0">
+            <div class="download-link2 linux-link-background">
+              <div class="linux-spec">
+                <a class="text-muted" href="http://downloads.tryton.org/2.6/neso-setup-last.exe"><strong>Neso 2.6 exe</strong></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 padding-0">
+          <div class="os-name linux_os bottom-border linux-link-background"></div>
+        </div>
+        </div>
+        <div class="col-sm-4 mar_top2 os_opacity mac_os">
+          <div class="os-name text-center os-name-border os-name-background">MacOS X</div>
+          <div class="col-sm-6 padding-0">
+            <div class="download-link linux-link-background">
+              <div class="linux-spec">
+                <a class="text-muted" href="http://downloads.tryton.org/3.4/tryton-last.dmg"><strong>Client 3.4 dmg</strong></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 padding-0">
+            <div class="download-link2 linux-link-background">
+              <div class="linux-spec">
+                <a class="text-muted" href="http://downloads.tryton.org/3.2/tryton-last.dmg"><strong>Client 3.2 dmg</strong></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 padding-0">
+            <div class="download-link linux-link-background">
+              <div class="linux-spec">
+                <a class="text-muted" href="http://downloads.tryton.org/3.0/tryton-last.dmg"><strong>Client 3.0 dmg</strong></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 padding-0">
+            <div class="download-link2 linux-link-background">
+              <div class="linux-spec">
+                <a class="text-muted" href="http://downloads.tryton.org/2.8/tryton-last.dmg"><strong>Client 2.8 dmg</strong></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 padding-0">
+            <div class="download-link linux-link-background">
+              <div class="linux-spec">
+                <a class="text-muted" href="http://downloads.tryton.org/2.6/tryton-last.dmg"><strong>Client 2.6 dmg</strong></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 padding-0">
+          <div class="os-name linux_os bottom-border linux-link-background"></div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="mar_top7 clearfix"></div>
+</div>
+{% endblock main %}
+{% block scripts %}
+  {{ super() }}
+  <script type="text/javascript">
+  $(document).ready(function(){
+    var OSName="Unknown OS";
+    if (navigator.appVersion.indexOf("Win")!=-1) 
+    {
+      OSName="Windows";
+      console.log("os name is win"+OSName);
+      $(".win_os").removeClass("os_opacity");
+    }
+    if (navigator.appVersion.indexOf("Mac")!=-1) 
+    {
+      OSName="MacOS";
+      console.log("os name is mac"+OSName);
+      $(".mac_os").removeClass("os_opacity");
+          }
+    if (navigator.appVersion.indexOf("Linux")!=-1)
+    { 
+    OSName="Linux";
+    console.log("os name is"+OSName);
+    $(".linux_os").removeClass("os_opacity");
+
+    }
+  });
+ </script>
+{% endblock scripts %}

@@ -67,4 +67,5 @@ TEMPLATE_PAGES = {
     'purchase.html': 'purchase.html',
     'orders.html': 'orders.html',
     'projects.html': 'projects.html',
+    'download.html': 'download.html'
 }
