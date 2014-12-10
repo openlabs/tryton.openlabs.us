@@ -176,10 +176,10 @@ a:hover {
 .app .info {
   margin-top: 25px;
 }
- 
+
 .map-container {
   height:256px;
- }
+}
 /* app section css ends */
 
 /* history section css start */
@@ -454,3 +454,77 @@ a:hover {
 .tryton-companies .address {
   height: 39%
 }    
+
+.os-name {
+  font-size: 45px;
+  font-weight: 200;
+  padding-top: 15px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15) inset, 0 1px 0 rgba(255, 255, 255, 0.45);
+  min-height: 101px;
+  max-height: 101px;
+  border-top: 20px;
+  text-shadow: rgba(255,255,255,0.5) 0 1px 0;
+  border-top: thin white solid;
+}
+
+.os-name-background {
+  background-image: linear-gradient(#c7c7c7, #a2a2a2);
+}
+
+.win-background {
+  background-image: linear-gradient(#f7f7f7, #f4f4f4);
+}
+
+.os-name-border {
+  border-bottom: 10px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom: thin gray solid;
+}
+
+.download-link, .download-link2 {
+  border-top: thin solid lightgray;
+  border-right: thin solid gray;
+  border-bottom: thin solid gray;
+}
+
+.linux-link-background {
+  background-image: linear-gradient(#b3b3b3, #9f9f9f);
+}
+
+.win-link-background {
+  background-image: linear-gradient(#f0f0f0, #eeeeee);
+}
+
+.linux-spec {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  min-height: 48px;
+  text-align: center;
+}
+
+.download-link2 {
+  border-top: thin solid lightgray;
+  border-left: thin solid lightgray;
+  border-right: thin solid gray;
+  border-bottom: thin solid gray;
+}
+
+.bottom-border {
+  border-top: thin solid lightgray;
+  border-left: thin solid lightgray;
+  border-right: thin solid gray;
+  border-bottom: thin solid gray;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  min-height: 160px;
+}
+
+.download_os {
+  background-image: linear-gradient(#1E212B 0px, #232732 25%, #40485C 75%, #5A6682 100%);
+}
+
+.os_opacity {
+  opacity: 0.3;
+}

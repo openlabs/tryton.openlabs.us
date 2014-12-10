@@ -41,6 +41,9 @@
     border-left: 0px;
     border-right: 0px;
   }
+  .padding15-xs{
+    padding: 15px;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
