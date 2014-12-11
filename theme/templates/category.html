@@ -1,0 +1,22 @@
+{% extends 'blogs.html' %}
+{% block title %} Category | {{ super() }} {% endblock title %}
+{% block pagetitle %}
+<section class="app-banner">
+  <div class="container">
+    <div class="mar-top-150"></div>
+    <div class="text-center">
+      <h1 class="white-text-color"><strong>{% trans %}NEWS{% endtrans %}</strong>
+      </h1>
+      <div class="col-sm-12 col-xs-12" >
+        <div class="col-sm-2 col-xs-4 col-xs-offset-4 col-sm-offset-5 app-banner-divider">
+        </div>
+      </div>
+      <div>
+        <p class="white-text-color">{% trans %}{% endtrans %}
+          Posts Category '{{ category }}'
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+ {% endblock pagetitle %}

@@ -69,3 +69,11 @@ TEMPLATE_PAGES = {
     'projects.html': 'projects.html',
     'community.html': 'community.html',
 }
+
+# Output dir structure
+ARTICLES_URL_ROOT = 'blogs'
+TAG_URL = "%s/tag/{slug}/" % ARTICLES_URL_ROOT
+TAG_SAVE_AS = "%s/tag/{slug}/index.html" % ARTICLES_URL_ROOT
+
+CATEGORY_URL = "%s/category/{slug}/" % ARTICLES_URL_ROOT
+CATEGORY_SAVE_AS = "%s/category/{slug}/index.html" % ARTICLES_URL_ROOT

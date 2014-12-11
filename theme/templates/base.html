@@ -33,52 +33,44 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li class="main-menu"><a href="foundation.html">Foundation</a></li>
+            <li class="main-menu"><a href="/foundation.html">Foundation</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Features<span class="caret"></span></a>
               <ul class="dropdown-menu dropdown-position" role="menu">
-                <li><a href="features.html" class="text-uppercase">Features</a></li>
-                <li><a href="features.html#fast" class="text-uppercase scroll">Fast</a></li>
-                <li><a href="features.html#opensource" class="text-uppercase scroll">OpenSource</a></li>
-                <li><a href="features.html#api" class="text-uppercase scroll">API</a></li>
-                <li><a href="features.html#custom" class="text-uppercase scroll">Customizable</a></li>
-                <li><a href="features.html#scale" class="text-uppercase scroll">Scalable</a></li>
-                <li><a href="features.html#secure" class="text-uppercase scroll">Secure</a></li>
-                <li><a href="features.html#modular" class="text-uppercase scroll">Modular</a></li>
-                <li><a href="features.html#stable" class="text-uppercase scroll">Stable</a></li>
+                <li><a href="/features.html" class="text-uppercase">Features</a></li>
+                <li><a href="/features.html#fast" class="text-uppercase scroll">Fast</a></li>
+                <li><a href="/features.html#opensource" class="text-uppercase scroll">OpenSource</a></li>
+                <li><a href="/features.html#api" class="text-uppercase scroll">API</a></li>
+                <li><a href="/features.html#custom" class="text-uppercase scroll">Customizable</a></li>
+                <li><a href="/features.html#scale" class="text-uppercase scroll">Scalable</a></li>
+                <li><a href="/features.html#secure" class="text-uppercase scroll">Secure</a></li>
+                <li><a href="/features.html#modular" class="text-uppercase scroll">Modular</a></li>
+                <li><a href="/features.html#stable" class="text-uppercase scroll">Stable</a></li>
               </ul>
             </li>
             <li class="dropdown">
-              <a href="app.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Apps<span class="caret"></span></a>
+              <a href="/app.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Apps<span class="caret"></span></a>
               <ul class="dropdown-menu dropdown-position" role="menu">
-                <li><a href="app.html" class="text-uppercase">Apps</a>
+                <li><a href="/app.html" class="text-uppercase">Apps</a>
                 </li>
-                <li><a href="ecommerce.html" class="text-uppercase">ECommerce</a>
+                <li><a href="/ecommerce.html" class="text-uppercase">ECommerce</a>
                 </li>
-                <li><a href="accounts.html" class="text-uppercase">Accounts</a>
+                <li><a href="/accounts.html" class="text-uppercase">Accounts</a>
                 </li>
-                <li><a href="inventory.html" class="text-uppercase">Inventory</a>
+                <li><a href="/inventory.html" class="text-uppercase">Inventory</a>
                 </li>
-                <li><a href="crm.html" class="text-uppercase">CRM</a>
+                <li><a href="/crm.html" class="text-uppercase">CRM</a>
                 </li>
-                <li><a href="purchase.html" class="text-uppercase">Purchase</a>
+                <li><a href="/purchase.html" class="text-uppercase">Purchase</a>
                 </li>
-                <li><a href="orders.html" class="text-uppercase">Orders</a>
+                <li><a href="/orders.html" class="text-uppercase">Orders</a>
                 </li>
-                <li><a href="projects.html" class="text-uppercase">Projects</a>
+                <li><a href="/projects.html" class="text-uppercase">Projects</a>
                 </li>
               </ul>
             </li>
-            <li class="dropdown">
-              <a href="community.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Community<span class="caret"></span></a>
-              <ul class="dropdown-menu dropdown-position" role="menu">
-                <li><a href="community.html" class="text-uppercase">Community</a>
-                </li>
-                <li><a href="community.html#Mailing lists, IRC" class="text-uppercase">Mailing lists, IRC</a>
-                </li>
-              </ul>
-            </li>
-            <li class="main-menu"><a href="blogs.html">Blog</a></li>
+            <li class="main-menu"><a href="/blogs/category/news/index.html">News</a></li>
+            <li class="main-menu"><a href="/blogs.html">Blog</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div>
@@ -185,19 +177,19 @@
 {% endblock footer %}
 
 {% block script_imports %}
-  <script src="{{ STATIC }}bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="{{ STATIC }}bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="{{ STATIC }}bower_components/nanoscroller/bin/javascripts/jquery.nanoscroller.js"></script>
+<script src="{{ STATIC }}bower_components/jquery/dist/jquery.min.js"></script>
+<script src="{{ STATIC }}bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="{{ STATIC }}bower_components/nanoscroller/bin/javascripts/jquery.nanoscroller.js"></script>
 {% endblock script_imports %}
 
 {% block scripts %}
 <script>
-  $(document).ready(function(){
-    $(".nano").nanoScroller();
-    $(".scroll").click(function(){
-      $("html,body").animate({scrollTop:$(this.hash).offset().top-105},2000);
-    });
+$(document).ready(function(){
+  $(".nano").nanoScroller();
+  $(".scroll").click(function(){
+    $("html,body").animate({scrollTop:$(this.hash).offset().top-105},2000);
   });
+});
 </script>
 {% endblock scripts %}
 </body>
