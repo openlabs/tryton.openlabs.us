@@ -454,3 +454,39 @@ a:hover {
 .tryton-companies .address {
   height: 39%
 }    
+
+.community-box {
+  padding: 25px 35px;
+  background-color: #f2f2f2;
+  border-radius: 6px;
+  border-bottom: 3px solid #666;
+  margin-top: 25px;
+  color:#2283bc;
+  min-height: 216px;
+}
+
+.mailing-irc-height{
+  min-height: 403px;
+}
+.inline-display {
+  display: inline;
+}
+
+.community-box i {
+  width: 70px;
+  background-color: #fff;
+  border-radius: 90px;
+  text-align: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  font-size: 40px;
+  border-bottom: 3px solid #2283bc;
+  color: #2283bc;
+  margin-left: 10px;
+  vertical-align: text-bottom;
+}
+
+.label-size {
+  line-height: 3;
+  font-size: 88%;
+}
