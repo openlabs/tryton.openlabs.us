@@ -1,58 +1,58 @@
 {% extends 'base.html' %}
 {% block main %}
-<section class="blog-heading">
+{% block pagetitle %}
+<section class="app-banner">
   <div class="container">
-    <h1 class="white-text-color margin-0">Blog</h1>
-    <ol class="breadcrumb remove_background padding-0 margin-0">
-      <li><a class="white-text-color" href="/">Home</a></li>
-      <li class="white-text-color">Blog</li>
-    </ol>
+    <div class="mar-top-150"></div>
+    <div class="text-center">
+      <h1 class="white-text-color"><strong>{% trans %}Blogs{% endtrans %}</strong>
+      </h1>
+      <div class="col-sm-12 col-xs-12" >
+        <div class="col-sm-2 col-xs-4 col-xs-offset-4 col-sm-offset-5 app-banner-divider">
+        </div>
+      </div>
+      <div>
+        <p class="white-text-color">{% trans %}Blogs{% endtrans %}
+        </p>
+      </div>
+    </div>
   </div>
 </section>
+{% endblock pagetitle %}
+<div class="mar_top5 clearfix"></div>
 <section>
+  {% for article in articles_page.object_list %}
   <div class="container">
-    <div class="mar_top7"></div>
-    <div class="col-xs-12 col-sm-12 col-md-12 padding-0">
-      {% for article in articles_page.object_list %}
-      <div class="col-xs-12 col-sm-6 col-md-6 padding-0 img-frame">
-        <a href="{{ SITEURL }}/{{ article.url }}"> <img class="img-responsive" src="{{ article.bannerimage }}" alt="{{ article.title }}">
+    <div class="col-md-6 col-md-offset-3">
+      <h3>
+        <a href="{{ SITEURL }}/{{ article.url }}" class="text-muted">
+          <strong>{{ article.title }} </strong>
+        </a>
+      </h3>
+      <h5 class="margin-0 text-primary">
+        <img src="{{ STATIC }}images/blogs/calendar-icon.jpg" height="32" width="32"></img> {{ article.date|strftime('%a') }}, 
+        {{ article.date|strftime('%B') }} 
+        {{ article.date|strftime('%d') }}, 
+        20{{ article.date|strftime('%y') }} 
+        {% for tag in article.tags %}
+        <a class="post-category" href="{{ SITEURL }}/{{ tag.url }}">
+          <span class="badge">{{ tag }}</span>
+        </a>
+        {% endfor %}
+      </h5>
+      {% if article.bannerimage  %}
+      <div class="img-frame mar_top2">
+        <a href="{{ SITEURL }}/{{ article.url }}"> 
+          <img class="img-responsive" src="{{ article.bannerimage }}" alt="{{ article.title }}">
         </a>
       </div>
-      <div class="col-xs-12 col-sm-6 col-md-6 mar_top3-xs">
-        <div>
-          <table class="blog-date pull-left" border="0" cellpadding="0" cellspacing="0" width="60">
-            <tr>
-              <td>
-                <table border="0" cellpadding="0" cellspacing="0">
-                  <tr>
-                    <td class="blog-month">
-                      {{ article.date|strftime('%B') }}
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="blog-time">
-                     {{ article.date|strftime('%d') }}
-                   </td>
-                 </tr>
-               </table>
-             </td>
-           </tr>
-         </table>
-         <h3 class="margin-0"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
-         <ul class="mar_bottom3">
-          <li class="pull-left list-unstyled post-by">{{article.author}}</li>
-          <li class="list-unstyled post-event pull-left">
-            <a class="post-category" href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
-          </li>
-        </ul>
-      </div>
-      <div class="clearfix"></div>
-      {{ article.summary }}
+      {% endif %}
+      <p>{{ article.summary }}</p>
+      <hr>
     </div>
-    <div class="clearfix"></div>
-    {% endfor %}
   </div>
-</div>
-<div class="mar_top7"></div>
+  {% endfor %}
+  {% include 'pagination.html' %}
 </section>
+<div class="mar_top7 clearfix"></div>
 {% endblock main %}
