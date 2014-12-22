@@ -45,16 +45,21 @@ a:hover {
   min-height: 70px;
   margin-bottom: 0;
   opacity: 0.98;
+  font-weight: 400;
+  background-color: #fff;
 }
 
 .navbar-nav > li > a {
   line-height: 40px;
   text-decoration: none;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   color: #3d3d48;
-  font-weight: 600;
+  font-weight: 400;
   text-transform: uppercase;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color:#1ac6ff; 
 }
 
 .navbar-right .dropdown-position {
@@ -288,10 +293,6 @@ background:linear-gradient(to top, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(..
 .blog-heading {
   background-color:#3398d4; 
   padding: 28px 0px;
-}
-
-.width-100 {
-  width: 100%;
 }
 
 .img-frame {
