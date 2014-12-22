@@ -67,6 +67,7 @@ TEMPLATE_PAGES = {
     'orders.html': 'orders.html',
     'projects.html': 'projects.html',
     'community.html': 'community.html',
+    'download.html': 'download.html'
 }
 
 # Output dir structure

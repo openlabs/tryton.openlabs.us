@@ -8,6 +8,7 @@ checkout:
 dependencies:
   post:
     - npm install -g gulp gulp-csslint bower
+    - npm install
   override:
     - pip install -r requirements.txt
     - bower install

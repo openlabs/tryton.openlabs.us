@@ -42,7 +42,7 @@ a:hover {
 }
 
 .nav-resize {
-  height: 70px;
+  min-height: 70px;
   margin-bottom: 0;
   opacity: 0.98;
 }
@@ -250,6 +250,7 @@ background:linear-gradient(to top, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(..
   background-position: center;
   background-attachment: fixed; 
   padding: 45px 0;
+  position:relative; 
 }
 
 .banner-heading {
@@ -385,12 +386,15 @@ background:linear-gradient(to top, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(..
 .nano { 
   height: 123px; 
 }
+
 .nano .nano-content { 
   padding: 10px; 
 }
+
 .nano .nano-pane   { 
   background: #888;
 }
+
 .nano .nano-slider { 
   background: #111;
 }
@@ -412,4 +416,86 @@ background:linear-gradient(to top, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(..
 .pagination-text:hover {
   background-color:#428bca;
   color:white;
+}
+
+.download-icon i {
+  width: 70px;
+  background-color: #fff;
+  border-radius: 90px;
+  text-align: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  font-size: 40px;
+  color: #60a839;
+  margin-left: 15px;
+}
+
+.tryton-interface {
+  margin-top: 10px;
+}
+
+.os-name {
+  margin-bottom: 15px;
+}
+
+.older-version {
+  font-size: 14px;
+}
+
+.older-version :hover {
+  color: #fff;
+}
+
+.linux-sub-os, .win-old, .mac-old {
+  display: inline;
+  margin-top: 10px;
+}
+
+.os-info .nano {
+  height: 160px;
+}
+
+.tryton-img {
+  position:absolute;
+  left:0;
+  bottom:0;
+  right:0;
+}
+
+.tryton-img img {
+  box-shadow: -4px -8px 44px -7px #888888;
+}
+
+.nav-pills > li.active > .linux-os {
+  background-color: transparent;
+  color:#727272;
+}
+.nav-pills > li.active:hover .linux-os {
+  background-color: #e3e3e3;
+  color:#727272;
+}
+
+.tryton-img img {
+  margin-top: 10px;
+}
+
+.tab-heading {
+  display: inline-block;
+}
+
+.download-banner {
+  min-height: 620px;
+  padding: 28px 0;
+}
+
+.well .row {
+  line-height: 60px;
+}
+
+.center-logo {
+line-height: 70px;
+}
+
+.os-logo {
+  height: 62px;
 }

@@ -1,0 +1,308 @@
+{% extends 'base.html' %}
+
+{% block title %} {% trans %}Download{% endtrans %} | {{ super() }} {% endblock title %}
+
+{% block main %}
+<section class="app-banner download-banner">
+ <div class="container">
+  <ol class="breadcrumb remove-background">
+    <li><a class="white-text-color" href="{{ SITE_ROOT }}index.html">{% trans %}Home{% endtrans %}</a></li>
+    <li class="white-text-color">{% trans %}Download{% endtrans %}</li>
+  </ol>
+  <div class="text-center">
+    <h1 class="white-text-color"><strong>{% trans %}Tryton Download Packages{% endtrans %}<br>{% trans %}<small class="white-text-color">Compatible to every platform that you can think of.{% endtrans %}</small></strong>
+    </h1>
+  </div>
+  <div class="col-sm-12 col-xs-12 text-center">
+    <div class="col-sm-4 col-xs-4 col-xs-offset-4 col-sm-offset-4 app-banner-divider padding-0">
+    </div>
+    <div class="col-sm-12 col-xs-12">
+      <a href="#" class="btn btn-success btn-lg os-name hide" target="_blank">{% trans %}Download Tryton 3.4{% endtrans %}</a>
+    </div>
+  </div>
+  <div class="col-sm-12 col-xs-12 text-center tryton-interface tryton-img">
+    <img src="{{ STATIC }}images/download/tryton.png" alt="tryton" class="hidden-xs">
+  </div>
+</div>
+</section>
+<section>
+  <div class="container">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="multiplatform hide text-center">
+        <h3 class="white-text-color text-center">{% trans %}Choose Your Linux OS {% endtrans %}</h3>
+        <!-- Nav tabs -->
+        <ul class="nav nav-pills tab-heading">
+          <li class="active"><a href="#arch" class="text-muted linux-os" data-toggle="tab">Arch Linux</a></li>
+          <li><a href="#debian" class="text-muted linux-os" data-toggle="tab">Debian</a></li>
+          <li><a href="#fedora" class="text-muted linux-os"  data-toggle="tab">Fedora</a></li>
+          <li><a href="#gentoo" class="text-muted linux-os"  data-toggle="tab">Gentoo</a></li>
+          <li><a href="#open" class="text-muted linux-os" data-toggle="tab">openSUSE</a></li>
+          <li><a href="#ubuntu" class="text-muted linux-os" data-toggle="tab">Ubuntu</a></li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content os-info col-md-12 tryton-interface text-center">
+          <div class="tab-pane active fade in" id="arch">
+            <div class="well well-sm col-md-12 text-left text-center">
+              <div class="row">
+                <div class="col-md-4 col-lg-3 col-lg-offset-1 col-sm-4">
+                  <a href="http://aur.archlinux.org/packages.php?K=tryton&setlang=en" class="btn btn-success btn-lg" target="_blank">{% trans %}Download Tryton 3.4{% endtrans %}
+                  </a>
+                </div>
+                <div class="col-md-4 col-sm-4 col-lg-4 text-center installation-link tryton-interface">
+                  <a href="https://wiki.archlinux.org/index.php/Tryton" target="_blank"><u> {% trans %}Link to Installation Instructions{% endtrans %}</u></a>
+                </div>
+                <div class="col-md-4 col-sm-4 col-lg-4 center-logo">
+                  <img src="{{ STATIC }}images/download/arch-logo.png" class="os-logo" alt="arch">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="debian">
+            <div class="well well-sm col-md-12 text-center">
+              <div class="row">
+                <div class="col-md-4 col-lg-3 col-lg-offset-1 col-sm-4">
+                  <a href="http://packages.debian.org/search?keywords=tryton&searchon=names&suite=all&section=all" class="btn btn-success btn-lg" target="_blank">{% trans %}Download Tryton 3.4{% endtrans %}</a>
+                </div>
+                <div class="col-md-4 col-sm-4 col-lg-4 text-center tryton-interface">
+                  <a href="https://code.google.com/p/tryton/wiki/InstallationOnDebian" target="_blank"><u>{% trans %}Link to Installation Instructions{% endtrans %}</u></a>
+                </div>
+                <div class="col-md-4 col-sm-4 col-lg-4 center-logo">
+                  <img src="{{ STATIC }}images/download/debian-logo.png" alt="debian" class="os-logo">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="fedora">
+            <div class="well well-sm col-md-12 text-center">
+              <div class="row">
+                <div class="col-md-4 col-lg-3 col-lg-offset-1 col-sm-4">
+                  <a href="https://admin.fedoraproject.org/pkgdb/packages/tryton*/" class="btn btn-success btn-lg" target="_blank">{% trans %}Download Tryton 3.4{% endtrans %}</a>
+                </div>
+                <div class="col-md-4 col-sm-4 col-lg-4 text-center tryton-interface">
+                  <a href="https://code.google.com/p/tryton/wiki/InstallationOnFedora" target="_blank"><u>{% trans %}Link to Installation Instructions{% endtrans %}</u></a>
+                </div>
+                <div class="col-md-4 col-sm-4 col-lg-4 center-logo">
+                  <img src="{{ STATIC }}images/download/fedora-logo.png" alt="Fedora" class="os-logo">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="gentoo">
+           <div class="well well-sm col-md-12 text-center">
+            <div class="row">
+              <div class="col-md-4 col-lg-3 col-lg-offset-1 col-sm-4">
+                <a href="http://code.google.com/p/tryton/wiki/GentooOverlay" class="btn btn-success btn-lg" target="_blank">{% trans %}Download Tryton 3.4{% endtrans %}</a>
+              </div>
+              <div class="col-md-4 col-sm-4 col-lg-4 text-center tryton-interface">
+                <a href="https://code.google.com/p/tryton/wiki/GentooOverlay" target="_blank"><u>{% trans %}Link to Installation Instructions{% endtrans %}</u></a>
+              </div>
+              <div class="col-md-4 col-sm-4 col-lg-4 center-logo">
+                <img src="{{ STATIC }}images/download/gentoo-logo.png" alt="gentoo" class="os-logo">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="open">
+          <div class="well well-sm col-md-12 text-center">
+            <div class="row">
+              <div class="col-md-4 col-lg-3 col-lg-offset-1 col-sm-4">
+               <a href="https://build.opensuse.org/project/subprojects/Application:ERP:Tryton" class="btn btn-success btn-lg" target="_blank">{% trans %}Download Tryton 3.4{% endtrans %}</a>
+             </div>
+             <div class="col-md-4 col-sm-4 col-lg-4 text-center tryton-interface">
+              <a href="https://code.google.com/p/tryton/wiki/InstallationonopenSUSE" target="_blank"><u>{% trans %}Link to Installation Instructions{% endtrans %}</u></a>
+            </div>
+            <div class="col-md-4 col-sm-4 col-lg-4 center-logo">
+              <img src="{{ STATIC }}images/download/opensuse-logo.png" alt="open-suse" class="os-logo">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="ubuntu">
+        <div class="well well-sm col-md-12 text-center">
+          <div class="row">
+            <div class="col-md-4 col-lg-3 col-lg-offset-1 col-sm-4">
+              <a href="http://packages.ubuntu.com/search?suite=default&section=all&arch=any&searchon=names&keywords=tryton" target="_blank" class="btn btn-success btn-lg">{% trans %}Download Tryton 3.4{% endtrans %}</a>
+            </div>
+            <div class="col-md-4 col-sm-4 col-lg-4 text-center tryton-interface">
+              <a href="https://code.google.com/p/tryton/wiki/InstallationOnUbuntu" target="_blank"><u>{% trans %}Link to Installation Instructions{% endtrans %}</u></a>
+            </div>
+            <div class="col-md-4 col-sm-4 col-lg-4 center-logo">
+              <img src="{{ STATIC }}images/download/ubuntu-logo.png" class="os-logo" alt="ubuntu">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<section class="section-space">
+  <div class="container">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="col-md-12 text-center">
+        <h3>{% trans %}Have Some Other OS ?{% endtrans %}</h3>
+        <div class="col-md-12">
+          <div class="win-old hide">
+            <div class="btn btn-primary btn-sm tryton-interface older-version">
+              <a href="http://downloads.tryton.org/3.4/tryton-setup-last.exe" target="_blank" class="white-text-color">Windows</a>
+            </div>
+          </div>
+          <div class="mac-old hide">
+            <div class="btn btn-primary btn-sm  tryton-interface older-version"><a href="http://downloads.tryton.org/3.4/tryton-last.dmg" target="_blank" class="white-text-color"><strong>Mac</strong></a>
+            </div>
+          </div>
+          <div class="linux-sub-os hide">
+            <div class="btn btn-primary tryton-interface"><a href="http://aur.archlinux.org/packages.php?K=tryton&setlang=en" target="_blank" class="white-text-color older-version"><strong>Arch Linux</strong></a>
+            </div>
+          </div>
+          <div class="linux-sub-os hide">
+            <div class="btn btn-primary tryton-interface"><a href="http://packages.debian.org/search?keywords=tryton&searchon=names&suite=all&section=all" class="white-text-color older-version" target="_blank"><strong>Debian</strong></a>
+            </div>
+          </div>
+          <div class="linux-sub-os hide">
+            <div class="btn btn-primary tryton-interface"><a href="https://admin.fedoraproject.org/pkgdb/packages/tryton*/" target="_blank" class="white-text-color older-version"><strong>Fedora</strong></a>
+            </div>
+          </div>
+          <div class="linux-sub-os hide">
+            <div class="btn btn-primary tryton-interface"><a href="http://code.google.com/p/tryton/wiki/GentooOverlay" class="white-text-color older-version" target="_blank"><strong>Gentoo</strong></a>
+            </div>
+          </div>
+          <div class="linux-sub-os hide">
+            <div class="btn btn-primary tryton-interface"><a href="https://build.opensuse.org/project/subprojects/Application:ERP:Tryton" target="_blank" class="white-text-color older-version"><strong>openSUSE</strong></a>
+            </div>
+          </div>
+          <div class="linux-sub-os hide">
+            <div class="btn btn-primary tryton-interface"><a href="http://packages.ubuntu.com/search?suite=default&section=all&arch=any&searchon=names&keywords=tryton" class="white-text-color older-version" target="_blank"><strong>Ubuntu</strong></a>
+            </div>
+          </div>
+          <div class="btn btn-primary btn-sm  tryton-interface older-version"><a href="http://www.openbsd.org/cgi-bin/cvsweb/ports/productivity/tryton/" target="_blank" class="white-text-color"><strong>OpenBSD</strong></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="col-md-12">
+       <div class="well well-lg">
+        <div class="row text-center">
+          <div class="col-md-12">
+            <h3>{% trans %}Looking for an old release?<br>Download<a href="http://downloads.tryton.org/3.2/" target="_blank"> Tryton 3.2</a>{% endtrans %}</h3>
+            <h4>{% trans %}Or you can find even older releases here:{% endtrans %}</h4>
+          </div>
+          <div class="col-md-12">
+            <div class="row">
+              <div class="btn btn-sm btn-primary older-version tryton-interface"><a href="http://downloads.tryton.org/3.0/" class="white-text-color" target="_blank">Tryton 3.0</a></div>
+              <div class="btn btn-sm btn-primary older-version tryton-interface"><a href="http://downloads.tryton.org/2.8/" target="_blank" class="white-text-color">Tryton 2.8</a></div>
+              <div class="btn btn-sm btn-primary older-version tryton-interface"><a class="white-text-color" href="http://downloads.tryton.org/2.6/" target="_blank">Tryton 2.6</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<section class="section-space">
+  <div class="container">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="col-md-12">
+        <h3 class="margin-0">{% trans %}Installation Instructions using pip command line tool{% endtrans %}</h3>
+        <h4>{% trans %}You can directly install Tryton using pip command-line tool:{% endtrans %}</h4>
+        <div class="col-md-10">
+          <div class="well well-sm">
+            <p>{% trans %}$ pip install trytond{% endtrans %}</p>
+            <p>{% trans %}$ pip install tryton{% endtrans %}</p>
+            <p>{% trans %}$ pip install trytond_module_name{% endtrans %}</p>
+          </div>
+        </div>
+        <div class="col-md-10">
+          <div class="alert alert-info">
+            {% trans %}Replace module_name with the name of the module to install{% endtrans %}
+          </div>
+        </div>
+        <div class="col-md-10 padding-0">
+          <p>{% trans %}This downloads and installs the latest versions of Tryton packages.{% endtrans %}</p>
+          <p>{% trans %}If you have an older Tryton release installed and would like to upgrade, add the "-U" option to the above commands.{% endtrans %}</p>
+          <p>{% trans %}You can find more modules on <a href="http://pypi.python.org/pypi?:action=browse&amp;show=all&amp;c=551" target="_blank">Python Package Index{% endtrans %}</a>
+          </p>
+          <h3>{% trans %}Try Tryton demo:{% endtrans %}</h3>
+          <p>{% trans %}To try out the latest Tryton server, you can connect with the latest Tryton client to:{% endtrans %}
+          </p>
+        </div>
+        <div class="col-md-10">
+          <div class="well well-sm">
+            <ul>
+              <li>server: <a href="http://demo.tryton.org/" target="_blank">demo.tryton.org</a>
+              </li>
+              <li>port: 8000</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-10 padding-0">
+          <p>{% trans %}With the user/password{% endtrans %}</p>
+          <ul>
+            <li>English: demo/demo</li>
+            <li>Español: demo_es/demo</li>
+            <li>Français: demo_fr/demo</li>
+            <li>РУССКИЙ: demo_ru/demo</li>
+            <li>Deutsch: demo_de/demo</li>
+            <li>Administrator: admin/admin</li>
+          </ul>
+          <br>
+          <h3>{% trans %}Development Source Code{% endtrans %}</h3>
+        <p>{% trans %}You can browse the <a href="http://hg.tryton.org/" target="_blank">source code repository</a> or get a copy using <a href="http://www.selenic.com/mercurial/" target="_blank">Mercurial</a> with following commands:{% endtrans %}</p>
+        </div>
+        <div class="col-md-10">
+          <div class="well well-sm">
+            <p>$ hg clone http://hg.tryton.org/trytond/</p>
+            <p>$ hg clone http://hg.tryton.org/tryton/</p>
+          </div>
+        </div>
+        <div class="col-md-10">
+          <p>{% trans %}The modules must be put in the trytond/modules directory:{% endtrans %}</p>
+        </div>
+        <div class="col-md-10">
+          <div class="well well-sm">
+            <p>$ hg clone http://hg.tryton.org/modules/module_name</p>
+          </div>
+        </div>
+        <div class="col-md-10">
+          <div class="alert alert-info text-muted">
+            <span class="text-muted">{% trans %}We suggest using the</span> <a href="http://mercurial.selenic.com/wiki/HgNestedExtension" target="_blank">hgnested extension</a>{% endtrans %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock main %}
+
+{% block scripts %}
+  {{ super() }}
+  <script type="text/javascript">
+  $(document).ready(function(){
+    if (navigator.appVersion.indexOf("Win")!=-1) {
+      $(".os-name").removeClass("hide");
+      $(".mac-old").removeClass("hide");
+      $(".linux-sub-os").removeClass("hide");
+      $('.download-banner .os-name').attr("href","http://downloads.tryton.org/3.4/tryton-setup-last.exe");
+    }
+    else if (navigator.appVersion.indexOf("Mac")!=-1) {
+      $(".os-name").removeClass("hide");
+      $(".linux-sub-os").removeClass("hide");
+      $(".win-old").removeClass("hide");
+      $('.download-banner .os-name').attr("href","http://downloads.tryton.org/3.4/tryton-last.dmg");
+    }
+    else if (navigator.appVersion.indexOf("Linux")!=-1) { 
+      $(".win-old").removeClass("hide");
+      $(".mac-old").removeClass("hide");;
+      $(".multiplatform").removeClass("hide");
+    }
+  });
+ </script>
+{% endblock scripts %}
