@@ -91,7 +91,7 @@ a:hover {
   
 }
 
-.section-space h2, h3, h4, h5 {
+.heading {
   font-weight: 200;
 }
 
@@ -108,7 +108,6 @@ a:hover {
 .characteristics-heading {
   color: #1ac6ff;
   font-size: 18px;
-  font-weight: bold;
   text-transform: uppercase;
 }
 
@@ -122,7 +121,6 @@ a:hover {
   line-height: 56px;
   border-radius: 100%;
   margin-right: 20px;
-  font-size: 29px;
 }
 
 .tab-heading {
@@ -130,7 +128,7 @@ a:hover {
 }
 
 .rounded-icon i {
-  top: 3px;
+  top: 7px;
   position: relative;
   font-size: 33px;
 }
@@ -171,14 +169,6 @@ a:hover {
 
 .history {
   background: linear-gradient(to top, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../images/tryton-community.jpg);
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
-  color: #fff;
-}
-
-.job-info { 
-  background:linear-gradient(to top, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../images/tryton-community.jpg);
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -262,7 +252,7 @@ a:hover {
   color:#fff;
 }
 
-.carousel-control.carousel-color-none {
+.carousel-inner .carousel-color-none {
   background-image: none;
 }
 
@@ -312,7 +302,7 @@ a:hover {
 }
 
 
-.app-detail h4 {
+.app-detail .app-heading {
   color:#1D1D1D;
   font-size: 24px;
   font-weight: 200;
@@ -324,12 +314,12 @@ a:hover {
 
 .blog-heading {
   background-color:#3398d4; 
-  padding: 28px 0px;
+  padding: 28px 0;
 }
 
 .img-frame {
   border:7px solid #fff;
-  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
 }
 
 
@@ -349,15 +339,12 @@ a:hover {
 
 .blog-time {
   color:#2C9AB7;
-  font-size:28px;
   font-weight:bold; 
   line-height:100%; 
-  padding-top:6px; 
-  padding-bottom:6px; 
+  padding-top:8px; 
+  padding-bottom:8px; 
   text-align:center;
-  background: -webkit-linear-gradient(top, #fcfcfc 0%,#dad8d8 100%);
-  background: linear-gradient(top, #fcfcfc 0%,#dad8d8 100%); 
-  background: -moz-linear-gradient(top, #fcfcfc 0%, #dad8d8 100%);
+  background:linear-gradient(to top,rgba(21, 3,0,0.1),rgba(16, 18, 16, 0.3));
 }
 
 .post-by {
@@ -370,19 +357,7 @@ a:hover {
   padding: 0 0 0 26px;
 }
 
-#search-submit {
-  background:#0a70e3 url(../images/article/site-search-icon.png) no-repeat center;
-  height: 34px;
-  width: 39px;
-  border:none;
-}
-
-.input-radius {
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
+/* blog.html css end*/
 
 /* foundation.html css starts */
 
@@ -399,6 +374,7 @@ a:hover {
 }
 
 .tryton-companies {
+  /*csslint box-model:false */
   box-shadow: 0 0 10px rgba(0,0,0,.2);
   padding: 15px;
   height: 453px;
@@ -439,9 +415,10 @@ a:hover {
 .tryton-companies .address {
   height: 39%;
 }    
+/* foundation.html css end*/
 
+/* pagination.html css starts */
 .pagination-text {
-  border-radius: 20px;
   margin-top: 30px;
   border-radius: 30px;
 }
@@ -451,6 +428,9 @@ a:hover {
   color:white;
 }
 
+/* pagination.html css end*/
+
+/* download.html css starts */
 .download-icon i {
   width: 70px;
   background-color: #fff;
@@ -471,17 +451,12 @@ a:hover {
   margin-bottom: 15px;
 }
 
-.older-version {
-  font-size: 14px;
-}
-
 .older-version :hover {
   color: #fff;
 }
 
 .linux-sub-os, .win-old, .mac-old {
   display: inline;
-  margin-top: 10px;
 }
 
 .os-info .nano {
@@ -532,3 +507,4 @@ line-height: 70px;
 .os-logo {
   height: 62px;
 }
+/* download.html css end*/

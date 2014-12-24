@@ -32,8 +32,8 @@
     min-height: inherit;
   }
   .border-left-right{
-    border-left: 0px;
-    border-right: 0px;
+    border-left: 0;
+    border-right: 0;
   }
   .nav > li > .selection-tab {
   padding: 6px;
@@ -51,8 +51,8 @@
     white-space: nowrap;
   }
   .border-left-right{
-    border-left: 0px;
-    border-right: 0px;
+    border-left: 0;
+    border-right: 0;
   }
 
 }
