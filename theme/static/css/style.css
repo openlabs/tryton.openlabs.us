@@ -91,9 +91,14 @@ a:hover {
   
 }
 
+.section-space h2, h3, h4, h5 {
+  font-weight: 200;
+}
+
 .section-space p {
   margin-top: 10px;
   line-height: 22px;
+  font-weight: 200;
 }
 /* basicinfo css ends */
 
@@ -150,8 +155,12 @@ a:hover {
 
 .app img {
   margin: auto;
-  width: 100%;
+  height: 60px;
 }
+
+.app {
+  margin-bottom: 35px;
+} 
 
 .map-container {
   height:256px;
@@ -169,11 +178,15 @@ a:hover {
 }
 
 .job-info { 
-background:linear-gradient(to top, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../images/tryton-community.jpg);
+  background:linear-gradient(to top, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../images/tryton-community.jpg);
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
   color: #fff;
+}
+
+.job-info img {
+  height: 75px;
 }
 
 .nav-pills > li.active > .selection-tab, 
@@ -195,6 +208,13 @@ background:linear-gradient(to top, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(..
 
 .know-more button {
   margin-top: 32px;
+  background: #1ac6ff
+}
+
+.know-more button:hover {
+  background-color: #1ac6ff;
+  color:#fff;
+  border-color:#ccc;
 }
 
 .line-img {
@@ -273,17 +293,29 @@ background:linear-gradient(to top, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(..
   line-height: 25px;
 }
 
-.app-detail h4 {
-  color:#2283bc;
-  font-size: 22px;
-}
-
 .remove-background {
   background-color:transparent; 
 }
 
-.app:hover h4 {
-  color:#0a70e3;
+ .section-button:hover {
+  background-color:#1ac6ff;
+  color:white;
+  border-color:#1ac6ff; 
+}
+
+.app a {
+  color:#1D1D1D;
+}
+
+.app a:hover {
+  color:#1ac6ff;
+}
+
+
+.app-detail h4 {
+  color:#1D1D1D;
+  font-size: 24px;
+  font-weight: 200;
 }
 
 /*app css end */
