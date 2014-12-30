@@ -451,10 +451,6 @@ a:hover {
   margin-bottom: 15px;
 }
 
-.older-version :hover {
-  color: #fff;
-}
-
 .linux-sub-os, .win-old, .mac-old {
   display: inline;
 }
@@ -507,4 +503,25 @@ line-height: 70px;
 .os-logo {
   height: 62px;
 }
+
+.common-color {
+  color: #1ac6ff;
+}
+
+.common-background {
+  background-color: #1ac6ff;
+}
+
+.older-version:hover {
+  color: #fff;
+  background-color: #07ADE4;
+}
+.older-version a:hover {
+  color: #fff;
+}
+
+.common-link:hover {
+  color: #07ADE4;
+}
+
 /* download.html css end*/
