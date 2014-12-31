@@ -1,2 +1,13 @@
 {% set SITE_ROOT = '../../' %}
 {% extends 'index.html' %}
+{% block title %} {{ category }} | {{ super() }} {% endblock title %}
+{% block breadcrumb %}
+  <li class="white-text-color">
+    <a class="white-text-color" href="{{ SITE_ROOT }}blogs/index.html">{% trans %}Blog{% endtrans %}</a>
+  </li>
+  <li class="white-text-color">{{ category }}</li>
+{% endblock breadcrumb %}
+
+{% block heading %}
+  <h1 class="white-text-color heading">{{ category }}</h1>
+{% endblock heading %}

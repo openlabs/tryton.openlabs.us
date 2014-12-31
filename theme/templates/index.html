@@ -1,15 +1,31 @@
 {% set SITE_ROOT = SITE_ROOT or '../' %}
 {% extends 'base.html' %}
+{% block title %} Blog | {{ super() }} {% endblock title %}
 {% block main %}
-<section class="blog-heading">
-  <div class="container">
-    <h1 class="white-text-color margin-0">{% trans %}Blog{% endtrans %}</h1>
-    <ol class="breadcrumb remove-background padding-0 margin-0">
-      <li><a class="white-text-color" href="{{ SITE_ROOT }}index.html">{% trans %}Home{% endtrans %}</a></li>
-      <li class="white-text-color">{% trans %}Blog{% endtrans %}</li>
-    </ol>
-  </div>
-</section>
+  <section class="app-banner">
+    <div class="container">
+      <ol class="breadcrumb remove-background">
+        <li>
+          <a class="white-text-color" href="{{ SITE_ROOT }}index.html">{% trans %}Home{% endtrans %}</a>
+        </li>
+        {% block breadcrumb %}
+           <li class="white-text-color">{% trans %}Blog{% endtrans %}</li>
+         {% endblock breadcrumb %}
+      </ol>
+      <div class="text-center section-space">
+        {% block heading %}
+        <h1 class="white-text-color heading">{% trans %}Blog{% endtrans %}
+        </h1>
+        {% endblock heading %}
+        <div class="col-sm-12 col-xs-12" >
+          <div class="col-sm-2 col-xs-4 col-xs-offset-4 col-sm-offset-5 app-banner-divider">
+            <!-- This is used for divider at banner -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% block content %}
 <section class="section-space">
   <div class="container">
     <div class="col-xs-12 col-sm-12 col-md-12 padding-0">
@@ -39,11 +55,13 @@
                </td>
              </tr>
            </table>
-           <h3 class="margin-0"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
+           <h3 class="margin-0"><a href="{{ SITEURL }}/{{ article.url }}" class="common-link common-color">{{ article.title }}</a></h3>
            <ul>
-            <li class="pull-left list-unstyled post-by">{{article.author}}</li>
+            <li class="pull-left list-unstyled post-by">
+              <a class="post-category common-link common-color" href="{{ SITEURL }}/{{ article.author.url }}">{{article.author}}</a>
+            </li>
             <li class="list-unstyled post-event pull-left">
-              <a class="post-category" href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
+              <a class="post-category common-link common-color" href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
             </li>
           </ul>
         </div>
@@ -56,4 +74,5 @@
   {% include 'pagination.html' %}
 </div>
 </section>
+{% endblock content %}
 {% endblock main %}

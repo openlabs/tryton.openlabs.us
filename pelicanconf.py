@@ -10,7 +10,7 @@ PATH = 'content'
 PAGE_PATHS = ['pages']
 STATIC_PATHS = ['images']
 ARTICLE_PATHS = ['articles']
-DIRECT_TEMPLATES = ('index', 'categories', 'authors', 'archives', 'tags')
+DIRECT_TEMPLATES = ('index', 'archives')
 
 PLUGIN_PATHS = ['pelican-plugins']
 PLUGINS = ['i18n_subsites', ]
