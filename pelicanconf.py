@@ -20,7 +20,11 @@ JINJA_EXTENSIONS = ['jinja2.ext.i18n',]
 I18N_GETTEXT_LOCALEDIR = 'i18n/'
 I18N_GETTEXT_DOMAIN = 'messages'
 I18N_SUBSITES = {
-    'fr': {}
+    'fr': {},
+    'ca': {},
+    'es': {},
+    'de': {},
+    'sl': {},
 }
 
 
