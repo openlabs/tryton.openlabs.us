@@ -32,13 +32,28 @@ a:hover {
   background:linear-gradient(to top, rgba(0, 0, 0, .5), 
     rgba(0, 0, 0, 0)), 
   url(../images/banner/complete-business.jpg) no-repeat;
-  
+  background-position: top;
+}
+
+.community-banner2 {
+  background:linear-gradient(to top, rgba(0, 0, 0, .5), 
+    rgba(0, 0, 0, 0)), 
+  url(../images/banner/community.jpg) no-repeat;
+  background-position: center;
+}
+
+.community-banner {
+  background:linear-gradient(to top, rgba(0, 0, 0, .5), 
+    rgba(0, 0, 0, 0)), 
+  url(../images/banner/community-1.jpg) no-repeat;
+  background-position: center;
 }
 
 .all-in-one-banner {
   background:linear-gradient(to top, rgba(0, 0, 0, .5), 
     rgba(0, 0, 0, 0)),
   url(../images/banner/all-in-one.jpg) no-repeat;
+  background-position: center;
 }
 
 .nav-resize {
@@ -334,7 +349,6 @@ a:hover {
 .blog-month {
   background-color:#2C9AB7; 
   color:#fff;
-  font-size:12px;
   font-weight:bold; 
   padding:6px; 
   text-align:center;
@@ -539,5 +553,53 @@ line-height: 70px;
   background-color: #1ac6ff;
   border-color:#1ac6ff; 
 }
+/* download.html css end */
 
-/* download.html css end*/
+.tryton-rss {
+  padding: 18px 40px 18px 0;
+  border-top: 1px solid #CFE3DC;
+}
+
+.color-black {
+  color: #1d1d1d;
+}
+
+.mailing-list {
+  color: #1ac6ff;
+  font-weight: 200;
+}
+
+.mailing-list:hover {
+  color: #07ADE4;
+}
+
+.grid-spaces {
+  padding-bottom: 35px;
+}
+
+.social-desc {
+  padding-top: 38px;
+}
+
+.social-background {
+  background-color: #f9f9f9;
+}
+
+.irc-detail {
+  background-color: #1ac6ff;
+  border-color: #1ac6ff; 
+}
+
+.irc-detail:hover {
+ color: white;
+ background-color: #07ADE4;
+ border-color: #07ADE4;
+}
+
+.language-list {
+  list-style-type: circle;
+}
+
+.language-list a:hover {
+  color: #1ac6ff;
+}

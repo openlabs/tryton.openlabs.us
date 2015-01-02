@@ -3,7 +3,6 @@
 {% block title %} Home | {{ super() }} {% endblock title %}
 
 {% block main %}
-<div class="slider-section-img ">
   <div id="carousel-banner" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -41,18 +40,17 @@
     <!-- Controls -->
     <a class="left carousel-control" href="#carousel-banner" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
+      <span class="sr-only">{% trans %}Previous{% endtrans %}</span>
     </a>
     <a class="right carousel-control" href="#carousel-banner" data-slide="next">
       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
+      <span class="sr-only">{% trans %}Next{% endtrans %}</span>
     </a>
   </div>
-</div>
 <section class="section-space">
   <div class="container">
     <h5 class="text-center text-muted heading">{% trans %}Stable, Secure and Scalable{% endtrans %}</h5>
-      <h2 class="text-center margin-0 top-heading heading">{% trans %}Open Source Business Solution{% endtrans %}</h2>
+      <h2 class="text-center margin-0 heading">{% trans %}Open Source Business Solution{% endtrans %}</h2>
     <br>
     <br>
     <div class="row">
@@ -182,8 +180,8 @@
 </div>
 <section class="app-detail section-space">
   <div class="container">
-    <h5 class="text-center text-muted top-heading heading">{% trans %}Everything you need for{% endtrans %}</h5>
-    <h2 class="margin-0 text-center top-heading heading">{% trans %}Managing your business{% endtrans %}</h2>
+    <h5 class="text-center text-muted heading">{% trans %}Everything you need for{% endtrans %}</h5>
+    <h2 class="margin-0 text-center heading">{% trans %}Managing your business{% endtrans %}</h2>
     <br>
     <br>
     <div class="col-xs-12 col-sm-12 col-md-12">
@@ -264,7 +262,7 @@
 <section class="users section-space">
   <div class="container">
     <h5 class="text-center text-muted heading">{% trans %}Companies that choose Tryton{% endtrans %}</h5>
-    <h2 class="text-center margin-0 top-heading heading">{% trans %}To manage their business{% endtrans %}
+    <h2 class="text-center margin-0 heading">{% trans %}To manage their business{% endtrans %}
     </h2>
     <br>
     <div id="carousel-user" class="carousel slide company-slider" data-ride="carousel">
