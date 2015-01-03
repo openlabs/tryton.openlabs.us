@@ -1,2 +1,23 @@
 {% set SITE_ROOT = '../../' %}
 {% extends 'index.html' %}
+{% block pagetitle %}
+<section class="app-banner">
+  <div class="container">
+    <ol class="breadcrumb remove-background">
+      <li><a class="white-text-color" href="{{ SITE_ROOT }}index.html">{% trans %} Home {% endtrans %}</a></li>
+      <li class="white-text-color"><a class="white-text-color" href="{{ SITE_ROOT }}blogs/index.html">{% trans %} Blog {% endtrans %}</a></li>
+      <li class="white-text-color">{{category}}</li>
+    </ol>
+    <div class="text-center section-space">
+      <h1 class="white-text-color"><strong>{% trans %} Posts in {% endtrans %}{{ category }}</strong>
+      </h1>
+      <div class="col-sm-12 col-xs-12" >
+        <div class="col-sm-2 col-xs-4 col-xs-offset-4 col-sm-offset-5 app-banner-divider">
+        </div>
+      </div>
+      <div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock pagetitle %}

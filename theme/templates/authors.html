@@ -1,0 +1,35 @@
+{% set SITE_ROOT = './' %}
+{% extends 'index.html' %}
+{% block main %}
+{% block pagetitle %}
+<section class="app-banner">
+  <div class="container">
+    <ol class="breadcrumb remove-background">
+      <li><a class="white-text-color" href="{{ SITE_ROOT }}index.html">{% trans %}Home{% endtrans %}</a></li>
+      <li class="white-text-color"><a class="white-text-color" href="{{ SITE_ROOT }}blogs/index.html">{% trans %}Blog{% endtrans %}</a></li>
+      <li class="white-text-color">Authors</li>
+    </ol>
+    <div class="text-center section-space">
+      <h1 class="white-text-color"><strong>{% trans %}Authors{% endtrans %}</strong>
+      </h1>
+      <div class="col-sm-12 col-xs-12" >
+        <div class="col-sm-2 col-xs-4 col-xs-offset-4 col-sm-offset-5 app-banner-divider">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock pagetitle %}
+<section class="section-space">
+  {% for author, articles in authors|sort %}
+   <div class="col-sm-offset-4 col-sm-4">
+    <ul class="list-group">
+      <li class="list-group-item">
+       <span class="badge">{{ articles|count }}</span>
+       <a href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>
+      </li>
+    </ul>
+   </div>
+  {% endfor %}
+</section>
+{% endblock main %}
