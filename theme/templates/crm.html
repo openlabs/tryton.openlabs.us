@@ -5,11 +5,6 @@
 {% block main %}
 <section class="app-banner">
   <div class="container">
-    <ol class="breadcrumb remove-background">
-      <li><a class="white-text-color" href="{{ SITE_ROOT }}index.html">{% trans %}Home{% endtrans %}</a></li>
-      <li> <a class="white-text-color" href="{{ SITE_ROOT }}app.html">{% trans %}App{% endtrans %}</a></li>
-      <li class="white-text-color">{% trans %}CRM{% endtrans %}</li>
-    </ol>
     <div class="text-center section-space">
       <h1 class="white-text-color">{% trans %}Customer relationship management{% endtrans %}
       </h1>
@@ -22,6 +17,15 @@
         </p>
       </div>
     </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <ol class="breadcrumb breadcrumb-background">
+      <li><a class="color-black" href="{{ SITE_ROOT }}index.html">{% trans %}Home{% endtrans %}</a></li>
+      <li><a class="color-black" href="{{ SITE_ROOT }}app.html">{% trans %}App{% endtrans %}</a></li>
+      <li class="color-black">{% trans %}CRM{% endtrans %}</li>
+    </ol>
   </div>
 </section>
 <div class="container">

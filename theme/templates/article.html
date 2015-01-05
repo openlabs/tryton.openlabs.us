@@ -3,17 +3,16 @@
 
 {% block title %} {{article.title }} | {{ super() }} {% endblock title %}
 
-{% block breadcrumb %}
-  <li class="white-text-color">
-    <a class="white-text-color" href="{{ SITE_ROOT }}blogs/index.html">{% trans %}Blog{% endtrans %}</a>
-  </li>
-  <li class="white-text-color">{{ article.title }}</li>
-{% endblock breadcrumb %}
-
 {% block heading %}
   <h1 class="white-text-color heading">{{ article.title }}</h1>
 {% endblock heading %}
 
+{% block breadcrumb %}
+  <li class="color-black">
+    <a class="color-black" href="{{ SITE_ROOT }}blogs/index.html">{% trans %}Blog{% endtrans %}</a>
+  </li>
+  <li class="color-black">{{ article.title }}</li>
+{% endblock breadcrumb %}
 {% block content %}
   <section class="section-space">
     <div class="container">
@@ -23,26 +22,26 @@
             <img class="img-responsive" src="{{ SITE_ROOT }}{{ article.bannerimage }}">
           </div>
           <br>
-            <table class="blog-date pull-left" border="0" cellpadding="0" cellspacing="0" width="60">
-              <tr>
-                <td>
-                  <table border="0" cellpadding="0" cellspacing="0">
-                    <tr>
-                      <td class="blog-month">
-                        {{ article.date|strftime('%B') }}
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="blog-time">
-                       <h4 class="margin-0"><strong>{{ article.date|strftime('%d') }}</strong></h4>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-            <h3 class="margin-0">{{article.title}}</h3>
-            <ul>
+          <table class="blog-date pull-left" border="0" cellpadding="0" cellspacing="0" width="60">
+            <tr>
+              <td>
+                <table border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td class="blog-month">
+                      {{ article.date|strftime('%B') }}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="blog-time">
+                      <h4 class="margin-0"><strong>{{ article.date|strftime('%d') }}</strong></h4>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+          <h3 class="margin-0">{{article.title}}</h3>
+          <ul>
             <li class="pull-left list-unstyled post-by">
               <a class="post-category common-link common-color" href="{{ SITEURL }}/{{ article.author.url }}">{{article.author}}</a>
             </li>
@@ -50,15 +49,13 @@
               <a class="post-category common-link common-color" href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
             </li>
           </ul>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-11 padding-0">
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-11 padding-0">
           <div class="post_info_content">
             {{ article.content }}
           </div>
         </div>
-        </div>
       </div>
     </div>
-  </div>
   </section>
 {% endblock content %}

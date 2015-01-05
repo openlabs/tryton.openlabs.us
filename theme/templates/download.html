@@ -5,10 +5,6 @@
 {% block main %}
 <section class="app-banner download-banner">
   <div class="container">
-    <ol class="breadcrumb remove-background">
-     <li><a class="white-text-color" href="{{ SITE_ROOT }}index.html">{% trans %}Home{% endtrans %}</a></li>
-     <li class="white-text-color">{% trans %}Download{% endtrans %}</li>
-    </ol>
     <div class="text-center">
       <h1 class="white-text-color">{% trans %}Tryton download packages{% endtrans %}<br><small class="white-text-color">{% trans %}Compatible to every platform that you can think of.{% endtrans %}</small>
       </h1>
@@ -23,6 +19,14 @@
     <div class="col-sm-12 col-xs-12 text-center tryton-interface tryton-img">
       <img src="{{ STATIC }}images/download/tryton.png" alt="tryton" class="hidden-xs">
     </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <ol class="breadcrumb breadcrumb-background">
+      <li><a class="color-black" href="{{ SITE_ROOT }}index.html">{% trans %}Home{% endtrans %}</a></li>
+      <li class="color-black">{% trans %}Download{% endtrans %}</li>
+    </ol>
   </div>
 </section>
 <section>
