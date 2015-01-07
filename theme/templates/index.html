@@ -4,14 +4,6 @@
 {% block main %}
   <section class="app-banner">
     <div class="container">
-      <ol class="breadcrumb remove-background">
-        <li>
-          <a class="white-text-color" href="{{ SITE_ROOT }}index.html">{% trans %}Home{% endtrans %}</a>
-        </li>
-        {% block breadcrumb %}
-           <li class="white-text-color">{% trans %}Blog{% endtrans %}</li>
-         {% endblock breadcrumb %}
-      </ol>
       <div class="text-center section-space">
         {% block heading %}
         <h1 class="white-text-color heading">{% trans %}Blog{% endtrans %}
@@ -25,6 +17,18 @@
       </div>
     </div>
   </section>
+<section>
+  <div class="container">
+    <ol class="breadcrumb breadcrumb-background">
+      <li>
+        <a class="color-black" href="{{ SITE_ROOT }}index.html">{% trans %}Home{% endtrans %}</a>
+      </li>
+      {% block breadcrumb %}
+      <li class="color-black">{% trans %}Blog{% endtrans %}</li>
+      {% endblock breadcrumb %}
+    </ol>
+  </div>
+</section>
 {% block content %}
 <section class="section-space">
   <div class="container">

@@ -298,8 +298,9 @@ a:hover {
   line-height: 25px;
 }
 
-.remove-background {
-  background-color:transparent; 
+.breadcrumb-background {
+  background-color: transparent;
+  padding-top: 20px;
 }
 
  .section-button:hover {
@@ -601,5 +602,12 @@ line-height: 70px;
 }
 
 .language-list a:hover {
+  color: #1ac6ff;
+}
+
+.breadcrumb-background > li + li:before {
+  color: #1d1d1d;
+}
+.breadcrumb-background > li > .color-black:hover {
   color: #1ac6ff;
 }
