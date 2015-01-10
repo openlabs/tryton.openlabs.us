@@ -1,0 +1,318 @@
+{% extends 'base.html' %}
+
+{% block title %} {% trans %}Community{% endtrans %} | {{ super() }} {% endblock title %}
+
+{% block main %}
+
+<section>
+ <div id="community-banner" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#community-banner" data-slide-to="0" class="active"></li>
+    <li data-target="#community-banner" data-slide-to="1"></li>
+  </ol>
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <div class="community-banner banner">
+        <!-- community banner -->
+      </div>
+    </div>
+    <div class="item">
+      <div class="community-banner2 banner">
+        <!-- community banners -->
+      </div>
+    </div>
+    <!-- Controls -->
+    <a class="left carousel-control" href="#community-banner" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">{% trans %}Previous{% endtrans %}</span>
+    </a>
+    <a class="right carousel-control" href="#community-banner" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">{% trans %}Next{% endtrans %}</span>
+    </a>
+  </div>
+</div>
+</section>
+<section class="section-space">
+  <div class="container">
+    <div class="col-sm-12 text-center-xs">
+      <div class="row">
+        <div class="col-sm-2 mailing-icon">
+          <img src="{{ STATIC }}images/community/mail-bg.png" alt="chat" class="img img-responsive content-center-xs">
+        </div>
+        <div class="col-sm-4 col-md-5">
+          <br>
+          <h2 class="heading margin-0"><a class="common-color mailing-list" href="http://groups.tryton.org/">{% trans %}Using Tryton{% endtrans %}</a>
+          </h2>
+          <p>{% trans %}Get help with tryton.{% endtrans %}</p>
+          <a class="btn btn-default white-text-color irc-detail" href="https://groups.google.com/forum/#!forum/tryton/join" target="blank">{% trans %}Subscribe{% endtrans %}</a>
+          <a class="btn btn-default white-text-color irc-detail" href="https://groups.google.com/forum/#!forum/tryton" target="blank">{% trans %}View Archive{% endtrans %}</a>
+        </div>
+        <div class="col-sm-6 col-md-5">
+          <br>
+          <h2 class="heading margin-0">
+            <a class="common-color mailing-list" href="http://groups-dev.tryton.org/" target="blank">{% trans %}Develop using Tryton{% endtrans %}</a>
+          </h2>
+          <p>{% trans %}Discuss new features & bugs for tryton{% endtrans %}</p>
+          <a class="btn btn-default white-text-color irc-detail" href="https://groups.google.com/forum/#!forum/tryton-dev/join" target="blank">{% trans %}Subscribe{% endtrans %}</a>
+          <a class="btn btn-default white-text-color irc-detail" href="https://groups.google.com/forum/#!forum/tryton-dev" target="blank">{% trans %}View Archive{% endtrans %}</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-8 col-sm-offset-2">
+     <br>
+     <br>
+     <div class="col-sm-12">
+      <div class="tryton-rss">
+        <a data-toggle="collapse" href="#mailinglist">
+          <h4 class="margin-0 common-color heading">{% trans %}Few more mailing lists{% endtrans %} <small><span class="pull-right glyphicon glyphicon-plus common-color"></span></small></h4>
+        </a>
+        <div id="mailinglist" class="collapse">
+          <br>
+          <h5>{% trans %}Follow major announcements{% endtrans %}</h5>
+          <h3 class="margin-0">
+            <small><a class="mailing-list" href="http://groups-announce.tryton.org/" target="blank">tryton-announce</a></small>
+          </h3>
+          <br>
+          <h5>
+            {% trans %}Get notified of change sets{% endtrans %}
+          </h5>
+          <h3 class="margin-0">
+            <small><a class="mailing-list" href="http://groups-commit.tryton.org/" target="blank">tryton-commit</a></small>
+          </h3>
+          <br>
+          <h5>{% trans %}Contribute to the development of Tryton{% endtrans %}</h5>
+          <h3 class="margin-0">
+            <small><a class="mailing-list" href="http://groups-contrib.tryton.org/" target="blank">tryton-contrib</a></small>
+          </h3>
+          <br>
+        </div>
+      </div>
+      <div class="tryton-rss">
+       <a data-toggle="collapse" href="#collapse-irc">
+        <h4 class="margin-0 common-color heading">{% trans %}Other language specific mailing lists {% endtrans %}<small><span class="pull-right glyphicon glyphicon-plus common-color"></span></small>
+        </h4>
+       </a>
+       <div id="collapse-irc" class="collapse">
+        <ul class="language-list">
+          <li>
+            <h3>
+              <small>
+                <a class="color-black" href="http://groups-ca.tryton.org/" target="blank">Català</a>
+              </small>
+            </h3>
+          </li>
+          <li>
+            <h3>
+              <small>
+                <a class="color-black" href="http://groups-es.tryton.org/" target="blank">Español</a>
+              </small>
+            </h3>
+          </li>
+          <li>
+            <h3>
+              <small>
+                <a class="color-black" href="http://groups-fr.tryton.org/" target="blank">Français</a>
+              </small>
+            </h3>
+          </li>
+          <li>
+            <h3>
+              <small>
+                <a class="color-black" href="http://groups-ru.tryton.org/" target="blank">РУССКИЙ</a>
+              </small>
+            </h3>
+          </li>
+        </ul>
+        <br>
+       </div>
+      </div>
+     </div>
+    </div>
+  </div>
+</section>
+<div class="col-sm-10 col-sm-offset-1 padding-0">
+ <div class="divider-line"></div>
+</div>
+<section class="section-space social-background">
+  <div class="container">
+    <div class="col-sm-12">
+      <h2 class="text-center margin-0 heading">{% trans %}Tryton IRC Channels{% endtrans %}</h2>
+      <br>
+      <br>
+      <div class="row">
+        <div class="col-sm-2 mailing-icon">
+          <img src="{{ STATIC }}images/community/chat-bg.png" alt="chat" class="img img-responsive content-center-xs">
+        </div>
+        <div class="col-sm-10">
+          <h4 class="text-center heading">{% trans %}Sometimes its easier to get help on tryton in real time. The <a href="irc://irc.freenode.net/tryton" class="common-color mailing-list" target="blank">#tryton</a><a class="common-color mailing-list" href="http://www.tryton.org/~irclog/" target="blank">(tryton archive)</a> channel on freenode IRC allows you to do that.{% endtrans %}
+          </h4>
+        </div>
+        <div class="col-sm-10 col-md-9 col-md-offset-1 col-lg-8">
+          <div class="row">
+            <div class="col-xs-4 col-sm-3 col-md-2 col-lg-2 col-lg-offset-1 text-center tryton-interface">
+             <a class="common-color mailing-list" href="irc://irc.freenode.net/tryton.de" target="blank">#tryton.de</a>
+             <br>
+             <a class="btn btn-default white-text-color irc-detail" href="http://www.tryton.org/~irclog/de/" target="blank">{% trans %}View archive{% endtrans %}</a>
+           </div>
+           <div class="col-xs-4 col-sm-3 col-md-2 col-lg-2 text-center tryton-interface">
+            <a class="common-color mailing-list" href="irc://irc.freenode.net/tryton-es" target="blank">#tryton-es</a>
+            <br>
+            <a class="btn btn-default white-text-color irc-detail" href="http://www.tryton.org/~irclog/es/" target="blank">{% trans %}View archive{% endtrans %}</a>
+          </div>
+          <div class="col-xs-4 col-sm-3 col-md-2 col-lg-2 text-center tryton-interface">
+            <a class="common-color mailing-list" href="irc://irc.freenode.net/tryton-fr" target="blank">#tryton-fr</a>
+            <br>
+            <a class="btn btn-default white-text-color irc-detail" href="http://www.tryton.org/~irclog/fr/" target="blank">{% trans %}View archive{% endtrans %}</a>
+          </div>
+          <div class="col-xs-4 col-sm-3 col-md-2 col-lg-2 text-center tryton-interface">
+            <a class="common-color mailing-list" href="irc://irc.freenode.net/tryton-ru" target="blank">#tryton-ru</a>
+            <br>
+            <a class="btn btn-default white-text-color irc-detail" href="http://www.tryton.org/~irclog/ru/">{% trans %}View archive{% endtrans %}</a>
+          </div>
+          <div class="col-xs-4 col-sm-3 col-md-2 col-lg-2 text-center tryton-interface">
+            <a class="common-color mailing-list">{% trans %}Commits{% endtrans %}</a>
+            <br>
+            <a class="btn btn-default white-text-color irc-detail" href="irc://irc.freenode.net/tryton-commit" target="blank">{% trans %}tryton-commit{% endtrans %}</a>
+          </div>
+         </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="col-sm-10 col-sm-offset-1 padding-0">
+ <div class="divider-line"></div>
+</div>
+<section class="section-space">
+  <div class="container">
+    <div class="col-sm-12">
+      <h2 class="text-center margin-0 heading">{% trans %}Community Tools{% endtrans %}</h2>
+      <br>
+      <br>
+      <div class="row">
+        <div class="col-sm-4 grid-spaces">
+          <div class="row">
+            <div class="col-sm-4">
+              <img src="{{ STATIC }}images/community/wiki.png" alt="community" class="img img-responsive content-center-xs">
+            </div>
+            <div class="col-sm-8 text-center-xs">
+              <h4 class="heading"><a class="common-color mailing-list" href="http://wiki.tryton.org/" target="blank">{% trans %}Wiki{% endtrans %}</a></h4>
+              {% trans %}Contains a compilation of many community resources such as articles, roadmap, howto’s etc{% endtrans %}}
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 grid-spaces">
+          <div class="row">
+            <div class="col-sm-4">
+              <img src="{{ STATIC }}images/community/papers-presentation.png" alt="paper-presentation" class="img img-responsive content-center-xs">
+            </div>
+            <div class="col-sm-8 text-center-xs">
+              <h4 class="common-color heading"><a class="common-color mailing-list" href="{{ SITE_ROOT }}papers.html" target="blank">{% trans %}Paper & Presentation{% endtrans %}</a></h4>
+              {% trans %}Video, papers, presentations, workshop and unconference recording can be found here.{% endtrans %}
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 grid-spaces">
+          <div class="row">
+            <div class="col-sm-4">
+              <img src="{{ STATIC }}images/community/stack-overflow.png" class="img img-responsive content-center-xs" alt="stack-overflow">
+            </div>
+            <div class="col-sm-8 text-center-xs">
+              <h4 class="heading"><a href="http://stackoverflow.com/questions/tagged/tryton"  class="common-color mailing-list" target="blank">Stack Overflow</a></h4>
+              {% trans %}There is a healthy community around tryton on Stack overflow where users / developers can ask questions.{% endtrans %}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 grid-spaces">
+          <div class="row">
+            <div class="col-sm-4">
+              <img src="{{ STATIC }}images/community/bugtracker.png" alt="bugtracker" class="img img-responsive content-center-xs">
+            </div>
+            <div class="col-sm-8 text-center-xs">
+              <h4 class="heading"><a href="https://bugs.tryton.org/" target="blank" class="common-color mailing-list">{% trans %}Bug tracker{% endtrans %}</a></h4>
+              {% trans %}Report any bug and issue associated to tryton here.{% endtrans %}
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 grid-spaces">
+          <div class="row">
+            <div class="col-sm-4">
+              <img src="{{ STATIC }}images/community/code.png" alt="code" class="img img-responsive content-center-xs">
+            </div>
+            <div class="col-sm-8 text-center-xs">
+              <h4 class="heading"><a href="http://hg.tryton.org/" target="blank" class="common-color mailing-list">{% trans %}Code{% endtrans %}</a></h4>
+              {% trans %}Browse the source code repository in mercurial.{% endtrans %}
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 grid-spaces">
+          <div class="row">
+            <div class="col-sm-4">
+              <img src="{{ STATIC }}images/community/github.png" alt="github" class="img img-responsive content-center-xs">
+            </div>
+            <div class="col-sm-8 text-center-xs">
+              <h4 class="heading"><a href="https://github.com/tryton/tryton" target="blank" class="common-color mailing-list">Github</a></h4>
+              {% trans %}Source code mirror for github lovers.{% endtrans %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="col-sm-10 col-sm-offset-1 padding-0">
+ <div class="divider-line"></div>
+</div>
+<section class="section-space social-background">
+  <div class="container">
+    <div class="col-sm-12">
+      <h2 class="text-center margin-0 heading">{% trans %}Social Media{% endtrans %}</h2>
+      <br>
+      <br>
+      <div class="row">
+        <div class="col-sm-6 grid-spaces">
+          <div class="row">
+            <div class="col-sm-3">
+              <a href="https://twitter.com/trytonusa" target="blank"><img src="{{ STATIC }}images/community/twitter.png" alt="twitter" class="img img-responsive content-center-xs">
+              </a>
+            </div>
+            <div class="col-sm-9 text-center-xs padding-0 social-desc">
+              {% trans %}Use the <a href="https://twitter.com/#tryton" class="mailing-list" target="blank">#tryton</a> hash tag to follow{% endtrans %}
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 grid-spaces">
+          <div class="row">
+            <div class="col-sm-3">
+              <a href="https://plus.google.com/u/0/communities/111064602356347307346" target="blank">
+                <img src="{{ STATIC }}images/community/google+.png" alt="googleplus" class="img img-responsive content-center-xs">
+              </a>
+            </div>
+            <div class="col-sm-9 text-center-xs padding-0 social-desc">
+              {% trans %}Join the discussion on the google+ pages{% endtrans %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock main %}
+{% block scripts %}
+  {{ super() }}
+  <script type="text/javascript">
+  $(document).ready(function () {
+    $('.collapse').on('shown.bs.collapse', function(){
+      $(this).parent().find(".glyphicon-plus").removeClass("glyphicon-plus").addClass("glyphicon-minus");
+    }).on('hidden.bs.collapse', function(){
+      $(this).parent().find(".glyphicon-minus").removeClass("glyphicon-minus").addClass("glyphicon-plus");
+    });
+  });
+  </script>
+{% endblock scripts %}

@@ -3,14 +3,8 @@
 {% block main %}
 <section class="app-banner">
   <div class="container">
-    <ol class="breadcrumb remove_background">
-      <li><a class="white-text-color" href="/">{% trans %}Home{% endtrans %}</a></li>
-      <li> <a class="white-text-color" href="app.html">{% trans %}App{% endtrans %}</a></li>
-      <li class="white-text-color">{% trans %}Inventory Management {% endtrans %}</li>
-    </ol>
-    <div class="mar-top-150"></div>
-    <div class="text-center">
-      <h1 class="white-text-color"><strong>{% trans %}INVENTORY MANAGEMENT{% endtrans %}</strong>
+    <div class="text-center section-space">
+      <h1 class="white-text-color">{% trans %}Inventory management{% endtrans %}
       </h1>
       <div class="col-sm-12 col-xs-12" >
         <div class="col-sm-2 col-xs-4 col-xs-offset-4 col-sm-offset-5 app-banner-divider">
@@ -23,69 +17,72 @@
     </div>
   </div>
 </section>
-<div class="mar_top5 clearfix"></div>
+<section>
+  <div class="container">
+    <ol class="breadcrumb breadcrumb-background">
+      <li><a class="color-black" href="{{ SITE_ROOT }}index.html">{% trans %}Home{% endtrans %}</a></li>
+      <li><a class="color-black" href="{{ SITE_ROOT }}app.html">{% trans %}App{% endtrans %}</a></li>
+      <li class="color-black">{% trans %}Inventory management{% endtrans %}</li>
+    </ol>
+  </div>
+</section>
 <div class="container">
-  <section>
+  <section class="section-space">
     <div class="container">
-      <div class="col-xs-12 col-sm-12 col-md-12 mar_top5">
+      <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="col-xs-12 col-sm-6 col-md-6 text-center">
-          <img src="{{ STATIC }}images/app/inventory/inventory-01.png" height="200" alt="ecommerce" class="content-center-xs">
+          <img src="{{ STATIC }}images/app/inventory/inventory-01.png" alt="ecommerce" class="content-center-xs orders-img">
         </div>
         <div class="col-xs-12 col-sm-6 col-md-6">
-          <h2>{% trans %}Intelligent{% endtrans %}</h2>
+          <h2 class="heading">{% trans %}Intelligent{% endtrans %}</h2>
           <p>{% trans %}Tryton’s Inventory management app is intelligent and it knows what are the critical elements of a good inventory system. From organizing location names to naming it unambigously; from unique and simple item numbers to definite units of measurement, this app knows what to do and how to do.{% endtrans %}
           </p>
         </div>
       </div>
     </div>
-    <div class="mar_top3 clearfix"></div>
   </section>
-  <div class="divider-line clearfix"></div>
-  <section>
+  <div class="divider-line"></div>
+  <section class="section-space">
     <div class="container">
       <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="col-xs-12 col-sm-6 col-md-6 col-sm-push-6 text-center">
-          <img src="{{ STATIC }}images/app/inventory/inventory-02.png" height="200" alt="ecommerce" class="content-center-xs">
+          <img src="{{ STATIC }}images/app/inventory/inventory-02.png" alt="ecommerce" class="content-center-xs orders-img">
         </div>
         <div class="col-xs-12 col-sm-6 col-md-6 col-sm-pull-6">
-          <h2>{% trans %}Never go Out of Stock!{% endtrans %}</h2>
+          <h2 class="heading">{% trans %}Never go Out of Stock!{% endtrans %}</h2>
           <p>{% trans %}You would never want to lose a sale just because a product in your store was Out of Stock. The inventory app keeps track of all your goods and analyses your inventory activities, so that you know which products you need to refill in your stock before it reaches to a threshold level.{% endtrans %}
           </p>
         </div>
       </div>
     </div>
-    <div class="mar_top3 clearfix"></div>
   </section>
-  <div class="divider-line clearfix"></div>
-  <section>
+  <div class="divider-line"></div>
+  <section class="section-space">
     <div class="container">
       <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="col-xs-12 col-sm-6 col-md-6 text-center">
-          <img src="{{ STATIC }}images/app/inventory/inventory-03.png" height="200" alt="fast" class=" content-center-xs">
+          <img src="{{ STATIC }}images/app/inventory/inventory-03.png" alt="fast" class=" content-center-xs orders-img">
         </div>
         <div class="col-xs-12 col-sm-6 col-md-6">
-          <h2>{% trans %}Serialised Inventory control{% endtrans %}</h2>
+          <h2 class="heading">{% trans %}Serialised Inventory control{% endtrans %}</h2>
           <p>{% trans %}Tracking serialised inventory with ease and grants access to real-time data, thus streamlining decision making and improving operations. For instance, you receive a shipment of 5 products, normally, it will be assigned to a single line making it difficult for you to track each product of the shipment. Tracking serialized inventory becomes an even more important process as it allows you to maintain accurate stock levels and quickly process inventory transactions.{% endtrans %}</p>
         </div>
       </div>
     </div>
-    <div class="mar_top3 clearfix"></div>
   </section>
-  <div class="divider-line clearfix"></div>
-  <section>
+  <div class="divider-line"></div>
+  <section class="section-space">
     <div class="container">
       <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="col-xs-12 col-sm-6 col-md-6 col-sm-push-6 text-center">
-          <img src="{{ STATIC }}images/app/inventory/inventory-04.png" height="200" alt="custom" class="content-center-xs">
+          <img src="{{ STATIC }}images/app/inventory/inventory-04.png" alt="custom" class="content-center-xs orders-img">
         </div>
         <div class="col-xs-12 col-sm-6 col-md-6 col-sm-pull-6">
-          <h2>{% trans %}Simple yet Beautiful Reports{% endtrans %}</h2>
+          <h2 class="heading">{% trans %}Simple yet Beautiful Reports{% endtrans %}</h2>
           <p>{% trans %}Don’t waste time on understanding complex graphs and reports. Activities of the Inventory department such as receipt of goods, delivery of goods, maintenance of material in the stock sections, classifying all the materials, issuing of materials to the manufacturing department, rejections from the suppliers are recorded and shown in a very simple understandable manner.{% endtrans %}</p>
         </div>
       </div>
     </div>
-    <div class="mar_top3 clearfix"></div>
   </section>
-  <div class="mar_top5 clearfix"></div>
 </div>
 {% endblock main %}

@@ -1,0 +1,344 @@
+{% extends 'base.html' %}
+
+{% block title %} Home | {{ super() }} {% endblock title %}
+
+{% block main %}
+  <div id="carousel-banner" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-banner" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-banner" data-slide-to="1"></li>
+      <li data-target="#carousel-banner" data-slide-to="2"></li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <div class="tryton-conf-banner banner"></div>
+        <div class="carousel-caption">
+          <h1 class="text-uppercase heading">Tryton Unconference 2014</h1>
+          <p>Leipzig, Germany. 14th - 16th November</p>
+          <a class="btn btn-lg btn-default section-button" href="http://lanyrd.com/2014/tryton-unconference-leipzig/" target="_blank">{% trans %}See Complete Schedule{% endtrans %}</a>
+        </div>
+      </div>
+      <div class="item">
+        <div class="business-banner banner"></div>
+        <div class="carousel-caption">
+          <h1 class="text-uppercase heading">{% trans %}Secure. Stable. Scalable.{% endtrans %}</h1>
+          <p>{% trans %}Give your business a sturdy backbone with Tryton.{% endtrans %}</p>
+          <a class="btn btn-lg btn-default section-button" href="#">{% trans %}Request a Demo{% endtrans %}</a>
+        </div>
+      </div>
+      <div class="item">
+        <div class="all-in-one-banner banner"></div>
+        <div class="carousel-caption">
+          <h1 class="text-uppercase heading">{% trans %}All in One{% endtrans %}</h1>
+          <p>{% trans %}Tryton comes with a variety of modules.{% endtrans %}</p>
+          <a class="btn btn-lg btn-default section-button"  href="#">{% trans %}Request a Demo{% endtrans %}</a>
+        </div>
+      </div>
+    </div>
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-banner" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">{% trans %}Previous{% endtrans %}</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-banner" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">{% trans %}Next{% endtrans %}</span>
+    </a>
+  </div>
+<section class="section-space">
+  <div class="container">
+    <h5 class="text-center text-muted heading">{% trans %}Stable, Secure and Scalable{% endtrans %}</h5>
+      <h2 class="text-center margin-0 heading">{% trans %}Open Source Business Solution{% endtrans %}</h2>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-md-4 col-sm-4 col-xs-12">
+        <div class="rounded-icon pull-left content-center-xs">
+          <i class="fa fa-github-alt fa-2x" aria-hidden="true"></i>
+        </div>
+        <h2 class="text-center-xs characteristics-heading text-uppercase heading">{% trans %}Open Source{% endtrans %}</h2>
+        <p>{% trans %}Tryton abides by the GPL license, which ensures that the modifications made are available to every member of the open source community. Being supported by a non-profit foundation.{% endtrans %}</p>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-12">
+        <div class="rounded-icon pull-left content-center-xs">
+          <i class="fa fa-terminal fa-2x"></i>
+        </div>
+        <h2 class="text-center-xs characteristics-heading text-uppercase heading">{% trans %}Mature and Quality Code {% endtrans %}</h2>
+        <p>{% trans %}The code building of Tryton applications is unique in its own way. The code is posted on the open source community to be reviewed by every member, which leaves no stone unturned in its development. After a painstakingly accurate review, the code is merged into the mainstream repositories{% endtrans %}</p>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-12">
+        <div class="rounded-icon pull-left content-center-xs">
+          <i class="fa fa-arrow-circle-o-up fa-2x"></i>
+        </div>
+        <h2 class="text-center-xs characteristics-heading text-uppercase heading">{% trans %}Predictable Release Cycle{% endtrans %} </h2>
+        <p>{% trans %}Tryton releases a new series every six months and new versions of older releases are made after the bug fixes (if there are any).{% endtrans %}</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section-space history job-info">
+  <div class="container padding-0">
+    <h3 class="text-center text-uppercase heading">{% trans %}Select who you are !{% endtrans %}
+    </h3>
+    <br>
+    <div class="col-md-12 text-center">
+      <div>
+        <!-- Nav tabs -->
+        <ul class="nav nav-pills tab-heading">
+          <li class="active">
+            <a href="#developer" data-toggle="tab" class="white-text-color selection-tab" >{% trans %}Developer{% endtrans %}</a>
+          </li>
+          <li>
+            <a href="#business" data-toggle="tab" class="white-text-color selection-tab">{% trans %}Business Owner{% endtrans %}</a>
+          </li>
+          <li>
+            <a href="#decision" data-toggle="tab" class="white-text-color selection-tab">{% trans %}Decision Maker{% endtrans %}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-12">
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div class="tab-pane fade in active" id="developer">
+          <h3 class="text-center heading">{% trans %}Tryton has one of the active Open source communities in the world.{% endtrans %} 
+          </h3>
+          <p class="text-center">{% trans %}Tryton project is a global collaboration of developers and technology enthusiasts developing the open source business management software for SMB’s.  Backed by a Not for profit Tryton software foundation and vibrant community of developers.{% endtrans %}
+          </p>
+          <br>
+          <div class="row">
+            <div class="col-md-4 text-center">
+              <img src="{{ STATIC }}images/history-python.png" alt="history-python" class=" content-center-xs">
+              <p>{% trans %}Tryton is a three-tiers high-level general purpose application platform written in Python and use Postgresql as database engine.{% endtrans %}
+              </p>
+            </div>
+            <div class="col-md-4 text-center border-left-right">
+              <img src="{{ STATIC }}images/developer-02.png" alt="developer">
+              <p>{% trans %}Most active open source community, get instant response on mailing list, IRC channels on freenode. {% endtrans %}
+              </p>
+            </div>
+            <div class="col-md-4 text-center">
+              <img src="{{ STATIC }}images/developer-03.png" alt="developer">
+              <p>{% trans %}Join Tryton Unconference that happens every year in the month of November and explore creativity with like minded people.{% endtrans %}
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="business">
+          <h3 class="text-center heading">{% trans %}Hack your business growth with the most secure and scalable ERP software{% endtrans %}
+          </h3>
+          <p class="text-center">{% trans %}Tryton can help you manage every aspect of your company in a better way – from sales, customer relationships, financials and inventory to operations. Available on-premise or on-cloud, and tailored to your business needs– the choice is yours.{% endtrans %}
+          </p>
+          <br>
+          <div class="col-md-4 text-center">
+            <img src="{{ STATIC }}images/owner-01.png" alt="owner">
+            <p>{% trans %}Control your complete business information from the single and stable system.{% endtrans %}
+            </p>
+          </div>
+          <div class="col-md-4 text-center border-left-right">
+            <div class="border-left-right hidden-sm hidden-xs">
+            </div>
+            <img src="{{ STATIC }}images/owner-02.png" alt="owner">
+            <p>{% trans %}Adapt the software to your business needs and get it up and running in just 2-4 weeks*.{% endtrans %}
+            </p>
+          </div>
+          <div class="col-md-4 text-center">
+           <img src="{{ STATIC }}images/owner-03.png" alt="owner">
+           <p>{% trans %}Supercharge your business processes with a smooth migration from your legacy system.{% endtrans %}
+           </p>
+         </div>
+       </div>
+       <div class="tab-pane fade" id="decision">
+         <h3 class="text-center heading">{% trans %}Get real time data about your business and make faster yet proficient business decisions{% endtrans %}
+         </h3>
+         <p class="text-center">{% trans %}Tryton helps you take better decisions by letting you browse status of variety of business attributes in real time. The salted hash password used in Tryton ensures that your ERP doesn’t talks to non reliable sources.{% endtrans %}
+         </p>
+         <br>
+         <div class="row">
+          <div class="col-md-4 text-center">
+           <img src="{{ STATIC }}images/decision-01.png" alt="decision">
+           <p>{% trans %}Tryton comes onboard with low TCO which lets you try it to its best and you spend money in building new features and not on fixes security issues.{% endtrans %}</p>
+         </div>
+         <div class="col-md-4 text-center border-left-right">
+           <img src="{{ STATIC }}images/decision-02.png" alt="decision">
+           <p>{% trans %}It covers almost every aspect of a business. It’s an all in one system with ERP, POS and eCommerce capabilities.{% endtrans %}</p>
+         </div>
+         <div class="col-md-4 text-center">
+           <img src="{{ STATIC }}images/decision-03.png" alt="decision">
+           <p>{% trans %}Gone are the times, when ERP use to take a massive infrastructural budgets. Get started with Tryton with a minimal cost on any cloud infrastructure.{% endtrans %}</p>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+</div>
+</section>
+<div class="col-sm-4 col-sm-offset-4 col-xs-6 col-xs-offset-3">
+ <div class="divider-line"></div>
+</div>
+<section class="app-detail section-space">
+  <div class="container">
+    <h5 class="text-center text-muted heading">{% trans %}Everything you need for{% endtrans %}</h5>
+    <h2 class="margin-0 text-center heading">{% trans %}Managing your business{% endtrans %}</h2>
+    <br>
+    <br>
+    <div class="col-xs-12 col-sm-12 col-md-12">
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 col-md-4 app">
+          <img src="{{ STATIC }}images/apps-ecommerce.png" class="img-responsive content-center-xs" alt="ecommerce" />
+          <h4 class="text-center heading app-heading"><a href="{{ SITE_ROOT }}ecommerce.html">{% trans %}eCommerce{% endtrans %}</a></h4>
+          <h5 class="text-center text-muted heading">{% trans %}Design your webstore with ease{% endtrans %}</h5>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4 app">
+          <img src="{{ STATIC }}images/apps-accounts.png" class="img-responsive content-center-xs" alt="account app" />
+          <h4 class="text-center heading app-heading"><a href="{{ SITE_ROOT }}accounts.html">{% trans %}Accounts{% endtrans %}</a></h4>
+          <h5 class="text-center text-muted heading">{% trans %}Automates complex accounting processes{% endtrans %}</h5>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4 app">
+          <img src="{{ STATIC }}images/app/apps-inventory.png" class="img-responsive content-center-xs" alt="inventory" />
+          <h4 class="text-center heading app-heading"><a href="{{ SITE_ROOT }}inventory.html">{% trans %}Inventory{% endtrans %}</a></h4>
+          <h5 class="text-center text-muted heading">{% trans %}Manage and monitor your inventory levels{% endtrans %}
+          </h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 col-md-4 app">
+          <img src="{{ STATIC }}images/apps-crm.png" class="img-responsive content-center-xs" alt="crm" />
+          <h4 class="text-center heading app-heading"><a href="{{ SITE_ROOT }}crm.html">{% trans %}CRM{% endtrans %}</a></h4>
+          <h5 class="text-center text-muted heading">{% trans %}Convert more Leads into customers{% endtrans %}</h5>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4 app">
+          <img src="{{ STATIC }}images/app/apps-purchase.png" class="img-responsive content-center-xs" alt="purchase" />
+          <h4 class="text-center heading app-heading"><a href="{{ SITE_ROOT }}purchase.html">{% trans %}Purchase{% endtrans %}</a></h4>
+          <h5 class="text-center text-muted heading">{% trans %}Complete control of your purchasing{% endtrans %}</h5>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4 app">
+          <img src="{{ STATIC }}images/app/apps-orders.png" class="img-responsive content-center-xs" alt="order" />
+          <h4 class="text-center heading app-heading"><a href="{{ SITE_ROOT }}orders.html">{% trans %}Orders{% endtrans %}</a></h4>
+          <h5 class="text-center text-muted heading">{% trans %}Process you orders faster and efficiently{% endtrans %}</h5>
+        </div>
+      </div>
+    </div>
+    <div class="text-center">
+      <a href="{{ SITE_ROOT }}app.html" class="btn btn-default section-button">{% trans %}View all apps{% endtrans %} &nbsp; <i class="fa fa-cube"></i></a>
+    </div>
+  </div>
+</section>
+<section class="history section-space">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+         <img src="{{ STATIC }}images/history-languages.png" alt="language" class="img img-responsive content-center-xs">
+         <p class="no-wrap">{% trans %}Languages Supported{% endtrans %}</p>
+       </div>
+       <div class="col-md-3 col-md-offset-1 col-sm-6 col-sm-offset-0 col-xs-12 text-center">
+        <img src="{{ STATIC }}images/history-python.png" alt="python" class="img img-responsive content-center-xs">
+        <p>{% trans %} Main Language{% endtrans %}</p>
+      </div>
+      <div class="col-md-3 col-md-offset-1 col-sm-6 col-sm-offset-0 col-xs-12 text-center">
+        <img src="{{ STATIC }}images/history-contributers.png" alt="contributor" class="img img-responsive content-center-xs">
+        <p>{% trans %}Total Contributers{% endtrans %}</p>
+      </div>
+      <div class="col-md-3 col-md-offset-2 col-sm-6 col-sm-offset-0 col-xs-12 text-center">
+        <img src="{{ STATIC }}images/history-loc.png" alt="loc" class="img img-responsive content-center-xs">
+        <p>{% trans %}Lines of Code{% endtrans %}</p>
+      </div>
+      <div class="col-md-3 col-md-offset-1 col-sm-6 col-sm-offset-3 col-xs-12 text-center">
+        <img src="{{ STATIC }}images/history-license.png" alt="license" class="img img-responsive content-center-xs">
+        <p>{% trans %}License{% endtrans %}</p>
+      </div>
+    </div>
+    <div class="col-md-6 col-sm-6 col-xs-12">
+     <h3 class="heading">{% trans %}One of the most active Open source communities in the world.{% endtrans %}</h3>
+     <p>{% trans %}Tryton project is a global collaboration of developers and technology enthusiasts developing the open source business management software for SMB’s.  Backed by a Not for profit Tryton software foundation and vibrant community of developers.{% endtrans %}</p>
+     <a href="https://github.com/tryton/tryton" class="btn btn-default section-button">{% trans %}Get me the Source Code{% endtrans %}</a>
+   </div>
+ </div>
+</div>
+</section>
+<section class="users section-space">
+  <div class="container">
+    <h5 class="text-center text-muted heading">{% trans %}Companies that choose Tryton{% endtrans %}</h5>
+    <h2 class="text-center margin-0 heading">{% trans %}To manage their business{% endtrans %}
+    </h2>
+    <br>
+    <div id="carousel-user" class="carousel slide company-slider" data-ride="carousel">
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <div class="row">
+            <div class="col-md-3 col-md-offset-2 col-sm-4 col-sm-offset-2 col-xs-10 col-xs-offset-2">
+              <img src="{{ STATIC }}images/logos/gna.jpg" class="img-responsive" alt="gna" />
+            </div>
+            <div class="col-md-5 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+              <h3 class="heading">GNACODE</h3>
+              <p>{% trans %} GNA Code wanted to have an eCommerce system where they could setup co-branded stores for their affiliates easily. It was equally important to offer flexible discounts for different affiliates. In addition, every order had to be fulfilled by the nearest warehouse based on the customer’s location.{% endtrans %}</p>
+              <a href="#" class="btn btn-default section-button">{% trans %}Read More{% endtrans %} &gt;</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="row">
+            <div class="col-md-3 col-md-offset-2 col-sm-4 col-sm-offset-2 col-xs-10 col-xs-offset-2">
+              <img src="{{ STATIC }}images/logos/bsure.png" class="img-responsive" alt="bsure" />
+            </div>
+            <div class="col-md-5 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+              <h3 class="heading">bSure</h3>
+              <p>{% trans %}Nereid based web portal with Tryton implementation removed the security and scalability issues posed by the existing solution. Franchise holders were granted a unified way of placing their orders.{% endtrans %}</p>
+              <a href="#" class="btn btn-default section-button">{% trans %}Read More{% endtrans %} &gt;</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="row">
+            <div class="col-md-3 col-md-offset-2 col-sm-4 col-sm-offset-2 col-xs-10 col-xs-offset-2">
+              <img src="{{ STATIC }}images/logos/gog.png" class="img-responsive" alt="gog" />
+            </div>
+            <div class="col-md-5 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+              <h3 class="heading">Government of Greenland</h3>
+              <p>{% trans %}Nereid based web portal and Tryton implementation assisted the government of Greenland in achieve digitisation of over 60 departments in 2 weeks.{% endtrans %}</p>
+              <a href="#" class="btn btn-default section-button">{% trans %}Read More{% endtrans %}  &gt;</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="row">
+            <div class="col-md-3 col-md-offset-2 col-sm-4 col-sm-offset-2 col-xs-10 col-xs-offset-2">
+              <img src="{{ STATIC }}images/logos/graduit.png" class="img-responsive" alt="graduit" />
+            </div>
+            <div class="col-md-5 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+              <h3 class="heading">Graduit Network</h3>
+              <p>{% trans %}Nereid based social network with Tryton as ERP platform aided Graduit to upgrade their existing interface to an innovative design implementing the changes. The web shop created allowed the members of the Graduit network to purchase products and also donate to the cause of the network.{% endtrans %}</p>
+              <a href="#" class="btn btn-default section-button">{% trans %}Read More{% endtrans %}  &gt;</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="row">
+            <div class="col-md-3 col-md-offset-2 col-sm-4 col-sm-offset-2 col-xs-10 col-xs-offset-2">
+              <img src="{{ STATIC }}images/logos/atax.png" class="img-responsive" alt="bsure" />
+            </div>
+            <div class="col-md-5 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+              <h3 class="heading">AdvocateTax</h3>
+              <p>{% trans %}As the aviation law changed, we assisted Advocate Tax in helping their clients and employees to submit information with ease and interact with the data efficiently leading them to advance their position in the market.{% endtrans %}</p>
+              <a href="#" class="btn btn-default section-button">{% trans %}Read More {% endtrans %} &gt;</a>
+            </div>
+          </div>
+        </div>
+        <!-- Controls -->
+        <a class="left carousel-color-none carousel-control" href="#carousel-user" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control carousel-color-none" href="#carousel-user" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock main %}

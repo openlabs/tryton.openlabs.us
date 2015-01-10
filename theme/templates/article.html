@@ -1,25 +1,27 @@
-{% extends 'base.html' %}
+{% set SITE_ROOT = '../' %}
+{% extends 'index.html' %}
+
 {% block title %} {{article.title }} | {{ super() }} {% endblock title %}
-{% block main %}
-<section class="blog-heading">
-  <div class="container">
-    <h1 class="white-text-color margin-0">Blog</h1>
-    <ol class="breadcrumb remove_background padding-0 margin-0">
-      <li><a class="white-text-color" href="/">Home</a></li>
-      <li class="white-text-color"><a class="white-text-color" href="blogs.html">Blog</a></li>
-      <li class="white-text-color">{{ article.title }}</li>
-    </ol>
-  </div>
-</section>
-<section>
-  <div class="container">
-    <div class="mar_top7"></div>
-    <div class="col-xs-12 col-sm-12 col-md-8 padding-0">
-      <div class="col-xs-12 col-sm-12 col-md-11 padding-0">
-        <div class="img-frame">
-          <img class="img-responsive" src="{{ article.bannerimage }}">
-        </div>
-        <div class="mar_top3">
+
+{% block heading %}
+  <h1 class="white-text-color heading">{{ article.title }}</h1>
+{% endblock heading %}
+
+{% block breadcrumb %}
+  <li class="color-black">
+    <a class="color-black" href="{{ SITE_ROOT }}blogs/index.html">{% trans %}Blog{% endtrans %}</a>
+  </li>
+  <li class="color-black">{{ article.title }}</li>
+{% endblock breadcrumb %}
+{% block content %}
+  <section class="section-space">
+    <div class="container">
+      <div class="col-xs-12 col-sm-12 col-md-8 padding-0">
+        <div class="col-xs-12 col-sm-12 col-md-11 padding-0">
+          <div class="img-frame">
+            <img class="img-responsive" src="{{ SITE_ROOT }}{{ article.bannerimage }}">
+          </div>
+          <br>
           <table class="blog-date pull-left" border="0" cellpadding="0" cellspacing="0" width="60">
             <tr>
               <td>
@@ -31,7 +33,7 @@
                   </tr>
                   <tr>
                     <td class="blog-time">
-                      {{ article.date|strftime('%d') }}
+                      <h4 class="margin-0"><strong>{{ article.date|strftime('%d') }}</strong></h4>
                     </td>
                   </tr>
                 </table>
@@ -39,19 +41,21 @@
             </tr>
           </table>
           <h3 class="margin-0">{{article.title}}</h3>
-          <ul class="mar_bottom3">
-            <li class="pull-left list-unstyled post-by">{{article.author }}</li>
-            <li class="list-unstyled post-event pull-left">{{ article.category }}</li>
+          <ul>
+            <li class="pull-left list-unstyled post-by">
+              <a class="post-category common-link common-color" href="{{ SITEURL }}/{{ article.author.url }}">{{article.author}}</a>
+            </li>
+            <li class="list-unstyled post-event pull-left">
+              <a class="post-category common-link common-color" href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
+            </li>
           </ul>
         </div>
-        <div class="post_info_content">
-          {{ article.content }}
+        <div class="col-xs-12 col-sm-12 col-md-11 padding-0">
+          <div class="post_info_content">
+            {{ article.content }}
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
-<div class="mar_top7"></div>
-</section>
-{% endblock main %}
-
+  </section>
+{% endblock content %}

@@ -3,7 +3,7 @@ Date: 2014-11-16 10:20
 Tags: annual, awesome
 Category: Event
 Author: Sorabh
-BannerImage: /images/tryton unconference 2014.jpg
+BannerImage: images/tryton unconference 2014.jpg
 Summary: This year the annual Tryton Unconference will take place in Leipzig, Germany from 14th to 16th of November. This will be the 4th Annual conference of the Tryton community
 
 This will be the 4th Annual conference of the Tryton community, where users, developers and interested people from around the world will have an opportunity to know and talk about Tryton.

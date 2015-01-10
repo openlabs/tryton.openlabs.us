@@ -10,8 +10,7 @@ PATH = 'content'
 PAGE_PATHS = ['pages']
 STATIC_PATHS = ['images']
 ARTICLE_PATHS = ['articles']
-PAGINATED_DIRECT_TEMPLATES = ('blogs',)
-DIRECT_TEMPLATES = ('index', 'blogs', 'categories', 'authors', 'archives')
+DIRECT_TEMPLATES = ('index', 'archives')
 
 PLUGIN_PATHS = ['pelican-plugins']
 PLUGINS = ['i18n_subsites', ]
@@ -50,13 +49,13 @@ SOCIAL = (
 DEFAULT_PAGINATION = 10
 DELETE_OUTPUT_DIRECTORY = True
 
-# Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+RELATIVE_URLS = True
 
 
 THEME = 'theme'
 
 TEMPLATE_PAGES = {
+    'home.html': 'index.html',  # change root page of website
     'features.html': 'features.html',
     'app.html': 'app.html',
     'foundation.html': 'foundation.html',
@@ -67,4 +66,22 @@ TEMPLATE_PAGES = {
     'purchase.html': 'purchase.html',
     'orders.html': 'orders.html',
     'projects.html': 'projects.html',
+    'community.html': 'community.html',
+    'download.html': 'download.html',
+    'papers.html': 'papers.html',
 }
+
+# Output dir structure
+ARTICLES_URL_ROOT = 'blogs'
+
+INDEX_SAVE_AS = '%s/index.html' % ARTICLES_URL_ROOT
+ARTICLE_URL = "%s/{slug}.html" % ARTICLES_URL_ROOT
+ARTICLE_SAVE_AS = "%s/{slug}.html" % ARTICLES_URL_ROOT
+
+CATEGORIES_SAVE_AS = '%s/categories.html' % ARTICLES_URL_ROOT
+CATEGORY_URL = "%s/category/{slug}.html" % ARTICLES_URL_ROOT
+CATEGORY_SAVE_AS = "%s/category/{slug}.html" % ARTICLES_URL_ROOT
+
+TAGS_SAVE_AS = '%s/tags.html' % ARTICLES_URL_ROOT
+TAG_URL = "%s/tag/{slug}.html" % ARTICLES_URL_ROOT
+TAG_SAVE_AS = "%s/tag/{slug}.html" % ARTICLES_URL_ROOT

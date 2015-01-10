@@ -114,6 +114,11 @@ def reserve():
 def preview():
     local('pelican -s publishconf.py')
 
+
+def s3_upload():
+    rebuild()
+    local('s3cmd sync output/* s3://www.tryton.us')
+
 def cf_upload():
     rebuild()
     local('cd {deploy_path} && '

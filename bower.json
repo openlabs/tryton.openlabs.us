@@ -19,6 +19,7 @@
   ],
   "dependencies": {
     "font-awesome": "~4.2.0",
-    "bootstrap": "~3.3.1"
+    "bootstrap": "~3.3.1",
+    "nanoscroller": "~0.8.4"
   }
 }

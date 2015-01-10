@@ -1,16 +1,11 @@
 {% extends 'base.html' %}
 {% block title %} {% trans %}Accounting App{% endtrans %} | {{ super() }} {% endblock title %}
+
 {% block main %}
 <section class="app-banner">
   <div class="container">
-    <ol class="breadcrumb remove_background">
-      <li><a class="white-text-color" href="/">{% trans %}Home{% endtrans %}</a></li>
-      <li> <a class="white-text-color" href="app.html">{% trans %}App{% endtrans %}</a></li>
-      <li class="white-text-color">{% trans %}Account{% endtrans %}</li>
-    </ol>
-    <div class="mar-top-150"></div>
-    <div class="text-center">
-      <h1 class="white-text-color"><strong>{% trans %}ACCOUNTING{% endtrans %}</strong>
+    <div class="text-center section-space">
+      <h1 class="white-text-color">{% trans %}Accounting{% endtrans %}
       </h1>
       <div class="col-sm-12 col-xs-12" >
         <div class="col-sm-2 col-xs-4 col-xs-offset-4 col-sm-offset-5 app-banner-divider">
@@ -23,69 +18,72 @@
     </div>
   </div>
 </section>
-<div class="mar_top5 clearfix"></div>
+<section>
+  <div class="container">
+    <ol class="breadcrumb breadcrumb-background">
+      <li><a class="color-black" href="{{ SITE_ROOT }}index.html">{% trans %}Home{% endtrans %}</a></li>
+      <li><a class="color-black" href="{{ SITE_ROOT }}app.html">{% trans %}App{% endtrans %}</a></li>
+      <li class="color-black">{% trans %}Account{% endtrans %}</li>
+    </ol>
+  </div>
+</section>
 <div class="container">
-  <section>
+  <section class="section-space">
     <div class="container">
-      <div class="col-xs-12 col-sm-12 col-md-12 mar_top5">
+      <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="col-xs-12 col-sm-6 col-md-6 text-center">
-          <img src="{{ STATIC }}images/app/account/accounting-01.png" height="200" alt="ecommerce" class="content-center-xs">
+          <img src="{{ STATIC }}images/app/account/accounting-01.png" alt="ecommerce" class="content-center-xs orders-img">
         </div>
         <div class="col-xs-12 col-sm-6 col-md-6">
-          <h2>{% trans %}Simplified Accounting{% endtrans %}</h2>
+          <h2 class="heading">{% trans %}Simplified Accounting{% endtrans %}</h2>
           <p>{% trans %}Accounting will never be intimidating again. The app makes the complex world of numbers simple and presents it in a easy-to-do format. There will be no delay in the payments and you can generate invoices based on purchase and sales orders. Suddenly, you spend less time on accounting and more time on your business.{% endtrans %}
           </p>
         </div>
       </div>
     </div>
-    <div class="mar_top3 clearfix"></div>
   </section>
-  <div class="divider-line clearfix"></div>
-  <section>
+  <div class="divider-line"></div>
+  <section class="section-space">
     <div class="container">
       <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="col-xs-12 col-sm-6 col-md-6 col-sm-push-6 text-center">
-          <img src="{{ STATIC }}images/app/account/accounting-02.png" height="200" alt="ecommerce" class="content-center-xs">
+          <img src="{{ STATIC }}images/app/account/accounting-02.png" alt="ecommerce" class="content-center-xs orders-img">
         </div>
         <div class="col-xs-12 col-sm-6 col-md-6 col-sm-pull-6">
-          <h2>{% trans %}Manage all your accounts at one place!{% endtrans %}</h2>
+          <h2 class="heading">{% trans %}Manage all your accounts at one place!{% endtrans %}</h2>
           <p>{% trans %}The app will assist in recording day to day transactions like receiving payments from customers, payments to vendors by raising cheques or through cash and journal entries. Over and above financial module records the data during; Creation of a Customer Account, Vendor Account, Bank Account or General Ledger account.{% endtrans %}
           </p>
         </div>
       </div>
     </div>
-    <div class="mar_top3 clearfix"></div>
   </section>
-  <div class="divider-line clearfix"></div>
-  <section>
+  <div class="divider-line"></div>
+  <section class="section-space">
     <div class="container">
       <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="col-xs-12 col-sm-6 col-md-6 text-center">
-          <img src="{{ STATIC }}images/app/account/accounting-03.png" height="200" alt="fast" class=" content-center-xs">
+          <img src="{{ STATIC }}images/app/account/accounting-03.png" alt="fast" class=" content-center-xs orders-img">
         </div>
         <div class="col-xs-12 col-sm-6 col-md-6">
-          <h2>{% trans %}Take Intelligent Decisions{% endtrans %}</h2>
+          <h2 class="heading">{% trans %}Take Intelligent Decisions{% endtrans %}</h2>
           <p>{% trans %}Accounting app will take care of all accounts related entries and their impact on the whole system. How the finance comes and how it is been utilised, Total flow of money and total expenditures, everything will be shown here.{% endtrans %}</p>
         </div>
       </div>
     </div>
-    <div class="mar_top3 clearfix"></div>
   </section>
-  <div class="divider-line clearfix"></div>
-  <section>
+  <div class="divider-line"></div>
+  <section class="section-space">
     <div class="container">
       <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="col-xs-12 col-sm-6 col-md-6 col-sm-push-6 text-center">
-          <img src="{{ STATIC }}images/app/account/accounting-04.png" height="200" alt="custom" class="content-center-xs">
+          <img src="{{ STATIC }}images/app/account/accounting-04.png" alt="custom" class="content-center-xs orders-img">
         </div>
         <div class="col-xs-12 col-sm-6 col-md-6 col-sm-pull-6">
-          <h2>{% trans %}Generate Reports{% endtrans %}</h2>
+          <h2 class="heading">{% trans %}Generate Reports{% endtrans %}</h2>
           <p>{% trans %}Reports generated through the Accounting app help you to take informed purchasing decisions based on complete order history analysis. You have accurate information at your fingertips to monitor outbound delivery confirmation.{% endtrans %}</p>
         </div>
       </div>
     </div>
-    <div class="mar_top3 clearfix"></div>
   </section>
-  <div class="mar_top5 clearfix"></div>
 </div>
 {% endblock main %}

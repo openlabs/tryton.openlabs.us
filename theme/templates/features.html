@@ -3,13 +3,8 @@
 {% block main %}
 <section class="app-banner">
   <div class="container">
-    <ol class="breadcrumb remove_background">
-      <li><a class="white-text-color" href="/">{% trans %} Home {% endtrans %}</a></li>
-      <li class="white-text-color">{% trans %} Features {% endtrans %}</li>
-    </ol>
-    <div class="mar-top-150"></div>
-    <div class="text-center">
-      <h1 class="white-text-color"><strong>{% trans %} ALL IN ONE SYSTEM{% endtrans %} <br>{% trans %}THAT WILL RUN YOUR ENTIRE BUSINESS{% endtrans %}</strong>
+    <div class="text-center section-space">
+      <h1 class="white-text-color">{% trans %}All in one system{% endtrans %} <br>{% trans %}That will run your entire business{% endtrans %}
       </h1>
       <div class="col-sm-12 col-xs-12" >
         <div class="col-sm-2 col-xs-4 col-xs-offset-4 col-sm-offset-5 app-banner-divider">
@@ -22,16 +17,23 @@
     </div>
   </div>
 </section>
-<div class="mar_top5 clearfix" id="api"></div>
+<section>
+  <div class="container">
+    <ol class="breadcrumb breadcrumb-background">
+      <li><a class="color-black" href="{{ SITE_ROOT }}index.html">{% trans %}Home{% endtrans %}</a></li>
+      <li class="color-black">{% trans %}Features{% endtrans %}</li>
+    </ol>
+  </div>
+</section>
 <div class="container">
-  <section>
+  <section class="section-space">
     <div class="container">
-      <div class="col-xs-12 col-sm-12 col-md-12 mar_top5">
+      <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="col-xs-12 col-sm-6 col-md-6">
           <img src="{{ STATIC }}images/feature/api.png" alt="reports" class="img img-responsive content-center-xs">
         </div>
         <div class="col-xs-12 col-sm-6 col-md-6">
-          <h2>{% trans %}Language agnostic Web {% endtrans %}</h2>
+          <h2 class="heading">{% trans %}Language agnostic Web {% endtrans %}</h2>
           <p>{% trans %}Already have a software component running on your system and want to integrate the same with Tryton? {% endtrans %}</p>
           <p>{% trans %}Don’t worry! Tryton provides 100% API Integration, which helps software developers and vendors to bundle their own software with one or more Tryton modules. {% endtrans %}</p>
           <p>{% trans %}With just a matter of clicks, you can have all your data and functionality already saved in your system, ready to be migrated to Tryton Solution! Integrating new applications and softwares with the existing is a piece of cake with the help of API feature in Tryton.{% endtrans %}
@@ -39,17 +41,16 @@
         </div>
       </div>
     </div>
-    <div class="mar_top3 clearfix"></div>
   </section>
-  <div class="divider-line clearfix" id="custom"></div>
-  <section>
+  <div class="divider-line" id="custom"></div>
+  <section class="section-space">
     <div class="container">
       <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="col-xs-12 col-sm-6 col-md-6 col-sm-push-6">
           <img src="{{ STATIC }}images/feature/customizable.png" alt="custom" class="img img-responsive content-center-xs">
         </div>
         <div class="col-xs-12 col-sm-6 col-md-6 col-sm-pull-6">
-          <h2>{% trans %}Easily Customizable{% endtrans %}</h2>
+          <h2 class="heading">{% trans %}Easily Customizable{% endtrans %}</h2>
           <p>{% trans %}Every business is different and so should be the solution to its problems. Ease of customization is an essential criterion to companies seeking to adopt an ERP system!” {% endtrans %}</p>
           <p>{% trans %}Most proprietary ERP systems provide some way of extending and customising them. But you can only customize in ways they’ve anticipated – the core is not your property and is not customisable. {% endtrans %}</p>
           <p>{% trans %}With Tryton you have the ability to customize and modify it as per your specific needs  and business processes. Gone are the times when your business adapt to the enterprise solution, adopt Tryton open source ERP solution to adapt the solution to your business workflows.{% endtrans %}
@@ -57,18 +58,16 @@
         </div>
       </div>
     </div>
-    <div class="mar_top3 clearfix"></div>
   </section>
-  <div class="divider-line clearfix" id="fast"></div>
-
-  <section>
+  <div class="divider-line" id="fast"></div>
+  <section class="section-space">
     <div class="container">
       <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="col-xs-12 col-sm-6 col-md-6">
           <img src="{{ STATIC }}images/feature/fast.png" alt="fast" class="img img-responsive content-center-xs">
         </div>
         <div class="col-xs-12 col-sm-6 col-md-6">
-          <h2>{% trans %}Fast{% endtrans %}</h2>
+          <h2 class="heading">{% trans %}Fast{% endtrans %}</h2>
           <p>{% trans %}With Tryton acting as the core of the system, all your tasks can be managed with simple clicks, getting results in the blink of an eye!{% endtrans %}
           </p>
           <p>{% trans %}The Tryton kernel is ELEVEN TIMES FASTER, which means it can handle huge applications featuring colossal data sets at lightning fast speed. You spend more time in getting actual work done, rather than wasting your time on slow systems.{% endtrans %}
@@ -78,17 +77,16 @@
         </div>
       </div>
     </div>
-    <div class="mar_top3 clearfix"></div>
   </section>
-  <div class="divider-line clearfix" id="modular"></div>
-  <section>
+  <div class="divider-line" id="modular"></div>
+  <section class="section-space">
     <div class="container">
       <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="col-xs-12 col-sm-6 col-md-6 col-sm-push-6">
           <img src="{{ STATIC }}images/feature/modular.png" alt="custom" class="img img-responsive content-center-xs">
         </div>
         <div class="col-xs-12 col-sm-6 col-md-6 col-sm-pull-6">
-          <h2>{% trans %}Modular{% endtrans %}</h2>
+          <h2 class="heading">{% trans %}Modular{% endtrans %}</h2>
           <p>{% trans %}Your business doesn't need the complete range of functionality available
             in a typical ERP suite.{% endtrans %}
           </p>
@@ -97,17 +95,16 @@
         </div>
       </div>
     </div>
-    <div class="mar_top3 clearfix"></div>
   </section>
-  <div class="divider-line clearfix" id="opensource"></div>
-  <section>
+  <div class="divider-line" id="opensource"></div>
+  <section class="section-space">
     <div class="container">
       <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="col-xs-12 col-sm-6 col-md-6">
           <img src="{{ STATIC }}images/feature/open-source.png" alt="open-source" class="img img-responsive content-center-xs">
         </div>
         <div class="col-xs-12 col-sm-6 col-md-6">
-          <h2>{% trans %}100% Open Source{% endtrans %}</h2>
+          <h2 class="heading">{% trans %}100% Open Source{% endtrans %}</h2>
           <p>{% trans %}If you are searching for an Open source ERP system, it means that you are already aware of the advantages on an Open source system.{% endtrans %}
           </p>
           <p>{% trans %}As Tryton is an open source ERP system, you can easily play around with the code and tweak it to suit your needs. With the help of people with right skillset, you can do wonders with your ERP solution.{% endtrans %}
@@ -117,17 +114,16 @@
         </div>
       </div>
     </div>
-    <div class="mar_top3 clearfix"></div>
   </section>
-  <div class="divider-line clearfix" id="scale"></div>
-  <section>
+  <div class="divider-line" id="scale"></div>
+  <section class="section-space">
     <div class="container">
       <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="col-xs-12 col-sm-6 col-md-6 col-sm-push-6">
           <img src="{{ STATIC }}images/feature/scalable.png" alt="custom" class="img img-responsive content-center-xs">
         </div>
         <div class="col-xs-12 col-sm-6 col-md-6 col-sm-pull-6">
-          <h2>{% trans %}Scalable{% endtrans %}</h2>
+          <h2 class="heading">{% trans %}Scalable{% endtrans %}</h2>
           <p>{% trans %}Tryton is a scalable ERP system which means that it does not lose its efficiency when the system’s complexity increases.{% endtrans %}
           </p>
           <p>{% trans %}As your business grows you save a lot of money by saving yourself from unnecessary reinvestments in the ERP system. Even when the amount of data and users increases vastly in your system, Tryton handles it with ease.{% endtrans %}
@@ -139,17 +135,16 @@
         </div>
       </div>
     </div>
-    <div class="mar_top3 clearfix"></div>
   </section>
-  <div class="divider-line clearfix" id="secure"></div>
-  <section>
+  <div class="divider-line" id="secure"></div>
+  <section class="section-space">
     <div class="container">
       <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="col-xs-12 col-sm-6 col-md-6">
           <img src="{{ STATIC }}images/feature/secure.png" alt="open-source" class="img img-responsive content-center-xs">
         </div>
         <div class="col-xs-12 col-sm-6 col-md-6">
-          <h2>{% trans %}Secure{% endtrans %}</h2>
+          <h2 class="heading">{% trans %}Secure{% endtrans %}</h2>
           <p>{% trans %}Tryton is one of the most secure ERP systems, that even commercial ERP systems fall short in front of Tryton’s security.{% endtrans %}
           </p>
           <p>{% trans %}At first, it may seem that an open source system might be an unsecure system as it’s code is open to all. But it is a big common misconception. Open source softwares are heavily tested as compared to their commercial counterparts. Being an uncountable number of downloaders of the Open Source ERP system, the feedbacks received by the community is huge. Once a flaw is reported, a patch is developed and suggested by the community to fix the flaw as soon as possible.{% endtrans %}
@@ -160,17 +155,16 @@
         </div>
       </div>
     </div>
-    <div class="mar_top3 clearfix"></div>
   </section>
-  <div class="divider-line clearfix" id="stable"></div>
-  <section>
+  <div class="divider-line" id="stable"></div>
+  <section class="section-space">
     <div class="container">
       <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="col-xs-12 col-sm-6 col-md-6 col-sm-push-6">
           <img src="{{ STATIC }}images/feature/stable.png" alt="custom" class="img img-responsive content-center-xs">
         </div>
         <div class="col-xs-12 col-sm-6 col-md-6 col-sm-pull-6">
-          <h2>{% trans %}Stable{% endtrans %}</h2>
+          <h2 class="heading">{% trans %}Stable{% endtrans %}</h2>
           <p>{% trans %}You really don’t want to lose your business or potential clients, just because your system gets down every other time because of stability issues. And if your business has a need to be up and live 24*7, then rightly investing in a stable ERP system is the first priority.{% endtrans %} </p>
           <p>{% trans %}Tryton provides an extremely stable ERP system for small and midsized businesses without the hassle of maintenance.{% endtrans %} </p>
           <p>{% trans %}The release cycle for Tryton have always been consistent which fortifies system’s stability with every update. The Database Management System used in Tryton is PostGreSQL, which is considered as one of the most stable Management system.{% endtrans %}
@@ -178,8 +172,6 @@
         </div>
       </div>
     </div>
-    <div class="mar_top3 clearfix"></div>
   </section>
-  <div class="mar_top5 clearfix"></div>
 </div>
 {% endblock main %}

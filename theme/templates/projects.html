@@ -3,14 +3,8 @@
 {% block main %}
 <section class="app-banner">
   <div class="container">
-    <ol class="breadcrumb remove_background">
-      <li><a class="white-text-color" href="/">{% trans %}Home{% endtrans %}</a></li>
-      <li> <a class="white-text-color" href="app.html">{% trans %}App{% endtrans %}</a></li>
-      <li class="white-text-color">{% trans %}Project Management App{% endtrans %}</li>
-    </ol>
-    <div class="mar-top-150"></div>
-    <div class="text-center">
-      <h1 class="white-text-color"><strong>{% trans %}PROJECT MANAGEMENT{% endtrans %}</strong>
+    <div class="text-center section-space">
+      <h1 class="white-text-color">{% trans %}Project management{% endtrans %}
       </h1>
       <div class="col-sm-12 col-xs-12" >
         <div class="col-sm-2 col-xs-4 col-xs-offset-4 col-sm-offset-5 app-banner-divider">
@@ -23,87 +17,90 @@
     </div>
   </div>
 </section>
-<div class="mar_top5 clearfix"></div>
+<section>
+  <div class="container">
+    <ol class="breadcrumb breadcrumb-background">
+      <li><a class="color-black" href="{{ SITE_ROOT }}index.html">{% trans %}Home{% endtrans %}</a></li>
+      <li><a class="color-black" href="{{ SITE_ROOT }}app.html">{% trans %}App{% endtrans %}</a></li>
+      <li class="color-black">{% trans %}Project management{% endtrans %}</li>
+    </ol>
+  </div>
+</section>
 <div class="container">
-  <section>
+  <section class="section-space">
     <div class="container">
-      <div class="col-xs-12 col-sm-12 col-md-12 mar_top5">
+      <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="col-xs-12 col-sm-6 col-md-6 text-center">
-          <img src="{{ STATIC }}images/app/project/projects-01.png" height="200" alt="ecommerce" class="content-center-xs">
+          <img src="{{ STATIC }}images/app/project/projects-01.png" alt="ecommerce" class="content-center-xs orders-img">
         </div>
         <div class="col-xs-12 col-sm-6 col-md-6">
-          <h2>{% trans %}Keep Track of all Time Spent{% endtrans %}</h2>
+          <h2 class="heading">{% trans %}Keep Track of all Time Spent{% endtrans %}</h2>
           <p>{% trans %}Timesheet feature of Tryton project management app help managers to track the time spent by each user on a specific project and thus making the complete process efficient during invoicing and billing.{% endtrans %}
           </p>
         </div>
       </div>
     </div>
-    <div class="mar_top3 clearfix"></div>
   </section>
-  <div class="divider-line clearfix"></div>
-  <section>
+  <div class="divider-line"></div>
+  <section class="section-space">
     <div class="container">
       <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="col-xs-12 col-sm-6 col-md-6 col-sm-push-6 text-center">
-          <img src="{{ STATIC }}images/app/project/projects-02.png" height="200" alt="ecommerce" class="content-center-xs">
+          <img src="{{ STATIC }}images/app/project/projects-02.png" alt="ecommerce" class="content-center-xs orders-img">
         </div>
         <div class="col-xs-12 col-sm-6 col-md-6 col-sm-pull-6">
-          <h2>{% trans %}Easy task management{% endtrans %}</h2>
+          <h2 class="heading">{% trans %}Easy task management{% endtrans %}</h2>
           <p>{% trans %}Tasks relevant to each project help you easily keep track of every job on a project, quickly telling you the who’s responsible, when it was due and why isn’t its completed!{% endtrans %}
           </p>
         </div>
       </div>
     </div>
-    <div class="mar_top3 clearfix"></div>
   </section>
-  <div class="divider-line clearfix"></div>
-  <section>
+  <div class="divider-line"></div>
+  <section class="section-space">
     <div class="container">
       <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="col-xs-12 col-sm-6 col-md-6 text-center">
-          <img src="{{ STATIC }}images/app/project/projects-03.png" height="200" alt="fast" class=" content-center-xs">
+          <img src="{{ STATIC }}images/app/project/projects-03.png" alt="fast" class=" content-center-xs orders-img">
         </div>
         <div class="col-xs-12 col-sm-6 col-md-6">
-          <h2>{% trans %}KanBan and Calendar view{% endtrans %}</h2>
+          <h2 class="heading">{% trans %}KanBan and Calendar view{% endtrans %}</h2>
           <p>{% trans %}Work on tasks and issues using the kanban view and control deadlines in the calendar view. Drag and drop the tasks to respective stages as to notify the deadline{% endtrans %}.
           </p>
         </div>
       </div>
     </div>
-    <div class="mar_top3 clearfix"></div>
   </section>
-  <div class="divider-line clearfix"></div>
-  <section>
+  <div class="divider-line"></div>
+  <section class="section-space">
     <div class="container">
       <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="col-xs-12 col-sm-6 col-md-6 col-sm-push-6 text-center">
-          <img src="{{ STATIC }}images/app/project/projects-04.png" height="200" alt="custom" class="content-center-xs">
+          <img src="{{ STATIC }}images/app/project/projects-04.png" alt="custom" class="content-center-xs orders-img">
         </div>
         <div class="col-xs-12 col-sm-6 col-md-6 col-sm-pull-6">
-          <h2>{% trans %}Tags{% endtrans %}</h2>
+          <h2 class="heading">{% trans %}Tags{% endtrans %}</h2>
           <p>{% trans %}Get organized as fast as you can think. Each task can be labeled with tags that make the complete process even more simpler. Easy categorization, great search capabilities makes the Tryton project management module a beast.{% endtrans %}
           </p>
         </div>
       </div>
     </div>
-    <div class="mar_top3 clearfix"></div>
   </section>
-  <section>
+  <div class="divider-line"></div>
+  <section class="section-space">
     <div class="container">
       <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="col-xs-12 col-sm-6 col-md-6 text-center">
-          <img src="{{ STATIC }}images/app/purchase/purchase-04.png" height="200" alt="fast" class=" content-center-xs">
+          <img src="{{ STATIC }}images/app/purchase/purchase-04.png" alt="fast" class=" content-center-xs">
         </div>
         <div class="col-xs-12 col-sm-6 col-md-6">
-          <h2>{% trans %}Smooth Workflow{% endtrans %}</h2>
+          <h2 class="heading">{% trans %}Smooth Workflow{% endtrans %}</h2>
           <p>{% trans %}From the inception of the project to its delivery, Tryton’s project management app is there to assist you at every step. You can record goals and milestones and map them against actual performance.{% endtrans %}
           </p>
         </div>
       </div>
     </div>
-    <div class="mar_top3 clearfix"></div>
   </section>
-  <div class="divider-line clearfix"></div>
-  <div class="mar_top5 clearfix"></div>
+  <div class="divider-line"></div>
 </div>
 {% endblock main %}

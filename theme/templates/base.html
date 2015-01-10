@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-{% set STATIC = '/theme/' %}
+{% set SITE_ROOT = SITE_ROOT or './' %}
+{% set STATIC = SITE_ROOT + 'theme/' %}
 <html lang="en-us">
 <head>
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
@@ -9,7 +10,7 @@
   <!-- Package CSS -->  
   <link href="{{ STATIC }}bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="{{ STATIC }}bower_components/font-awesome/css/font-awesome.min.css">
-
+  <link rel="stylesheet" href="{{ STATIC }}bower_components/nanoscroller/bin/css/nanoscroller.css">
   <!-- Custom CSS -->
   <link href="{{ STATIC }}css/style.css" rel="stylesheet">
   <link href="{{ STATIC }}css/responsive-layouts.css" rel="stylesheet">
@@ -28,48 +29,51 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="logo margin-left-0" href="/"></a>
+          <a class="logo margin-left-0" href="{{ SITE_ROOT }}index.html"></a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li class="main-menu"><a href="foundation.html">Foundation</a></li>
+            <li class="main-menu"><a href="{{ SITE_ROOT }}foundation.html">Foundation</a></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Features<span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Features</a>
               <ul class="dropdown-menu dropdown-position" role="menu">
-                <li><a href="features.html" class="text-uppercase">Features</a></li>
-                <li><a href="features.html#fast" class="text-uppercase scroll">Fast</a></li>
-                <li><a href="features.html#opensource" class="text-uppercase scroll">OpenSource</a></li>
-                <li><a href="features.html#api" class="text-uppercase scroll">API</a></li>
-                <li><a href="features.html#custom" class="text-uppercase scroll">Customizable</a></li>
-                <li><a href="features.html#scale" class="text-uppercase scroll">Scalable</a></li>
-                <li><a href="features.html#secure" class="text-uppercase scroll">Secure</a></li>
-                <li><a href="features.html#modular" class="text-uppercase scroll">Modular</a></li>
-                <li><a href="features.html#stable" class="text-uppercase scroll">Stable</a></li>
+                <li><a href="{{ SITE_ROOT }}features.html" class="text-uppercase">Features</a></li>
+                <li><a href="{{ SITE_ROOT }}features.html#fast" class="text-uppercase scroll">Fast</a></li>
+                <li><a href="{{ SITE_ROOT }}features.html#opensource" class="text-uppercase scroll">OpenSource</a></li>
+                <li><a href="{{ SITE_ROOT }}features.html#api" class="text-uppercase scroll">API</a></li>
+                <li><a href="{{ SITE_ROOT }}features.html#custom" class="text-uppercase scroll">Customizable</a></li>
+                <li><a href="{{ SITE_ROOT }}features.html#scale" class="text-uppercase scroll">Scalable</a></li>
+                <li><a href="{{ SITE_ROOT }}features.html#secure" class="text-uppercase scroll">Secure</a></li>
+                <li><a href="{{ SITE_ROOT }}features.html#modular" class="text-uppercase scroll">Modular</a></li>
+                <li><a href="{{ SITE_ROOT }}features.html#stable" class="text-uppercase scroll">Stable</a></li>
               </ul>
             </li>
             <li class="dropdown">
-              <a href="app.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Apps<span class="caret"></span></a>
+              <a href="{{ SITE_ROOT }}app.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Apps</a>
               <ul class="dropdown-menu dropdown-position" role="menu">
-                <li><a href="app.html" class="text-uppercase">Apps</a>
+                <li><a href="{{ SITE_ROOT }}app.html" class="text-uppercase">App</a></li>
+                <li><a href="{{ SITE_ROOT }}ecommerce.html" class="text-uppercase">ECommerce</a>
                 </li>
-                <li><a href="ecommerce.html" class="text-uppercase">ECommerce</a>
+                <li><a href="{{ SITE_ROOT }}accounts.html" class="text-uppercase">Accounts</a>
                 </li>
-                <li><a href="accounts.html" class="text-uppercase">Accounts</a>
+                <li><a href="{{ SITE_ROOT }}inventory.html" class="text-uppercase">Inventory</a>
                 </li>
-                <li><a href="inventory.html" class="text-uppercase">Inventory</a>
+                <li><a href="{{ SITE_ROOT }}crm.html" class="text-uppercase">CRM</a>
                 </li>
-                <li><a href="crm.html" class="text-uppercase">CRM</a>
+                <li><a href="{{ SITE_ROOT }}purchase.html" class="text-uppercase">Purchase</a>
                 </li>
-                <li><a href="purchase.html" class="text-uppercase">Purchase</a>
+                <li><a href="{{ SITE_ROOT }}orders.html" class="text-uppercase">Orders</a>
                 </li>
-                <li><a href="orders.html" class="text-uppercase">Orders</a>
-                </li>
-                <li><a href="projects.html" class="text-uppercase">Projects</a>
+                <li><a href="{{ SITE_ROOT }}projects.html" class="text-uppercase">Projects</a>
                 </li>
               </ul>
             </li>
-            <li class="main-menu"><a href="blogs.html">Blog</a></li>
+            <li>
+              <a href="{{ SITE_ROOT }}community.html" class="text-uppercase">Community</a>
+            </li>
+            <li class="main-menu"><a href="{{ SITE_ROOT }}blogs/index.html">Blog</a></li>
+            <li class="main-menu"><a href="{{ SITE_ROOT }}download.html">Download</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div>
@@ -83,26 +87,28 @@
   <!-- footer -->
   {% block footer %}
   {% block request_demo %}
-  <section class="know-more pull-left pad-all20">
+  <section class="know-more">
     <div class="container">
-      <div class="col-md-8 col-sm-12 col-xs-12">
-        <h3 class="white-text-color text-center">{% trans %}Want To Know More About {% endtrans %}<strong>TRYTON</strong></h3>
-        <h4 class="text-center-xs white-text-color text-center">{% trans %}Let us demonstrate how it can meet your business requirements.{% endtrans %}</h4>
-      </div>
-      <div class="col-md-4 col-sm-12 col-xs-12 text-center">
-        <div class="line_img pull-left hidden-sm hidden-xs"></div>
-        <button type="button" class="btn btn-lg btn-default mar_bottom3"><i class="fa fa-comments fa-lg"></i>&nbsp; &nbsp;{% trans %} REQUEST A DEMO{% endtrans %}</button>
+      <div class="row">
+        <div class="col-md-8 col-sm-12 col-xs-12">
+          <h3 class="white-text-color text-center">{% trans %}Want To Know More About {% endtrans %}<strong>TRYTON</strong></h3>
+          <h4 class="white-text-color text-center">{% trans %}Let us demonstrate how it can meet your business requirements.{% endtrans %}</h4>
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12 text-center">
+          <div class="line-img pull-left hidden-sm hidden-xs"></div>
+          <button type="button" class="btn btn-lg btn-default white-text-color"><i class="fa fa-comments fa-lg"></i>&nbsp; &nbsp;{% trans %}REQUEST A DEMO{% endtrans %}</button>
+        </div>
       </div>
     </div>
   </section>
   {% endblock request_demo %}
-  <div class="footer pull-left">
-    <div class="mar_top7 clearfix"></div>
+  <div class="clearfix"></div>
+  <div class="footer section-space">
     <div class="container">
       <div class="col-md-3 col-sm-6 col-xs-12 text-center-xs footer-set-height">
-        <img src="{{ STATIC }}images/footer-logo.png" alt="trytonLogo" />
-        <ul class="contact_address pull-left list-unstyled">
-          <li>Tryton.us{% trans %} is an initiative of Openlabs Technologies to aware people about Tryton and its implementation.{% endtrans %}<br><br>{% trans %}It is a private initiative not intended to replace, or communicate on behalf of the whole Tryton community.{% endtrans %} 
+        <img src="{{ STATIC }}images/footer-logo.png" alt="trytonLogo" class="img img-responsive content-center-xs" />
+        <ul class="contact-address list-unstyled">
+          <li>tryton.us{% trans %} is an initiative of Openlabs Technologies to aware people about Tryton and its implementation.<br><br>It is a private initiative not intended to replace, or communicate on behalf of the whole Tryton community.{% endtrans %}
           </li>
           <li>{% trans %}Tryton is a registered trademark of the Tryton Foundation.{% endtrans %}</li>
           <li><img src="{{ STATIC }}images/footer-wmap.png" alt=""></li>
@@ -111,16 +117,15 @@
       <div class="col-md-3 col-sm-4 col-md-offset-0 col-sm-offset-2 col-xs-4 col-xs-offset-4 footer-set-height">
         <h3 class="footer_headings">Useful Links</h3>
         <ul class="link_list list-unstyled">
-          <li><a href="/"><i class="fa fa-angle-right"></i> Home</a></li>
-          <li><a href="events.html"><i class="fa fa-angle-right"></i> Features</a></li>
-          <li><a href="community.html"><i class="fa fa-angle-right"></i> Apps</a></li>
-          <li><a href="foundation.html"><i class="fa fa-angle-right"></i> Foundation</a></li>
-          <li><a href="download.html"><i class="fa fa-angle-right"></i> Blog</a></li>
-          <li><a href="documentation.html"><i class="fa fa-angle-right"></i> Contact</a></li>
+          <li><a href="{{ SITE_ROOT }}index.html" class="text-muted"><i class="fa fa-angle-right"></i> Home</a></li>
+          <li><a href="{{ SITE_ROOT }}features.html" class="text-muted"><i class="fa fa-angle-right"></i> Features</a></li>
+          <li><a href="{{ SITE_ROOT }}app.html" class="text-muted"><i class="fa fa-angle-right"></i> Apps</a></li>
+          <li><a href="{{ SITE_ROOT }}foundation.html" class="text-muted"><i class="fa fa-angle-right"></i> Foundation</a></li>
+          <li><a href="{{ SITE_ROOT }}blogs/index.html" class="text-muted"><i class="fa fa-angle-right"></i> Blog</a></li>
         </ul>
       </div>
       <div class="col-md-3 col-sm-6 col-xs-12 text-center-xs footer-set-height">
-       <h3 class="footer_headings">Latest Tweets</h3>
+       <h3 class="white-text-color"><strong>Latest Tweets</strong></h3>
        <div class="twitter_feed">
         <a class="twitter-timeline" href="https://twitter.com/hashtag/tryton" data-widget-id="499079587393839106">#tryton Tweets</a>
         <script>
@@ -137,36 +142,31 @@
         </script>
       </div>
     </div>
-    <div class="col-md-3 col-sm-4 col-sm-offset-2 col-xs-12 col-md-offset-0 text-center-xs footer-set-height">
-      <h3 class="footer_headings">Join Community</h3>
+    <div class="col-md-3 col-sm-6 col-xs-12 text-center-xs footer-set-height">
+      <h3 class="white-text-color"><strong>Join Community</strong></h3>
       <ul class="list-unstyled">
         <li>
-          <a href="https://groups.google.com/forum/#!forum/tryton" class="white-text-color"><i class="fa fa-google-plus"></i>&nbsp;&nbsp;GOOGLE GROUP</a>
+          <a href="http://groups.tryton.org/" class="white-text-color"><h5><i class="fa fa-google-plus"></i>&nbsp;&nbsp;GOOGLE GROUP</h5></a>
         </li>
         <li>
-          <a href="https://github.com/tryton/tryton" class="white-text-color"><i class="fa fa-github"></i>&nbsp;&nbsp;GET THE CODE</a>
+          <a href="http://hg.tryton.org/" class="white-text-color"><h5><i class="fa fa-github"></i>&nbsp;&nbsp;GET THE CODE</h5></a>
         </li>
-      </ul>
-      <br>
-      <br>
-      <p class="white-text-color">Tryton Fondation Privée <br>
-        Rue de Rotterdam, 4 <br>
-        4000 Liège <br>
-        Belgium <br><br>
-        <a href="mailto:foundation@tryton.org" target="_blank" class="white-text-color"><i class="fa fa-envelope"></i>&nbsp;&nbsp;foundation@tryton.org</a></p>
+        <li class="white-text-color">Tryton Fondation Privée <br>
+          Rue de Rotterdam, 4 <br>
+          4000 Liège <br>
+          Belgium <br><br>
+          <a href="mailto:foundation@tryton.org" target="_blank" class="white-text-color"><i class="fa fa-envelope"></i>&nbsp;&nbsp;foundation@tryton.org</a></li>
+        </ul>
       </div>
-      <div class="clearfix mar_top6"></div>
     </div>
     <div class="copyright_info">
-      <div class="clearfix mar_top6"></div>
       <div class="container">
         <div class="col-md-12 text-center">
           <p class="white-text-color">Made with <i class="fa fa-heart text-red"></i> by <strong><a href="https://www.openlabs.co.in" class="white-text-color">Team OPENLABS</a></strong></p>
         </div>
-        <div class="clearfix mar_top3 clearfix pull-left"></div>
       </div>
     </div>
-    <div class="content_licensed col-md-12 col-sm-12 col-xs-12">
+    <div class="content-licensed col-md-12 col-sm-12 col-xs-12">
      <div class="container">
       <b>Content Licensed as Creative Commons</b>
     </div>
@@ -175,16 +175,21 @@
 
 {% endblock footer %}
 
-{% block script_tags %}
-<script src="{{ STATIC }}bower_components/jquery/dist/jquery.min.js"></script>
-<script src="{{ STATIC }}bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<script>
-$(document).ready(function(){
-  $(".scroll").click(function(){
-    $("html,body").animate({scrollTop:$(this.hash).offset().top-105},2000);
-  });
-});
-</script>
-{% endblock script_tags %}
+{% block script_imports %}
+  <script src="{{ STATIC }}bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="{{ STATIC }}bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="{{ STATIC }}bower_components/nanoscroller/bin/javascripts/jquery.nanoscroller.js"></script>
+{% endblock script_imports %}
+
+{% block scripts %}
+  <script>
+    $(document).ready(function(){
+      $(".nano").nanoScroller();
+      $(".scroll").click(function(){
+      $("html,body").animate({scrollTop:$(this.hash).offset().top-105},2000);
+      });
+    });
+  </script>
+{% endblock scripts %}
 </body>
 </html>
