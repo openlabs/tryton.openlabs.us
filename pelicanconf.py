@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = u'Tryton'
+AUTHOR = u'Tryton Foundation'
 SITENAME = u'Tryton'
 SITEURL = ''
 
@@ -20,7 +20,11 @@ JINJA_EXTENSIONS = ['jinja2.ext.i18n',]
 I18N_GETTEXT_LOCALEDIR = 'i18n/'
 I18N_GETTEXT_DOMAIN = 'messages'
 I18N_SUBSITES = {
-    'fr': {}
+    'fr': {},
+    'ca': {},
+    'es': {},
+    'de': {},
+    'sl': {},
 }
 
 

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 {% set SITE_ROOT = SITE_ROOT or './' %}
-{% set STATIC = SITE_ROOT + 'theme/' %}
+{% set STATIC = SITE_ROOT + relpath_to_site(DEFAULT_LANG, main_lang) + '/theme/' %}
 <html lang="en-us">
 <head>
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
@@ -91,7 +91,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8 col-sm-12 col-xs-12">
-          <h3 class="white-text-color text-center">{% trans %}Want To Know More About {% endtrans %}<strong>TRYTON</strong></h3>
+          <h3 class="white-text-color text-center">{% trans %}Want To Know More About<strong>TRYTON</strong>{% endtrans %}</h3>
           <h4 class="white-text-color text-center">{% trans %}Let us demonstrate how it can meet your business requirements.{% endtrans %}</h4>
         </div>
         <div class="col-md-4 col-sm-12 col-xs-12 text-center">
@@ -108,7 +108,7 @@
       <div class="col-md-3 col-sm-6 col-xs-12 text-center-xs footer-set-height">
         <img src="{{ STATIC }}images/footer-logo.png" alt="trytonLogo" class="img img-responsive content-center-xs" />
         <ul class="contact-address list-unstyled">
-          <li>tryton.us{% trans %} is an initiative of Openlabs Technologies to aware people about Tryton and its implementation.<br><br>It is a private initiative not intended to replace, or communicate on behalf of the whole Tryton community.{% endtrans %}
+          <li>tryton.us {% trans %}is an initiative of Openlabs Technologies to aware people about Tryton and its implementation.<br><br>It is a private initiative not intended to replace, or communicate on behalf of the whole Tryton community.{% endtrans %} 
           </li>
           <li>{% trans %}Tryton is a registered trademark of the Tryton Foundation.{% endtrans %}</li>
           <li><img src="{{ STATIC }}images/footer-wmap.png" alt=""></li>

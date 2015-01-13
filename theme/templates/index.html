@@ -2,21 +2,21 @@
 {% extends 'base.html' %}
 {% block title %} Blog | {{ super() }} {% endblock title %}
 {% block main %}
-  <section class="app-banner">
-    <div class="container">
-      <div class="text-center section-space">
-        {% block heading %}
-        <h1 class="white-text-color heading">{% trans %}Blog{% endtrans %}
-        </h1>
-        {% endblock heading %}
-        <div class="col-sm-12 col-xs-12" >
-          <div class="col-sm-2 col-xs-4 col-xs-offset-4 col-sm-offset-5 app-banner-divider">
-            <!-- This is used for divider at banner -->
-          </div>
+<section class="app-banner">
+  <div class="container">
+    <div class="text-center section-space">
+      {% block heading %}
+      <h1 class="white-text-color heading">{% trans %}Blog{% endtrans %}
+      </h1>
+      {% endblock heading %}
+      <div class="col-sm-12 col-xs-12" >
+        <div class="col-sm-2 col-xs-4 col-xs-offset-4 col-sm-offset-5 app-banner-divider">
+          <!-- This is used for divider at banner -->
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 <section>
   <div class="container">
     <ol class="breadcrumb breadcrumb-background">
@@ -31,52 +31,42 @@
 </section>
 {% block content %}
 <section class="section-space">
+  {% for article in articles_page.object_list %}
   <div class="container">
-    <div class="col-xs-12 col-sm-12 col-md-12 padding-0">
-      {% for article in articles_page.object_list %}
+    <div class="col-md-10 col-md-offset-1">
+      <h3>
+        <a href="{{ SITE_ROOT }}{{ article.url }}" class="text-muted">
+          <strong>{{ article.title }}</strong>
+        </a>
+      </h3>
+      <img src="{{ STATIC }}images/article/calendar-icon.jpg" alt="calender"> {{ article.date|strftime('%a') }}, 
+      {{ article.date|strftime('%B') }} 
+      {{ article.date|strftime('%d') }}, 
+      {{ article.date|strftime('%Y') }} 
+      {% for tag in article.tags %}
+      <a class="post-category" href="{{ SITE_ROOT }}{{ tag.url }}">
+        <span class="badge">{{ tag }}</span>
+      </a>
+      {% endfor %}
+      <br>
+      {% if article.bannerimage  %}
+      <br>
       <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-6 padding-0 img-frame">
-          <a href="{{ SITEURL }}/{{ article.url }}"> <img class="img-responsive" src="{{ SITE_ROOT }}{{ article.bannerimage }}" alt="{{ article.title }}">
-          </a>
+        <div class="col-md-8">
+          <div class="img-frame">
+            <a href="{{ SITE_ROOT }}{{ article.url }}"> 
+              <img class="img-responsive" src="{{ SITE_ROOT }}{{ article.bannerimage }}" alt="{{ article.title }}">
+            </a>
+          </div>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-6">
-          <div>
-            <table class="blog-date pull-left" border="0" cellpadding="0" cellspacing="0" width="60">
-              <tr>
-                <td>
-                  <table border="0" cellpadding="0" cellspacing="0">
-                    <tr>
-                      <td class="blog-month">
-                        {{ article.date|strftime('%B') }}
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="blog-time">
-                       <h4 class="margin-0"><strong>{{ article.date|strftime('%d') }}</strong></h4>
-                     </td>
-                   </tr>
-                 </table>
-               </td>
-             </tr>
-           </table>
-           <h3 class="margin-0"><a href="{{ SITEURL }}/{{ article.url }}" class="common-link common-color">{{ article.title }}</a></h3>
-           <ul>
-            <li class="pull-left list-unstyled post-by">
-              <a class="post-category common-link common-color" href="{{ SITEURL }}/{{ article.author.url }}">{{article.author}}</a>
-            </li>
-            <li class="list-unstyled post-event pull-left">
-              <a class="post-category common-link common-color" href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
-            </li>
-          </ul>
-        </div>
-        <br>
-        {{ article.summary }}
+      </div>
+      {% endif %}
+      <p>{{ article.summary }}</p>
+      <hr>
     </div>
   </div>
-    {% endfor %}
-  </div>
+  {% endfor %}
   {% include 'pagination.html' %}
-</div>
 </section>
 {% endblock content %}
 {% endblock main %}
