@@ -367,12 +367,13 @@ a:hover {
 
 .post-by {
   background:url(../images/article/icon-by-user.png) no-repeat 0 5px;
-  padding: 0 0 0 18px;
+  padding: 4px 0 0 18px;
+  margin-left: 8px;
 }
 
 .post-event {
   background:url(../images/article/icon-category.png) no-repeat 9px 5px;
-  padding: 0 0 0 26px;
+  padding: 2px 0 0 26px;
 }
 
 /* blog.html css end*/
