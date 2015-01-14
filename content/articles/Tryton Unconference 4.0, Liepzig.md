@@ -1,6 +1,6 @@
 Title: Tryton Unconference 4.0, Liepzig
 Date: 2014-11-16 10:20
-Tags: annual, awesome
+Tags: TUL
 Category: Event
 Author: Sorabh
 BannerImage: images/tryton unconference 2014.jpg
