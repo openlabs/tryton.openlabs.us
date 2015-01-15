@@ -5,7 +5,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{% block title %}Tryton - World's Most Stable OpenSource ERP System{% endblock title %}</title>
+  <title>{% block title %}{% trans %}Tryton - World's Most Stable OpenSource ERP System{% endtrans %}{% endblock title %}</title>
 
   <!-- Package CSS -->  
   <link href="{{ STATIC }}bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -34,46 +34,46 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li class="main-menu"><a href="{{ SITE_ROOT }}foundation.html">Foundation</a></li>
+            <li class="main-menu"><a href="{{ SITE_ROOT }}foundation.html">{% trans %}Foundation{% endtrans %}</a></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Features</a>
-              <ul class="dropdown-menu dropdown-position" role="menu">
-                <li><a href="{{ SITE_ROOT }}features.html" class="text-uppercase">Overview</a></li>
-                <li><a href="{{ SITE_ROOT }}features.html#fast" class="text-uppercase scroll">Fast</a></li>
-                <li><a href="{{ SITE_ROOT }}features.html#opensource" class="text-uppercase scroll">OpenSource</a></li>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">{% trans %}Features{% endtrans %}</a>
+              <ul class="dropdown-menu dropdown-position">
+                <li><a href="{{ SITE_ROOT }}features.html" class="text-uppercase">{% trans %}Overview{% endtrans %}</a></li>
+                <li><a href="{{ SITE_ROOT }}features.html#fast" class="text-uppercase scroll">{% trans %}Fast{% endtrans %}</a></li>
+                <li><a href="{{ SITE_ROOT }}features.html#opensource" class="text-uppercase scroll">{% trans %}OpenSource{% endtrans %}</a></li>
                 <li><a href="{{ SITE_ROOT }}features.html#api" class="text-uppercase scroll">API</a></li>
-                <li><a href="{{ SITE_ROOT }}features.html#custom" class="text-uppercase scroll">Customizable</a></li>
-                <li><a href="{{ SITE_ROOT }}features.html#scale" class="text-uppercase scroll">Scalable</a></li>
-                <li><a href="{{ SITE_ROOT }}features.html#secure" class="text-uppercase scroll">Secure</a></li>
-                <li><a href="{{ SITE_ROOT }}features.html#modular" class="text-uppercase scroll">Modular</a></li>
-                <li><a href="{{ SITE_ROOT }}features.html#stable" class="text-uppercase scroll">Stable</a></li>
+                <li><a href="{{ SITE_ROOT }}features.html#custom" class="text-uppercase scroll">{% trans %}Customizable{% endtrans %}</a></li>
+                <li><a href="{{ SITE_ROOT }}features.html#scale" class="text-uppercase scroll">{% trans %}Scalable{% endtrans %}</a></li>
+                <li><a href="{{ SITE_ROOT }}features.html#secure" class="text-uppercase scroll">{% trans %}Secure{% endtrans %}</a></li>
+                <li><a href="{{ SITE_ROOT }}features.html#modular" class="text-uppercase scroll">{% trans %}Modular{% endtrans %}</a></li>
+                <li><a href="{{ SITE_ROOT }}features.html#stable" class="text-uppercase scroll">{% trans %}Stable{% endtrans %}</a></li>
               </ul>
             </li>
             <li class="dropdown">
-              <a href="{{ SITE_ROOT }}app.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Apps</a>
-              <ul class="dropdown-menu dropdown-position" role="menu">
-                <li><a href="{{ SITE_ROOT }}app.html" class="text-uppercase">Overview</a></li>
-                <li><a href="{{ SITE_ROOT }}ecommerce.html" class="text-uppercase">ECommerce</a>
+              <a href="{{ SITE_ROOT }}app.html" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">{% trans %}Apps{% endtrans %}</a>
+              <ul class="dropdown-menu dropdown-position">
+                <li><a href="{{ SITE_ROOT }}app.html" class="text-uppercase">{% trans %}Overview{% endtrans %}</a></li>
+                <li><a href="{{ SITE_ROOT }}ecommerce.html" class="text-uppercase">{% trans %}ECommerce{% endtrans %}</a>
                 </li>
-                <li><a href="{{ SITE_ROOT }}accounts.html" class="text-uppercase">Accounts</a>
+                <li><a href="{{ SITE_ROOT }}accounts.html" class="text-uppercase">{% trans %}Accounts{% endtrans %}</a>
                 </li>
-                <li><a href="{{ SITE_ROOT }}inventory.html" class="text-uppercase">Inventory</a>
+                <li><a href="{{ SITE_ROOT }}inventory.html" class="text-uppercase">{% trans %}Inventory{% endtrans %}</a>
                 </li>
                 <li><a href="{{ SITE_ROOT }}crm.html" class="text-uppercase">CRM</a>
                 </li>
-                <li><a href="{{ SITE_ROOT }}purchase.html" class="text-uppercase">Purchase</a>
+                <li><a href="{{ SITE_ROOT }}purchase.html" class="text-uppercase">{% trans %}Purchase{% endtrans %}</a>
                 </li>
-                <li><a href="{{ SITE_ROOT }}orders.html" class="text-uppercase">Orders</a>
+                <li><a href="{{ SITE_ROOT }}orders.html" class="text-uppercase">{% trans %}Orders{% endtrans %}</a>
                 </li>
-                <li><a href="{{ SITE_ROOT }}projects.html" class="text-uppercase">Projects</a>
+                <li><a href="{{ SITE_ROOT }}projects.html" class="text-uppercase">{% trans %}Projects{% endtrans %}</a>
                 </li>
               </ul>
             </li>
             <li>
-              <a href="{{ SITE_ROOT }}community.html" class="text-uppercase">Community</a>
+              <a href="{{ SITE_ROOT }}community.html" class="text-uppercase">{% trans %}Community{% endtrans %}</a>
             </li>
-            <li class="main-menu"><a href="{{ SITE_ROOT }}blogs/index.html">Blog</a></li>
-            <li class="main-menu"><a href="{{ SITE_ROOT }}download.html">Download</a></li>
+            <li class="main-menu"><a href="{{ SITE_ROOT }}blogs/index.html">{% trans %}Blog{% endtrans %}</a></li>
+            <li class="main-menu"><a href="{{ SITE_ROOT }}download.html">{% trans %}Download{% endtrans %}</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div>
@@ -91,87 +91,100 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8 col-sm-12 col-xs-12">
-          <h3 class="white-text-color text-center">{% trans %}Want To Know More About<strong>TRYTON</strong>{% endtrans %}</h3>
+          <h3 class="white-text-color text-center">{% trans %}Want To Know More About <strong>TRYTON</strong>{% endtrans %}</h3>
           <h4 class="white-text-color text-center">{% trans %}Let us demonstrate how it can meet your business requirements.{% endtrans %}</h4>
         </div>
         <div class="col-md-4 col-sm-12 col-xs-12 text-center">
           <div class="line-img pull-left hidden-sm hidden-xs"></div>
-          <button type="button" class="btn btn-lg btn-default white-text-color"><i class="fa fa-comments fa-lg"></i>&nbsp; &nbsp;{% trans %}REQUEST A DEMO{% endtrans %}</button>
+          <button type="button" class="btn btn-lg btn-default white-text-color"><i class="fa fa-comments fa-lg"></i>&nbsp; &nbsp;{% trans %}Request a demo{% endtrans %}</button>
         </div>
       </div>
     </div>
   </section>
   {% endblock request_demo %}
   <div class="clearfix"></div>
-  <div class="footer section-space">
+  <section class="footer">
     <div class="container">
-      <div class="col-md-3 col-sm-6 col-xs-12 text-center-xs footer-set-height">
-        <img src="{{ STATIC }}images/footer-logo.png" alt="trytonLogo" class="img img-responsive content-center-xs" />
-        <ul class="contact-address list-unstyled">
-          <li>tryton.us {% trans %}is an initiative of Openlabs Technologies to aware people about Tryton and its implementation.<br><br>It is a private initiative not intended to replace, or communicate on behalf of the whole Tryton community.{% endtrans %} 
-          </li>
-          <li>{% trans %}Tryton is a registered trademark of the Tryton Foundation.{% endtrans %}</li>
-          <li><img src="{{ STATIC }}images/footer-wmap.png" alt=""></li>
-        </ul>
-      </div>
-      <div class="col-md-3 col-sm-4 col-md-offset-0 col-sm-offset-2 col-xs-4 col-xs-offset-4 footer-set-height">
-        <h3 class="footer_headings">Useful Links</h3>
-        <ul class="link_list list-unstyled">
-          <li><a href="{{ SITE_ROOT }}index.html" class="text-muted"><i class="fa fa-angle-right"></i> Home</a></li>
-          <li><a href="{{ SITE_ROOT }}features.html" class="text-muted"><i class="fa fa-angle-right"></i> Features</a></li>
-          <li><a href="{{ SITE_ROOT }}app.html" class="text-muted"><i class="fa fa-angle-right"></i> Apps</a></li>
-          <li><a href="{{ SITE_ROOT }}foundation.html" class="text-muted"><i class="fa fa-angle-right"></i> Foundation</a></li>
-          <li><a href="{{ SITE_ROOT }}blogs/index.html" class="text-muted"><i class="fa fa-angle-right"></i> Blog</a></li>
-        </ul>
-      </div>
-      <div class="col-md-3 col-sm-6 col-xs-12 text-center-xs footer-set-height">
-       <h3 class="white-text-color"><strong>Latest Tweets</strong></h3>
-       <div class="twitter_feed">
-        <a class="twitter-timeline" href="https://twitter.com/hashtag/tryton" data-widget-id="499079587393839106">#tryton Tweets</a>
-        <script>
-        ! function(d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0],
-          p = /^http:/.test(d.location) ? 'http' : 'https';
-          if (!d.getElementById(id)) {
-            js = d.createElement(s);
-            js.id = id;
-            js.src = p + "://platform.twitter.com/widgets.js";
-            fjs.parentNode.insertBefore(js, fjs);
-          }
-        }(document, "script", "twitter-wjs");
-        </script>
-      </div>
-    </div>
-    <div class="col-md-3 col-sm-6 col-xs-12 text-center-xs footer-set-height">
-      <h3 class="white-text-color"><strong>Join Community</strong></h3>
-      <ul class="list-unstyled">
-        <li>
-          <a href="http://groups.tryton.org/" class="white-text-color"><h5><i class="fa fa-google-plus"></i>&nbsp;&nbsp;GOOGLE GROUP</h5></a>
-        </li>
-        <li>
-          <a href="http://hg.tryton.org/" class="white-text-color"><h5><i class="fa fa-github"></i>&nbsp;&nbsp;GET THE CODE</h5></a>
-        </li>
-        <li class="white-text-color">Tryton Fondation Privée <br>
-          Rue de Rotterdam, 4 <br>
-          4000 Liège <br>
-          Belgium <br><br>
-          <a href="mailto:foundation@tryton.org" target="_blank" class="white-text-color"><i class="fa fa-envelope"></i>&nbsp;&nbsp;foundation@tryton.org</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="copyright_info">
-      <div class="container">
-        <div class="col-md-12 text-center">
-          <p class="white-text-color">Made with <i class="fa fa-heart text-red"></i> by <strong><a href="https://www.openlabs.co.in" class="white-text-color">Team OPENLABS</a></strong></p>
+      <div class="row footer-divider">
+        <div class="col-md-4 col-sm-6 col-xs-12 text-center footer-set-height">
+          <br>
+          <h4 class="white-text-color heading">{% trans %}About Us{% endtrans %}</h4>
+          <ul class="list-unstyled">
+            <li class="white-text-color">{% trans %}Tryton is an open source business software that helps businesses streamlines thier business processes. It is supported by the Tryton Software Foundation, which aim to protect, promote and develop Tryton functionalities. This website is a private initiative and not intended to replace or communicate on behalf of the Tryton community.{% endtrans %} 
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-4 col-sm-6 text-center col-xs-12 footer-set-height border-left">
+              <i class="fa fa-search-plus footer-heading"></i>
+              <h4 class="white-text-color heading">{% trans %}Explore{% endtrans %}</h4>
+              <ul class="list-unstyled">
+                <li><a href="http://doc.tryton.org/3.4/" class="white-text-color common-link">{% trans %}Getting Started with Tryton{% endtrans %}</a></li>
+                <li><a href="{{ SITE_ROOT }}foundation.html" class="white-text-color common-link">{% trans %}Tryton Software Foundation{% endtrans %}</a></li>
+                <li><a href="{{ SITE_ROOT }}features.html" class="white-text-color common-link">{% trans %}About Tryton{% endtrans %}</a></li>
+                <li><a href="http://wiki.tryton.org/" class="white-text-color common-link">{% trans %}Tryton Wiki{% endtrans %}</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 text-center footer-set-height border-left">
+              <i class="fa fa-bullhorn footer-heading"></i>
+              <br>
+              <h4 class="white-text-color heading">{% trans %}Need Help?{% endtrans %}</h4>
+              <ul class="list-unstyled">
+                <li class="grid-spaces"><a href="{{ SITE_ROOT }}community.html#mailing-list" class="white-text-color common-link">{% trans %}Check out the mailing list{% endtrans %}</a></li>
+                <li class="white-text-color">{% trans %}For an instant support{% endtrans %}<br><a href="{{ SITE_ROOT }}community.html#irc-list" class="btn btn-sm btn-default white-text-color background-transparent">{% trans %}Join IRC{% endtrans %}</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 text-center footer-set-height border-left">
+              <i class="fa fa-paper-plane-o footer-heading"></i>
+              <br>
+              <h4 class="white-text-color heading">{% trans %}Stay Updated{% endtrans %}</h4>
+              <ul class="list-unstyled">
+                <li class="white-text-color grid-spaces">
+                  {% trans %}Keep up with latest <br>
+                  <a href="http://groups.tryton.org/" class="white-text-color common-link">foundation news{% endtrans %}</a>
+                </li>
+                <li>
+                  <a href="{{ SITE_ROOT }}blogs/index.html" class="btn btn-sm btn-default white-text-color background-transparent">{% trans %}What's New{% endtrans %}</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
+      <div class="text-center white-text-color">
+        Tryton Fondation Privée Rue de Rotterdam, 4 4000 Liège Belgium <br>
+        <a href="mailto:foundation@tryton.org" target="_blank" class="white-text-color common-link heading"><i class="fa fa-envelope"></i>&nbsp;&nbsp;foundation@tryton.org</a>
+      </div>
+      <br>
+      <br>
+      <div class="col-sm-6 text-center-xs white-text-color">
+        <p class="heading social-box">{% trans %}Tryton is a registered trademark of the Tryton Foundation.{% endtrans %}</p>
+      </div>
+      <div class="col-sm-6 text-right white-text-color text-center-xs">
+         <a href="https://plus.google.com/u/0/communities/111064602356347307346">
+          <i class="fa fa-google-plus social-icons social-box"></i>
+        </a>
+        <a href="https://twitter.com/#tryton">
+          <i class="fa fa-twitter social-icons social-icons social-box"></i>
+        </a>
+        <a href="https://github.com/tryton/tryton">
+          <i class="fa fa-github social-icons social-box"></i>
+        </a>
+        <a href="http://stackoverflow.com/questions/tagged/tryton" class="common-color mailing-list">
+          <i class="fa fa-stack-overflow social-icons social-box"></i>
+        </a>
+      </div>
     </div>
-    <div class="content-licensed col-md-12 col-sm-12 col-xs-12">
-     <div class="container">
-      <b>Content Licensed as Creative Commons</b>
+    <br>
+  </section>
+  <div class="copyright">
+    <div class="container">
+      <div class="col-md-12 text-center">
+        <p class="white-text-color">{% trans %}Made with <i class="fa fa-heart text-red"></i> by <strong><a href="https://www.openlabs.co.in" class="white-text-color common-link">Team OPENLABS{% endtrans %}</a></strong></p>
+      </div>
     </div>
   </div>
-</div>
 
 {% endblock footer %}
 
