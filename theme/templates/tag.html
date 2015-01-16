@@ -2,7 +2,7 @@
 {% extends 'index.html' %}
 {% block title %} {{ tag }} | {{ super() }} {% endblock title %}
 {% block heading %}
-  <h1 class="white-text-color heading">Blogs tagged '{{ tag }}'</h1>
+  <h1 class="white-text-color app-banner-heading heading">{% trans %}Blogs tagged{% endtrans %} '{{ tag }}'</h1>
 {% endblock heading %}
 {% block breadcrumb %}
   <li class="color-black">

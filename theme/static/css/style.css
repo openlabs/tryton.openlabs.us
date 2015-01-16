@@ -287,10 +287,12 @@ a:hover {
   font-size:40px;
 }
 
-.app-banner-divider {
-  border-top: 2px solid #fff;
-  margin-top: 30px;
-  margin-bottom: 30px;
+.app-banner-heading::after {
+  content:"";
+  width :25%;   
+  border-bottom:2px solid #fff;
+  display:block;
+  margin:30px auto;
 }
 
 .app-banner p {
