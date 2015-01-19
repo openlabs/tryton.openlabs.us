@@ -2,14 +2,12 @@
 {% extends 'base.html' %}
 {% block title %} Blog | {{ super() }} {% endblock title %}
 {% block main %}
-<section class="app-banner">
-  <div class="container">
-    <div class="text-center section-space">
+<section class="blog-banner">
+    <div class="text-center">
       {% block heading %}
-      <h1 class="white-text-color app-banner-heading heading">{% trans %}Blog{% endtrans %}</h1>
+      <h1 class="white-text-color heading blog-banner-heading">{% trans %}Blog{% endtrans %}</h1>
       {% endblock heading %}
     </div>
-  </div>
 </section>
 <section>
   <div class="container">
@@ -27,13 +25,13 @@
 <section class="section-space">
   {% for article in articles_page.object_list %}
   <div class="container">
-    <div class="col-md-10 col-md-offset-1">
-      <h3>
-        <a href="{{ SITE_ROOT }}{{ article.url }}" class="text-muted">
-          <strong>{{ article.title }}</strong>
+    <div class="col-md-9">
+      <h2 class="heading banner-title">
+        <a href="{{ SITE_ROOT }}{{ article.url }}" class="common-link color-black">
+          {{ article.title }}
         </a>
-      </h3>
-      <img src="{{ STATIC }}images/article/calendar-icon.jpg" alt="calender"> {{ article.date|strftime('%a') }}, 
+      </h2>
+      <img src="{{ STATIC }}images/article/calendar-icon.png" alt="calender"> {{ article.date|strftime('%a') }}, 
       {{ article.date|strftime('%B') }} 
       {{ article.date|strftime('%d') }}, 
       {{ article.date|strftime('%Y') }} 
@@ -55,7 +53,10 @@
         </div>
       </div>
       {% endif %}
-      <p>{{ article.summary }}</p>
+
+      <div class="blog-content">
+        <p>{{ article.summary }}</p>
+      </div>
       <hr>
     </div>
   </div>
