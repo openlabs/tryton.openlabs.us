@@ -3,7 +3,7 @@ var gulp = require('gulp'),
 
 gulp.task('css-lint', function() {
   gulp.src('theme/static/css/*.css')
-    .pipe(csslint())
+    .pipe(csslint('.csslintrc'))
     .pipe(csslint.reporter())
     .pipe(csslint.failReporter()); // Fail on error
 });
