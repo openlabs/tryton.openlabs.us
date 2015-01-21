@@ -202,8 +202,8 @@ a:hover {
 }
 
 /* history section css ends */
-/* users section css starts */
 
+/* know-more css starts */
 
 .know-more {
   background: #1ac6ff ;
@@ -229,27 +229,27 @@ a:hover {
   min-height: 119px; 
 }
 
+/* know-more css ends */
+
+/* footer css starts */
+
 .footer {
   width: 100%;
   background-color: #3d3d48;
   color: #999;
+  padding-top:60px; 
 }
-
-.footer .contact-address {
-  margin: 10px 0 0 0;
-  width: 100%;
-}
-
-.footer .link-list li {
-  line-height: 30px;
+.copyright {
+  background-color: #3d3d48;
 }
 
 .footer-set-height {
-  min-height: 316px;
+  min-height:266px;
 }
 
-.footer li a:hover {
-  color:#fff;
+.footer .list-unstyled {
+  line-height: 2;
+  font-weight: 200;
 }
 
 .text-red {
@@ -270,6 +270,8 @@ a:hover {
 .carousel-inner .carousel-color-none {
   background-image: none;
 }
+
+/* footer css ends */
 
 /* app.html css starts */
 
@@ -595,9 +597,9 @@ line-height: 70px;
 }
 
 .irc-detail:hover {
- color: white;
- background-color: #07ADE4;
- border-color: #07ADE4;
+  color: white;
+  background-color: #07ADE4;
+  border-color: #07ADE4;
 }
 
 .language-list {
@@ -611,6 +613,50 @@ line-height: 70px;
 .breadcrumb-background > li + li:before {
   color: #1d1d1d;
 }
+
 .breadcrumb-background > li > .color-black:hover {
   color: #1ac6ff;
+}
+
+.background-transparent {
+  background-color: transparent;;
+}
+
+.border-left {
+  border-left: 1px solid #69747a;
+}
+
+.social-icons {
+  height: 50px;
+  width: 50px;
+  background-color: #777;
+  text-align: center;
+  border-radius: 50%;
+  margin-right: 10px;
+  font-size:20px;
+  color: white;
+}
+
+.social-box {
+  line-height: 50px;
+}
+
+.social-icons:hover {
+  opacity: 0.9;
+  background-color: #1ac6ff;
+}
+
+.footer-divider:after {
+  content: "";
+  border-bottom: 1px solid #69747a;
+  width: 100%;
+  padding-top: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-heading {
+  font-size: 30px;
+  color: #fff;
+  margin-bottom: 14px;
+  margin-top: 20px;
 }
