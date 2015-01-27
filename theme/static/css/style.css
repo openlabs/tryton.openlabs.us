@@ -18,7 +18,7 @@ a:hover {
 }
 
 .tryton-conf-banner {
-  background:linear-gradient(to top, rgba(0, 0, 0, .5), 
+  background: linear-gradient(to top, rgba(0, 0, 0, .5), 
     rgba(0, 0, 0, 0)), 
   url(../images/banner/tryton-conf.jpg) no-repeat;
 }
@@ -29,28 +29,28 @@ a:hover {
   min-height: 600px;
 }
 .business-banner {
-  background:linear-gradient(to top, rgba(0, 0, 0, .5), 
+  background: linear-gradient(to top, rgba(0, 0, 0, .5), 
     rgba(0, 0, 0, 0)), 
   url(../images/banner/complete-business.jpg) no-repeat;
   background-position: top;
 }
 
 .community-banner2 {
-  background:linear-gradient(to top, rgba(0, 0, 0, .5), 
+  background: linear-gradient(to top, rgba(0, 0, 0, .5), 
     rgba(0, 0, 0, 0)), 
   url(../images/banner/community.jpg) no-repeat;
   background-position: center;
 }
 
 .community-banner {
-  background:linear-gradient(to top, rgba(0, 0, 0, .5), 
+  background: linear-gradient(to top, rgba(0, 0, 0, .5), 
     rgba(0, 0, 0, 0)), 
   url(../images/banner/community-1.jpg) no-repeat;
   background-position: center;
 }
 
 .all-in-one-banner {
-  background:linear-gradient(to top, rgba(0, 0, 0, .5), 
+  background: linear-gradient(to top, rgba(0, 0, 0, .5), 
     rgba(0, 0, 0, 0)),
   url(../images/banner/all-in-one.jpg) no-repeat;
   background-position: center;
@@ -79,8 +79,8 @@ a:hover {
 
 .navbar-right .dropdown-position {
   top: 69px;
-  right:0;
-  left:0;
+  right: 0;
+  left: 0;
 }
 
 .navbar-right li ul li a {
@@ -150,7 +150,7 @@ a:hover {
 
 .border-left-right {
   border-left: 1px solid #ddd;
-  border-right:1px solid #ddd;
+  border-right: 1px solid #ddd;
 }
 
 
@@ -176,7 +176,7 @@ a:hover {
 } 
 
 .map-container {
-  height:256px;
+  height: 256px;
  }
 /* app section css ends */
 
@@ -198,7 +198,7 @@ a:hover {
 .nav-pills > li.active > .selection-tab:hover, 
 .nav-pills > li.active> .selection-tab:focus {
   background-color: white;
-  color:black;
+  color: black;
 }
 
 /* history section css ends */
@@ -218,12 +218,12 @@ a:hover {
 
 .know-more button:hover {
   background-color: #1ac6ff;
-  color:#fff;
-  border-color:#ccc;
+  color: #fff;
+  border-color: #ccc;
 }
 
 .line-img {
-  background:url(../images/h-line.png) no-repeat left top;
+  background: url(../images/h-line.png) no-repeat left top;
   width: 6%;
   margin-right: 16px;
   min-height: 119px; 
@@ -237,14 +237,14 @@ a:hover {
   width: 100%;
   background-color: #3d3d48;
   color: #999;
-  padding-top:60px; 
+  padding-top: 60px; 
 }
 .copyright {
   background-color: #3d3d48;
 }
 
 .footer-set-height {
-  min-height:266px;
+  min-height: 266px;
 }
 
 .footer .list-unstyled {
@@ -264,7 +264,7 @@ a:hover {
 }
 
 .white-text-color {
-  color:#fff;
+  color: #fff;
 }
 
 .carousel-inner .carousel-color-none {
@@ -277,24 +277,24 @@ a:hover {
 
 .app-banner {
   min-height: 580px;
-  background:url(../images/app/temp-bg.jpg) no-repeat;
+  background: url(../images/app/temp-bg.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed; 
   padding: 45px 0;
-  position:relative; 
+  position: relative; 
 }
 
 .banner-heading {
-  font-size:40px;
+  font-size: 40px;
 }
 
 .app-banner-heading::after {
-  content:"";
-  width :25%;   
-  border-bottom:2px solid #fff;
-  display:block;
-  margin:30px auto;
+  content: "";
+  width : 25%;   
+  border-bottom: 2px solid #fff;
+  display: block;
+  margin: 30px auto;
 }
 
 .app-banner p {
@@ -308,22 +308,22 @@ a:hover {
 }
 
  .section-button:hover {
-  background-color:#1ac6ff;
-  color:white;
-  border-color:#1ac6ff; 
+  background-color: #1ac6ff;
+  color: white;
+  border-color: #1ac6ff; 
 }
 
 .app a {
-  color:#1D1D1D;
+  color: #1D1D1D;
 }
 
 .app a:hover {
-  color:#1ac6ff;
+  color: #1ac6ff;
 }
 
 
 .app-detail .app-heading {
-  color:#1D1D1D;
+  color: #1D1D1D;
   font-size: 24px;
   font-weight: 200;
 }
@@ -336,47 +336,47 @@ a:hover {
 /*blog css starts */
 
 .blog-heading {
-  background-color:#3398d4; 
+  background-color: #3398d4; 
   padding: 28px 0;
 }
 
 .img-frame {
-  border:7px solid #fff;
+  border: 7px solid #fff;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
 }
 
 
 .blog-date {
-  background-color:#FFFFFF; 
+  background-color: #FFFFFF; 
   margin-right: 15px;
 }
 
 .blog-month {
-  background-color:#2C9AB7; 
-  color:#fff;
-  font-weight:bold; 
-  padding:6px; 
-  text-align:center;
+  background-color: #2C9AB7; 
+  color: #fff;
+  font-weight: bold; 
+  padding: 6px; 
+  text-align: center;
 }
 
 .blog-time {
-  color:#2C9AB7;
-  font-weight:bold; 
-  line-height:100%; 
-  padding-top:8px; 
-  padding-bottom:8px; 
-  text-align:center;
-  background:linear-gradient(to top,rgba(21, 3,0,0.1),rgba(16, 18, 16, 0.3));
+  color: #2C9AB7;
+  font-weight: bold; 
+  line-height: 100%; 
+  padding-top: 8px; 
+  padding-bottom: 8px; 
+  text-align: center;
+  background: linear-gradient(to top,rgba(21, 3,0,0.1),rgba(16, 18, 16, 0.3));
 }
 
 .post-by {
-  background:url(../images/article/icon-by-user.png) no-repeat 0 5px;
+  background: url(../images/article/icon-by-user.png) no-repeat 0 5px;
   padding: 4px 0 0 18px;
   margin-left: 8px;
 }
 
 .post-event {
-  background:url(../images/article/icon-category.png) no-repeat 9px 5px;
+  background: url(../images/article/icon-category.png) no-repeat 9px 5px;
   padding: 2px 0 0 26px;
 }
 
@@ -447,8 +447,8 @@ a:hover {
 }
 
 .pagination-text:hover {
-  background-color:#428bca;
-  color:white;
+  background-color: #428bca;
+  color: white;
 }
 
 /* pagination.html css end*/
@@ -483,10 +483,10 @@ a:hover {
 }
 
 .tryton-img {
-  position:absolute;
-  left:0;
-  bottom:0;
-  right:0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
 .tryton-img img {
@@ -495,11 +495,11 @@ a:hover {
 
 .nav-pills > li.active > .linux-os {
   background-color: transparent;
-  color:#727272;
+  color: #727272;
 }
 .nav-pills > li.active:hover .linux-os {
   background-color: #e3e3e3;
-  color:#727272;
+  color: #727272;
 }
 
 .tryton-img img {
@@ -549,7 +549,7 @@ line-height: 70px;
 }
 
 .latest-version {
-  border:1px solid #fff;
+  border: 1px solid #fff;
   background-color: transparent;
   color: #fff;
 }
@@ -557,7 +557,7 @@ line-height: 70px;
 .latest-version:hover {
   color: #fff;
   background-color: #1ac6ff;
-  border-color:#1ac6ff; 
+  border-color: #1ac6ff; 
 }
 /* download.html css end */
 
@@ -659,4 +659,51 @@ line-height: 70px;
   color: #fff;
   margin-bottom: 14px;
   margin-top: 20px;
+}
+
+.blog-content h2 {
+  font-weight: 200;
+  font-size: 26px;
+}
+
+.blog-content h3 {
+  font-size: 21px;
+  font-weight: 200;
+}
+
+.blog-banner {
+  background: url(../images/app/temp-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+  position: relative; 
+}
+
+.blog-banner-heading {
+  font-size: 242px;
+  opacity: .2;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  line-height: 117px;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 159px;
+}
+
+.banner-title {
+  margin-top: 0;
+}
+
+.blog-content pre.literal-block {
+  background: #2d2d2d;
+  color: #cccccc;
+  font-size: 75%;
+  padding: 15px 15px 15px 15px;
+  box-shadow: 2px 2px 2px #888;
+}
+
+.blog-content blockquote {
+  background: #2d2d2d;
+  color: #cccccc;
 }

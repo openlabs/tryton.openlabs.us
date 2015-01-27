@@ -4,7 +4,7 @@
 {% block title %} {{ article.title }} | {{ super() }} {% endblock title %}
 
 {% block heading %}
-  <h1 class="white-text-color app-banner-heading heading">{{ article.title }}</h1>
+  <h1 class="white-text-color heading blog-banner-heading">{{ article.title }}</h1>
 {% endblock heading %}
 {% block breadcrumb %}
   <li class="color-black">
@@ -15,8 +15,8 @@
 {% block content %}
 <section class="section-space">
   <div class="container">
-    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
-      <div class="col-xs-12 col-sm-12">
+    <div class="col-xs-12 col-sm-9">
+      <div class="col-xs-12 col-sm-12 padding-0">
         {% if article.bannerimage  %}
           <div class="row">
             <div class="col-md-8">
@@ -25,21 +25,22 @@
               </div>
             </div>
           </div>
+          <br>
+          <br>
         {% endif %}
-        <br>
-        <br>
-        <h2 class="margin-0">{{article.title}}</h2>
-        <img src="{{ STATIC }}images/article/calendar-icon.jpg" alt="calender"></img> 
-        {{ article.date|strftime('%a') }}, 
-        {{ article.date|strftime('%B') }} 
-        {{ article.date|strftime('%d') }}, 
-        {{ article.date|strftime('%Y') }} 
+        <h2 class="banner-title heading">{{article.title}}</h2>
+        <img src="{{ STATIC }}images/article/calendar-icon.png" alt="calender"></img> 
+        {{ article.date|strftime('%a') }},
+        {{ article.date|strftime('%B') }}
+        {{ article.date|strftime('%d') }},
+        {{ article.date|strftime('%Y') }}
         {% if article.author %}
         <span class="post-by"><a href="{{ SITEURL }}/{{ article.author.url }}">{{article.author }}</a></span>
         {% endif %}
         <span class="post-event"><a class="post-category" href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a></span>
-        <p>{{ article.summary }}</p>
-        <p>{{ article.content }}</p>
+        <div class="blog-content">
+          <p>{{ article.content }}</p>
+        </div>
       </div>
     </div>
   </div>
