@@ -276,7 +276,7 @@ a:hover {
 /* app.html css starts */
 
 .app-banner {
-  min-height: 580px;
+  min-height: 400px;
   background: url(../images/app/temp-bg.jpg) no-repeat;
   background-size: cover;
   background-position: center;
@@ -706,4 +706,7 @@ line-height: 70px;
 .blog-content blockquote {
   background: #2d2d2d;
   color: #cccccc;
+}
+.blog-section {
+  padding: 25px 0 75px;
 }
