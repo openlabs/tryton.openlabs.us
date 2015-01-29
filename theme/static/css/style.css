@@ -49,13 +49,6 @@ a:hover {
   background-position: center;
 }
 
-.all-in-one-banner {
-  background: linear-gradient(to top, rgba(0, 0, 0, .5), 
-    rgba(0, 0, 0, 0)),
-  url(../images/banner/all-in-one.jpg) no-repeat;
-  background-position: center;
-}
-
 .nav-resize {
   min-height: 70px;
   margin-bottom: 0;
