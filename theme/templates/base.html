@@ -90,13 +90,15 @@
   <section class="know-more">
     <div class="container">
       <div class="row">
-        <div class="col-md-8 col-sm-12 col-xs-12">
-          <h3 class="white-text-color text-center">{% trans %}Want To Know More About <strong>TRYTON</strong>{% endtrans %}</h3>
-          <h4 class="white-text-color text-center">{% trans %}Let us demonstrate how it can meet your business requirements.{% endtrans %}</h4>
+        <div class="col-md-8 col-sm-12 col-xs-12 know-more-content">
+          <h3 class="white-text-color text-center">{% trans %}Tryton is free and 100% open source business software.{% endtrans %}</h3>
+          <h4 class="white-text-color text-center">{% trans %}Download now and get started with it right away.{% endtrans %}</h4>
         </div>
         <div class="col-md-4 col-sm-12 col-xs-12 text-center">
           <div class="line-img pull-left hidden-sm hidden-xs"></div>
-          <button type="button" class="btn btn-lg btn-default white-text-color"><i class="fa fa-comments fa-lg"></i>&nbsp; &nbsp;{% trans %}Request a demo{% endtrans %}</button>
+          <a class="btn btn-default section-button" href="{{ SITE_ROOT }}download.html"><i class="fa fa-download fa-lg"></i>&nbsp; &nbsp;{% trans %}Download Tryton 3.4{% endtrans %}</a>
+          <br>
+          <a href="{{ SITE_ROOT }}blogs/new-tryton-release-34.html" class="white-text-color"><u>What's new in latest release</u></a>
         </div>
       </div>
     </div>

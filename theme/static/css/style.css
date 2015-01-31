@@ -211,13 +211,15 @@ a:hover {
   padding: 20px 0;
 }
 
-.know-more button {
+.know-more .btn {
   margin-top: 32px;
-  background: #1ac6ff
+  margin-bottom: 15px;
+}
+.know-more-content {
+  padding-top: 12px;
 }
 
-.know-more button:hover {
-  background-color: #1ac6ff;
+.know-more .btn:hover {
   color: #fff;
   border-color: #ccc;
 }
