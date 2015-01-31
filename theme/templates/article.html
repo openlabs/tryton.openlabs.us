@@ -3,9 +3,6 @@
 
 {% block title %} {{ article.title }} | {{ super() }} {% endblock title %}
 
-{% block heading %}
-  <h1 class="white-text-color heading blog-banner-heading">{{ article.title }}</h1>
-{% endblock heading %}
 {% block breadcrumb %}
   <li class="color-black">
     <a class="color-black" href="{{ SITE_ROOT }}blogs/index.html">{% trans %}Blog{% endtrans %}</a>
@@ -13,7 +10,7 @@
   <li class="color-black">{{ article.title }}</li>
 {% endblock breadcrumb %}
 {% block content %}
-<section class="section-space">
+<section class="blog-section">
   <div class="container">
     <div class="col-xs-12 col-sm-9">
       <div class="col-xs-12 col-sm-12 padding-0">

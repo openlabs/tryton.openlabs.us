@@ -2,12 +2,16 @@
 {% extends 'base.html' %}
 {% block title %} Blog | {{ super() }} {% endblock title %}
 {% block main %}
-<section class="blog-banner">
-    <div class="text-center">
+<section class="app-banner">
+  <div class="container">
+    <div class="text-center section-space">
       {% block heading %}
-      <h1 class="white-text-color heading blog-banner-heading">{% trans %}Blog{% endtrans %}</h1>
+      <h1 class="white-text-color app-banner-heading heading">{% trans %}Blog{% endtrans %}</h1>
+      <p class="white-text-color">{% trans %}A place for latest Tryton news and announcing cool features{% endtrans %}
+      </p>
       {% endblock heading %}
     </div>
+  </div>
 </section>
 <section>
   <div class="container">
@@ -22,7 +26,7 @@
   </div>
 </section>
 {% block content %}
-<section class="section-space">
+<section class="blog-section">
   {% for article in articles_page.object_list %}
   <div class="container">
     <div class="col-md-9">
