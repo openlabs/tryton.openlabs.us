@@ -1,0 +1,169 @@
+{% extends 'base.html' %}
+{% block title %} {% trans %}Donate{% endtrans %} | {{ super() }} {% endblock title %}
+
+{% block main %}
+<section class="app-banner">
+  <div class="container">
+    <div class="text-center section-space">
+      <h1 class="white-text-color app-banner-heading heading">{% trans %}Donate to the Tryton Software Foundation{% endtrans %}</h1>
+      <p class="white-text-color">{% trans %}Help the Tryton project to achieve its goal which ultimately brings a better free software business solution for companies all over the world.{% endtrans %}
+      </p>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <ol class="breadcrumb breadcrumb-background">
+      <li><a class="color-black" href="{{ SITE_ROOT }}index.html">{% trans %}Home{% endtrans %}</a></li>
+      <li class="color-black">{% trans %}Donate{% endtrans %}</li>
+    </ol>
+  </div>
+</section>
+<section class="section-space">
+  <div class="container">
+    <div class="col-md-12 grid-spaces">
+      <p class="text-center donate-heading">{% trans %}No matter they're big or small, all of them benefit from a powerful application that is free from any vendor lock ins. If you're already using tryton, please consider contributing to the project or support the foundation so the project remains vibrant and continues growing. We're happy to accept direct donation via:{% endtrans %}</p>
+      <br>
+      <div class="col-md-12 text-center no-pad">
+        <ul class="nav nav-pills doante-tab">
+          <li class="active"><a href="#Wire-transfer" data-toggle="pill"><span>Wire transfer</span> |</a></li>
+          <li><a href="#PayPal" data-toggle="pill"><span>PayPal</span> |</a></li>
+          <li><a href="#BitCoin" data-toggle="pill"><span>BitCoin</span> |</a></li>
+          <li><a href="#Flattr" data-toggle="pill"><span>Flattr</span> |</a></li>
+          <li><a href="#gittip" data-toggle="pill"><span>Gittip</span></a></li>
+        </ul>
+      </div>
+      <!-- Tab panes -->
+      <div class="tab-content grid-spaces">
+        <div class="tab-pane active row" id="Wire-transfer">{% trans %}<h3 class="text-center">Via Wire transfer:</h3><p class="text-center">our bank account is:<p>
+          <ul class="col-md-4 col-md-offset-5 col-sm-4 col-sm-offset-4 col-xs-5 col-xs-offset-3">
+            <li>IBAN: BE82 0688 9627 4468</li>
+            <li>BIC: GKCCBEBB {% endtrans %}</li>
+          </ul>
+        </div>
+        <div class="tab-pane" id="PayPal">
+          <h3 class="text-center">Via PayPal:</h3>
+          <div class="col-md-6 col-md-offset-3">
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" class="grid-spaces text-center">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="hosted_button_id" value="BRSPM746GRGA4">
+              <input type="image" src="https://www.paypalobjects.com/en_US/BE/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="Donate via PayPal">
+            </form>
+
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" class="text-center">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="hosted_button_id" value="TKCJ8CEMNBEFN">
+              <div class="col-md-8 col-md-offset-2 col-xs-offset-0 padding-0">
+              <table>
+                <tr><td><input type="hidden" name="on0" value=""></td></tr>
+                <tr><td>
+                  <select name="os0" class="paypal-amount">
+                    <option value="Monthly Donation 10.00 EUR">Monthly Donation 10.00 EUR : &amp;10,00 EUR - mensuel</option>
+                    <option value="Monthly Donation 20.00 EUR">Monthly Donation 20.00 EUR : &amp;20,00 EUR - mensuel</option>
+                    <option value="Monthly Donation 50.00 EUR">Monthly Donation 50.00 EUR : &amp;50,00 EUR - mensuel</option>
+                    <option value="Monthly Donation 100.00 EUR">Monthly Donation 100.00 EUR : &amp;100,00 EUR - mensuel</option>
+                    <option value="Monthly Donation 100.00 EUR">Monthly Donation 100.00 EUR : &amp;200,00 EUR - mensuel</option>
+                    <option value="Monthly Donation 500.00 EUR">Monthly Donation 500.00 EUR : &amp;500,00 EUR - mensuel</option>
+                  </select>
+                </td></tr>
+              </table>
+            </div>
+              <input type="hidden" name="currency_code" value="EUR">
+              <input type="image" src="https://www.paypalobjects.com/fr_FR/BE/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="Donate Monthly via PayPal">
+            </form>
+          </div>
+        </div>
+        <div class="tab-pane" id="BitCoin">
+          <h3 class="text-center">Via BitCoin:</h3>
+          <div class="col-md-6 col-md-offset-3">
+            <form id="makeDonation" action="https://bitpay.com/checkout" method="post">
+              <input name="action" type="hidden" value="checkout">
+              <input name="orderID" type="email" class="input input-xlarge form-control" placeholder="Email address (optional)" maxlength="50" autocapitalize="off" autocorrect="off"><br>
+              <input name="price" type="number" value="" placeholder="Amount" maxlength="10" min="0.01" step="0.01" class="form-control col-md-6">
+              <br>
+              <select name="currency" value="" class="paypal-amount">
+                <option value="USD">USD</option>
+                <option value="BTC">BTC</option>
+                <option value="EUR" selected>EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="AUD">AUD</option>
+                <option value="BGN">BGN</option>
+                <option value="BRL">BRL</option>
+                <option value="CAD">CAD</option>
+                <option value="CHF">CHF</option>
+                <option value="CNY">CNY</option>
+                <option value="CZK">CZK</option>
+                <option value="DKK">DKK</option>
+                <option value="HKD">HKD</option>
+                <option value="HRK">HRK</option>
+                <option value="HUF">HUF</option>
+                <option value="IDR">IDR</option>
+                <option value="ILS">ILS</option>
+                <option value="INR">INR</option>
+                <option value="JPY">JPY</option>
+                <option value="KRW">KRW</option>
+                <option value="LTL">LTL</option>
+                <option value="LVL">LVL</option>
+                <option value="MXN">MXN</option>
+                <option value="MYR">MYR</option>
+                <option value="NOK">NOK</option>
+                <option value="NZD">NZD</option>
+                <option value="PHP">PHP</option>
+                <option value="PLN">PLN</option>
+                <option value="RON">RON</option>
+                <option value="RUB">RUB</option>
+                <option value="SEK">SEK</option>
+                <option value="SGD">SGD</option>
+                <option value="THB">THB</option>
+                <option value="TRY">TRY</option>
+                <option value="ZAR">ZAR</option>
+              </select>
+              <input type="hidden" name="data" value="DTV4JaKv709xq02lnDoV6YQzckpuFjSKkWgOIEaHst13ciMsAsGhH+lsBgTnSgZUhdcrDUWYx6UE4QolrN26/QN7O/4kpMfJkjkImN+nLRGmR05AM/UJhWVXsidBuo4N1u8LGqe1e5ohy+w7uRNew7y57qR8N6dngxEPcRHlPK9UuJu6OS3/aRho33vG0D0oVDUL4bwPTn5ITu1Eal1vM15fb/wWtoPX5+JwZgaYj2DdZJMEEV5T1K06zBhcAGWg">
+              <input name="submit" class="btn btn-default" src="//bitpay.com/img/donate-sm.png" type="image" alt="BitPay, the easy way to pay with bitcoins." border="0">
+            </form>
+          </div>
+        </div>
+        <div class="tab-pane" id="Flattr">
+          <h3 class="text-center">Via Flattr:</h3>
+          <div class="col-md-6 col-md-offset-3 text-center">
+            <a href="http://flattr.com/thing/1093304/Tryton" target="_blank">
+              <img src="//api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0">
+            </a>
+          </div>
+        </div>
+        <div class="tab-pane" id="gittip">
+          <h3 class="text-center">Via Gittip:</h3>
+          <div class="col-md-6 col-md-offset-3 text-center">
+            <iframe style="border: 0; margin: 0; padding: 0;" src="https://www.gittip.com/tryton/widget.html" width="78pt" height="55pt"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="text-center mailing-list">{% trans %}*If you want your donation to stay anonymous please say it so in donation comments{% endtrans %}</p>
+    <h2 class="text-center heading">{% trans %}Donors{% endtrans %}</h2>
+    <p class="text-center">{% trans %}The tryton Foundation wants to thank individuals and companies that finance it's activity. Donors are lsited in descending order using an algorithm that takes into account both the amount and the age of the donation over the last year.{% endtrans %}</p>
+    <br>
+   <div id="donators-list">
+      <a href="{{ STATIC }}assets/donators.txt">List</a>
+    </div>
+  </div>
+</section>
+{% endblock main %}
+{% block scripts %}
+  {{ super() }}
+  <script type="text/javascript">
+    jQuery(document).ready(function() {
+      jQuery.get(jQuery('#donators-list').children('a').attr('href'),
+        function(data) {
+          var list = jQuery('<ol id="donators-list"></ol>');
+          jQuery('#donators-list').replaceWith(list);
+          var donators = data.split('\n');
+          for (var i = 0, len = donators.length; i < len; i += 1) {
+            var donator = donators[i];
+            if (!donator) continue;
+            list.append('<li>' + donator + '</li>');
+          }
+        });
+    });
+  </script>
+{% endblock scripts %}
