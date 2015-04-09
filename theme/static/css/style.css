@@ -22,6 +22,11 @@ a:hover {
     rgba(0, 0, 0, 0)), 
   url(../images/banner/tryton-conf.jpg) no-repeat;
 }
+.pycon-banner{
+  background: linear-gradient(to top, rgba(0, 0, 0, .5), 
+    rgba(0, 0, 0, 0)), 
+  url(../images/banner/pycon-banner.jpg) no-repeat;
+}
 
 .banner {
   background-size: cover;
