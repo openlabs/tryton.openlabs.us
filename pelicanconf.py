@@ -73,6 +73,7 @@ TEMPLATE_PAGES = {
     'community.html': 'community.html',
     'download.html': 'download.html',
     'papers.html': 'papers.html',
+    'copyright.html':'copyright.html'
 }
 
 # Output dir structure
