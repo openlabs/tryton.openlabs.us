@@ -48,6 +48,9 @@
     border-top: 1px dotted #69747a;
     border-left: 0;
   }
+  .paypal-amount {
+    width: 280px
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
