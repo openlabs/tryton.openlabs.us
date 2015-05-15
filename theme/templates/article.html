@@ -4,7 +4,7 @@
 {% block title %} {{ article.title }} | {{ super() }} {% endblock title %}
 
 {% block breadcrumb %}
-  <li class="color-black">
+  <li class="color-black" id="main" tabindex="-1">
     <a class="color-black" href="{{ SITE_ROOT }}blogs/index.html">{% trans %}Blog{% endtrans %}</a>
   </li>
   <li class="color-black">{{ article.title }}</li>
