@@ -200,9 +200,11 @@
 {% block scripts %}
   <script>
     $(document).ready(function(){
-      $(".nano").nanoScroller();
       $(".scroll").click(function(){
       $("html,body").animate({scrollTop:$(this.hash).offset().top-105},2000);
+      });
+      $( ".nano" ).mouseover(function(){
+        $(".nano").nanoScroller();
       });
     });
   </script>
