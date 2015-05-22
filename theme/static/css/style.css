@@ -773,3 +773,11 @@ a:hover {
   margin: 15px 0;
   width: 361px;
 }
+.foundation-zone > li {
+  float:none;
+  display:inline-block;
+}
+
+.foundation-zone {
+  text-align:center;
+}
